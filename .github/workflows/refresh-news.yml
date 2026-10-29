@@ -28,7 +28,7 @@ jobs:
         run: |
           python - <<'PYTEST'
           import json
-          p=json.load(open('newsroom.json'))
+          p=json.load(open('site/newsroom.json'))
           assert p['schema_version']==2
           assert len(p['news'])>0
           assert not p['status']['kbs_broadcast_verified']
