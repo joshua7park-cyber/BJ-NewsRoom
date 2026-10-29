@@ -1,0 +1,54 @@
+name: BJ Newsroom - hourly feed refresh
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: bj-feed-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gather recent RSS headlines
+        env:
+          REQUIRE_AT_LEAST_ONE_FEED: '1'
+        run: python scripts/update_feed.py
+      - name: Validate generated data
+        run: |
+          python - <<'PYTEST'
+          import json
+          p=json.load(open('newsroom.json'))
+          assert p['schema_version']==2
+          assert len(p['news'])>0
+          assert not p['status']['kbs_broadcast_verified']
+          assert not p['status']['minimum_5_verified_per_section']
+          print('validation OK, indexed:',len(p['news']))
+          PYTEST
+      - name: Commit updated newsroom.json
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add newsroom.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'chore: refresh newsroom RSS index [skip ci]'
+          git push
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy new feed and existing site
+        id: deployment
+        uses: actions/deploy-pages@v4
