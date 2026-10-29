@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "sections": [
+    {
+      "id": "kbs",
+      "icon": "📺",
+      "title": "KBS 뉴스9"
+    },
+    {
+      "id": "domestic",
+      "icon": "🇰🇷",
+      "title": "국내 종합"
+    },
+    {
+      "id": "global",
+      "icon": "🌍",
+      "title": "국제 정세·경제"
+    },
+    {
+      "id": "israel",
+      "icon": "🛡️",
+      "title": "이스라엘·중동"
+    },
+    {
+      "id": "religion",
+      "icon": "✝️",
+      "title": "Religion / 세계 종교"
+    },
+    {
+      "id": "mission",
+      "icon": "🌐",
+      "title": "글로벌 선교·생명 윤리"
+    },
+    {
+      "id": "science",
+      "icon": "🔬",
+      "title": "과학·첨단기술"
+    },
+    {
+      "id": "ai",
+      "icon": "🎓",
+      "title": "AI 교육·행사"
+    }
+  ],
+  "news": [],
+  "events": [],
+  "counts": {
+    "kbs": 0,
+    "domestic": 0,
+    "global": 0,
+    "israel": 0,
+    "religion": 0,
+    "mission": 0,
+    "science": 0,
+    "ai": 0,
+    "ai_events": 0
+  },
+  "errors": [
+    {
+      "section": "domestic",
+      "query": "한국 정치 경제 사회 교육 문화",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "domestic",
+      "query": "South Korea economy politics education",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "global",
+      "query": "international relations global economy",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "global",
+      "query": "US China Japan Europe world economy",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "israel",
+      "query": "Israel Gaza Middle East diplomacy humanitarian",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "israel",
+      "query": "이스라엘 중동 외교 인도주의",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "religion",
+      "query": "religion catholic protestant buddhism islam ethics",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "religion",
+      "query": "세계 종교 가톨릭 불교 이슬람 윤리",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "mission",
+      "query": "기독교 세계 선교 신학 목회 KWMA",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "mission",
+      "query": "global Christian mission church ethics",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "science",
+      "query": "AI semiconductor space quantum science",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "science",
+      "query": "인공지능 반도체 우주 양자 기술",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "ai",
+      "query": "생성형 AI 교육 세미나 ChatGPT Gemini Claude",
+      "error": "배포 전 초기 자료 없음"
+    },
+    {
+      "section": "ai",
+      "query": "AI training workshop seminar Korea",
+      "error": "배포 전 초기 자료 없음"
+    }
+  ],
+  "status": {
+    "level": "auto_indexed_not_fact_checked",
+    "kbs_broadcast_verified": false,
+    "minimum_5_verified_per_section": false,
+    "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
+  },
+  "built_at": "2026-10-29T01:49:21.435888+00:00",
+  "stale_after": "2026-10-29T04:49:21.435888+00:00"
+}

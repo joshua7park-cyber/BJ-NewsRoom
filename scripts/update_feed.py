@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""Build a transparent, sourced news digest from public RSS searches.
+RSS indexing != independent fact-checking. Never label indexed articles verified.
+"""
+import json, os, re, sys, html, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+SITE=ROOT/'site'
+KST=timezone(timedelta(hours=9))
+SECTIONS=[('kbs','📺','KBS 뉴스9'),('domestic','🇰🇷','국내 종합'),('global','🌍','국제 정세·경제'),('israel','🛡️','이스라엘·중동'),('religion','✝️','Religion / 세계 종교'),('mission','🌐','글로벌 선교·생명 윤리'),('science','🔬','과학·첨단기술'),('ai','🎓','AI 교육·행사')]
+QUERIES={
+ 'domestic':['한국 정치 경제 사회 교육 문화','South Korea economy politics education'],
+ 'global':['international relations global economy','US China Japan Europe world economy'],
+ 'israel':['Israel Gaza Middle East diplomacy humanitarian','이스라엘 중동 외교 인도주의'],
+ 'religion':['religion catholic protestant buddhism islam ethics','세계 종교 가톨릭 불교 이슬람 윤리'],
+ 'mission':['기독교 세계 선교 신학 목회 KWMA','global Christian mission church ethics'],
+ 'science':['AI semiconductor space quantum science','인공지능 반도체 우주 양자 기술'],
+ 'ai':['생성형 AI 교육 세미나 ChatGPT Gemini Claude','AI training workshop seminar Korea'],
+}
+
+MAX_PER_SECTION=16
+
+def fetch(url):
+ req=urllib.request.Request(url,headers={'User-Agent':'BJNewsroomRSS/1.0 (news research dashboard)'})
+ with urllib.request.urlopen(req,timeout=22) as response:
+  return response.read(2_000_000)
+
+def txt(element,name):
+ found=element.find(name)
+ return ''.join(found.itertext()).strip() if found is not None else ''
+
+def parse_feed(xml_bytes,section,now):
+ root=ET.fromstring(xml_bytes)
+ items=[]
+ for item in root.findall('.//item'):
+  title=html.unescape(re.sub(r'<[^>]+>','',txt(item,'title'))).strip()
+  url=txt(item,'link').strip()
+  pub=txt(item,'pubDate')
+  source=txt(item,'source') or 'Google News RSS 색인'
+  if not title or not url.startswith('https://'): continue
+  try: date=parsedate_to_datetime(pub).astimezone(timezone.utc)
+  except Exception: continue
+  age=(now-date).total_seconds()/3600
+  if age< -3 or age>72: continue
+  # Google News links are aggregator links; show explicitly.
+  items.append({'section':section,'title':title[:280], 'url':url,'date':date.isoformat(),
+   'source':source,'summary':'RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.',
+   'insight':'자동 생성된 분석 없음','verification_status':'자동 수집 · 원문 사실검증 전',
+   'verification_level':'indexed','kind':'news'})
+ return items
+
+def unique(items):
+ seen=set(); out=[]
+ for n in items:
+  key=re.sub(r'\W+','',n['title'].casefold())[:100]
+  if key in seen: continue
+  seen.add(key);out.append(n)
+ return out
+
+def load_events(now):
+ p=ROOT/'data'/'official_events.json'
+ if not p.exists():return []
+ data=json.loads(p.read_text(encoding='utf8'))
+ out=[]
+ for e in data:
+  if not e.get('official_url','').startswith('https://'):continue
+  try:
+   day=datetime.fromisoformat(e['date'][:10]).date()
+   if not (now.astimezone(KST).date()<=day<=now.astimezone(KST).date()+timedelta(days=30)):continue
+  except: continue
+  e=dict(e);e['section']='ai';e['url']=e.pop('official_url');e['kind']='event'
+  e['verification_status']='편집 입력된 공식 안내 · 실시간 모집상태 미보증'
+  e['verification_level']='official_listing'
+  out.append(e)
+ return out
+
+def build(fetcher=fetch,now=None):
+ now=now or datetime.now(timezone.utc)
+ counts={}; feed_errors=[]; records=[]
+ for section,_,_ in SECTIONS:
+  if section=='kbs':
+   # Do not misrepresent search results as a specific KBS 9 broadcast.
+   counts[section]=0; continue
+  collected=[]
+  for query in QUERIES.get(section,[]):
+   rss='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':query+' when:3d','hl':'ko','gl':'KR','ceid':'KR:ko'})
+   try: collected.extend(parse_feed(fetcher(rss),section,now))
+   except Exception as ex:feed_errors.append({'section':section,'query':query,'error':str(ex)[:160]})
+  collected=unique(collected)[:MAX_PER_SECTION]
+  records.extend(collected);counts[section]=len(collected)
+ events=load_events(now)
+ # Event category: only official curated events count toward verified event goal.
+ counts['ai_events']=len(events)
+ freshness={'built_at':now.isoformat(),'stale_after':(now+timedelta(hours=3)).isoformat()}
+ return {'schema_version':2,'sections':[{'id':i,'icon':ico,'title':label} for i,ico,label in SECTIONS],
+         'news':records,'events':events,'counts':counts,'errors':feed_errors,
+         'status':{'level':'auto_indexed_not_fact_checked','kbs_broadcast_verified':False,
+                   'minimum_5_verified_per_section':False,
+                   'note':'자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다.'},
+         **freshness}
+
+if __name__=='__main__':
+ SITE.mkdir(exist_ok=True,parents=True)
+ result=build()
+ (SITE/'newsroom.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
+ print('Saved',SITE/'newsroom.json','news:',len(result['news']),'events:',len(result['events']),'errors:',len(result['errors']))
+ if os.environ.get('REQUIRE_AT_LEAST_ONE_FEED')=='1' and not result['news']:
+  sys.exit('No articles collected; not publishing empty feed')
