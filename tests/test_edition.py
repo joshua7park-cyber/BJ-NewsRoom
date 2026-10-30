@@ -263,6 +263,11 @@ class DeployContract(unittest.TestCase):
     def test_recheck_after_0800_edition(self):
         self.assertIn("cron: '9 23 * * *'", self.wf)
 
+    def test_result_is_recorded_for_report(self):
+        # 07:58 보고 세션은 GitHub API를 쓸 수 없어 deploy-status 브랜치의 status.json을 읽습니다.
+        self.assertIn('refs/heads/deploy-status', self.wf)
+        self.assertIn('if: ${{ !cancelled() }}', self.wf)
+
 
 if __name__ == '__main__':
     unittest.main()

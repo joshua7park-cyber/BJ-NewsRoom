@@ -11,7 +11,7 @@ on:
     types: [completed]
 
 permissions:
-  contents: read
+  contents: write   # only to update the deploy-status branch read by the 07:58 report
   pages: write
   id-token: write
 
@@ -36,12 +36,15 @@ jobs:
       - uses: actions/configure-pages@v5
 
       - name: 1. Edition data gate (schema, grades, weekdays, dummy text)
+        id: gate
         run: python scripts/validate_edition.py
 
       - name: 2. Regression tests
+        id: tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: 3. Page JavaScript syntax
+        id: js
         run: |
           python - <<'PY'
           import re, pathlib
@@ -53,9 +56,11 @@ jobs:
           node --check /tmp/app.js
 
       - name: 4. Source and sign-up links
+        id: links
         run: python scripts/check_links.py
 
       - name: Upload site
+        id: upload
         uses: actions/upload-pages-artifact@v4
         with:
           path: '.'
@@ -65,6 +70,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: 5. Public page check
+        id: public
         env:
           PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
@@ -87,3 +93,46 @@ jobs:
                           raise SystemExit(f'PUBLIC FAIL {base}{path}: {ex}')
                       time.sleep(15)
           PY
+
+      - name: Record result for the 07:58 report
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          STEPS: ${{ toJSON(steps) }}
+          JOB_STATUS: ${{ job.status }}
+          EVENT: ${{ github.event_name }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          python - <<'PY'
+          import json, os, pathlib
+          from datetime import datetime, timedelta, timezone
+          names = {'gate': '1. 아침판 데이터 검사', 'tests': '2. 회귀 테스트', 'js': '3. 페이지 자바스크립트',
+                   'links': '4. 링크 점검', 'upload': '사이트 업로드', 'deployment': '배포', 'public': '5. 공개 주소 확인'}
+          steps = json.loads(os.environ['STEPS'])
+          outcome = {k: steps.get(k, {}).get('outcome', 'skipped') for k in names}
+          failed = next((names[k] for k in names if outcome[k] == 'failure'), None)
+          if os.environ['JOB_STATUS'] != 'success' and not failed:
+              failed = '준비 단계(체크아웃·설정)'
+          ed = json.load(open('data/edition.json', encoding='utf-8'))
+          rep = pathlib.Path('site/link-report.json')
+          rep = json.loads(rep.read_text(encoding='utf-8')) if rep.exists() else {}
+          status = {
+              'finished_at': datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='minutes'),
+              'result': 'failure' if failed else 'success', 'failed_step': failed, 'steps': outcome,
+              'event': os.environ['EVENT'], 'run_url': os.environ['RUN_URL'], 'commit': os.environ['GITHUB_SHA'],
+              'edition_date': ed.get('edition_date'), 'published_at': ed.get('published_at'),
+              'links': {k: rep.get(k) for k in ('checked_at', 'total', 'ok', 'blocked', 'broken', 'problems')},
+              'broken_links': [{'url': r['url'], 'used_by': r.get('used_by')}
+                               for r in rep.get('results', []) if r.get('status') == 'broken'][:10],
+          }
+          pathlib.Path('/tmp/status.json').write_text(json.dumps(status, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(status, ensure_ascii=False)[:600])
+          PY
+          blob=$(git hash-object -w /tmp/status.json)
+          tree=$(printf '100644 blob %s\tstatus.json\n' "$blob" | git mktree)
+          commit=$(git commit-tree "$tree" -m "deploy status ${GITHUB_RUN_ID}")
+          git push --force origin "$commit:refs/heads/deploy-status"
