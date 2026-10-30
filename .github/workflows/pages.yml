@@ -36,9 +36,9 @@ jobs:
           python - <<'PY'
           import re, json, pathlib
           html=pathlib.Path('index.html').read_text(encoding='utf-8')
-          scripts=re.findall(r'<script(?:\\s[^>]*)?>(.*?)</script>',html,re.S|re.I)
+          scripts=re.findall(r'<script[^>]*>(.*?)</script>',html,re.S|re.I)
           assert scripts, 'No inline JavaScript'
-          pathlib.Path('/tmp/newsroom-app.js').write_text('\\n'.join(scripts),encoding='utf-8')
+          pathlib.Path('/tmp/newsroom-app.js').write_text(chr(10).join(scripts),encoding='utf-8')
           d=json.loads(pathlib.Path('site/newsroom.json').read_text(encoding='utf-8'))
           assert d.get('schema_version')==2 and isinstance(d.get('news'),list)
           PY
