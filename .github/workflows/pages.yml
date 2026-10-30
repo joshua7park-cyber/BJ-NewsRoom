@@ -72,7 +72,7 @@ jobs:
           import json, os, time, urllib.request
           base = os.environ['PUBLIC_URL'].rstrip('/') + '/'
           want = json.load(open('data/edition.json', encoding='utf-8'))['edition_date']
-          checks = [('', '오늘의 하이라이트'), ('data/edition.json', want),
+          checks = [('', '오늘 아침판을 불러오는 중'), ('data/edition.json', want),
                     ('site/link-report.json', want), ('site/newsroom.json', 'schema_version')]
           for path, needle in checks:
               for attempt in range(8):

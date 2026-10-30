@@ -74,21 +74,22 @@ class PageContract(unittest.TestCase):
         self.assertEqual(stray, [], 'index.html 하나만 운영본입니다')
 
     def test_reads_live_data(self):
-        for path in ('./data/edition.json',):
+        for path in ('./data/edition.json', './site/link-report.json', './site/newsroom.json'):
             self.assertIn(path, self.html)
 
-    def test_essential_first_contract(self):
-        for value in ('오늘의 하이라이트', '국내', '국제', '이스라엘', 'Religion', '과학', 'AI 교육'):
-            self.assertIn(value,self.html)
-        self.assertIn('.slice(0,5)',self.html)
-        self.assertNotIn('site/newsroom.json',self.html)
-        self.assertNotIn('51건',self.html)
+    def test_sections_and_controls(self):
+        for name in ('국내', '국제', '이스라엘·중동', 'Religion', '과학·AI', '포털 보기', '데스크 보기',
+                     '모두 펼치기', '글자 크게', '검증 보류', '교육·세미나 달력', '실시간 제목 색인'):
+            self.assertIn(name, self.html)
 
-    def test_controls_and_accessibility(self):
-        for ident in ('id="search"','id="font"','id="minus"','id="plus"','id="events"'):
-            self.assertIn(ident,self.html)
-        self.assertIn('확인 범위',self.html)
-        self.assertIn("make('details'",self.html)
+    def test_approved_layout_is_a_plus_c(self):
+        # BJ님이 고른 운영 화면(2026-10-30): 포털(A)과 데스크(C) 전환, 상태 줄, 숫자 5칸이 보여야 합니다.
+        self.assertIn('function viewPortal()', self.html)
+        self.assertIn('function viewDesk()', self.html)
+        self.assertIn("MODE==='desk'?viewDesk():viewPortal()", self.html)
+        css = ' '.join(re.findall(r'<style[^>]*>(.*?)</style>', self.html, re.S))
+        hidden = re.search(r'(\.mode|#kpis|#status|\.kpis|\.status)\b[^{}]*\{[^}]*display\s*:\s*none', css)
+        self.assertIsNone(hidden, f'승인된 화면 요소를 숨기는 CSS: {hidden and hidden.group(0)[:120]}')
 
     def test_no_inline_articles_in_page(self):
         # Articles live in data/edition.json only, never hard-coded in the page.
