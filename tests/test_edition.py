@@ -82,6 +82,18 @@ class PageContract(unittest.TestCase):
                      '모두 펼치기', '글자 크게', '검증 보류', '교육·세미나 달력', '실시간 제목 색인'):
             self.assertIn(name, self.html)
 
+    def test_calm_five_only_default(self):
+        self.assertIn('function viewCalm()', self.html)
+        self.assertIn("filter(s=>(TAB==='전체'||s.section===TAB)&&hit(s))).slice(0,5)", self.html)
+        self.assertIn("$('#view').replaceChildren(viewCalm())", self.html)
+        self.assertIn('class:\'bj-events\'', self.html)
+        self.assertIn('.mode,.legend,#kpis,#status', self.html)
+
+    def test_accessibility_controls_still_exist(self):
+        for ident in ('id="q"', 'id="font"', 'id="zm"', 'id="zp"', 'id="ex"'):
+            self.assertIn(ident, self.html)
+        self.assertIn('function story(', self.html)
+
     def test_no_inline_articles_in_page(self):
         # Articles live in data/edition.json only, never hard-coded in the page.
         for s in ED['stories']:
