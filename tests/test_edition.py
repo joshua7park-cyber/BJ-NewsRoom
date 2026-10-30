@@ -77,6 +77,9 @@ class PageContract(unittest.TestCase):
         self.assertIn('./data/edition.json',self.html)
         self.assertNotIn('site/newsroom.json',self.html)
         self.assertIn('.slice(0,5)',self.html)
+        for label in ('경제·금융','정치·사회','테크·산업','국제','이스라엘','Religion','과학','AI 교육'):
+            self.assertIn(label,self.html)
+        self.assertIn('(s.topics||[]).includes(tab)',self.html)
 
     def test_five_story_ui_and_controls(self):
         for term in ('오늘의 하이라이트','국내','국제','이스라엘','Religion','과학','AI 교육',
