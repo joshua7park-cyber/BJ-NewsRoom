@@ -2,7 +2,8 @@ name: BJ Newsroom — fresh 07:30 edition
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 22 * * *' # 07:20 Korea time, prepare ahead of morning publication
+    - cron: '20 22 * * *' # 07:20 KST, morning edition before 07:30
+    - cron: '26 0-21,23 * * *' # hourly refresh; avoid duplicate morning slot
 permissions:
   contents: write
 concurrency:
