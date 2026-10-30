@@ -205,7 +205,7 @@ class PageContract(unittest.TestCase):
                      '실시간 제목 색인', '기본 4대 섹션', 'BJ 관심 섹션', '오늘 아침 5분', '오늘의 3줄',
                      '오늘의 지표', '5분 헤드라인', '오늘의 대문', 'Featured', '검증된 뉴스만 싣습니다',
                      '오늘의 검증 뉴스', '오늘의 관전 포인트', '다가오는 교육·세미나', '핵심 정리',
-                     '앞으로 볼 것', '매일 07:30'):
+                     '앞으로 볼 것', '매일 08:00'):
             self.assertIn(name, self.html)
 
     def test_page_sections_match_gate(self):
@@ -246,6 +246,22 @@ class PageContract(unittest.TestCase):
         for s in ED['stories']:
             self.assertNotIn(s['title'], self.html)
         self.assertIsNone(re.search(r'(예시|샘플|더미|시연용)\s*(기사|뉴스)', self.html))
+
+
+class DeployContract(unittest.TestCase):
+    wf = (ROOT / '.github' / 'workflows' / 'pages.yml').read_text(encoding='utf-8')
+
+    def test_link_check_can_stop_deploy(self):
+        self.assertIn('run: python scripts/check_links.py\n', self.wf)
+        self.assertNotIn('check_links.py --report-only', self.wf)
+
+    def test_previous_edition_keeps_deploying(self):
+        # 오늘판이 늦어도 매시간 제목 색인은 배포되고, 페이지가 "오늘판 발행 전"으로 알립니다.
+        self.assertNotIn('--require-today', self.wf)
+        self.assertNotIn("edition_date']==today", self.wf.replace(' ', ''))
+
+    def test_recheck_after_0800_edition(self):
+        self.assertIn("cron: '9 23 * * *'", self.wf)
 
 
 if __name__ == '__main__':

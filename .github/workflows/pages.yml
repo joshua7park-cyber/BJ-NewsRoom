@@ -5,10 +5,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '12 22 * * *'   # 07:12 KST — first public preflight/retry
-    - cron: '21 22 * * *'   # 07:21 KST — second public preflight/retry
-    - cron: '36 22 * * *'   # 07:36 KST — independent post-publish check
-    - cron: '49 22 * * *'   # 07:49 KST — extra retry for delayed Actions
+    - cron: '9 23 * * *'    # 08:09 KST: re-check links and the public page after the 08:00 edition
   workflow_run:
     workflows: ['BJ Newsroom - hourly feed refresh']
     types: [completed]
@@ -55,20 +52,8 @@ jobs:
           PY
           node --check /tmp/app.js
 
-      - name: 3b. Confirm today's editorial is ready before 07:30
-        run: |
-          python - <<'PY'
-          import json
-          from datetime import datetime,timezone,timedelta
-          d=json.load(open('data/edition.json',encoding='utf8'))
-          today=datetime.now(timezone(timedelta(hours=9))).date().isoformat()
-          assert d['edition_date']==today, f"Edition {d['edition_date']} is not today's {today}"
-          assert len(d['stories'])>=5, 'Insufficient stories'
-          print('MORNING PREFLIGHT PASS', today, len(d['stories']))
-          PY
-
       - name: 4. Source and sign-up links
-        run: python scripts/check_links.py --report-only
+        run: python scripts/check_links.py
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v4

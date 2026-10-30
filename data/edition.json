@@ -947,7 +947,7 @@
       "tag": "선교",
       "start": "2026-11-02",
       "end": "2026-11-04",
-      "time_label": "2박 3일 · 주제 '다음세대, 대상을 넘어 주체로'",
+      "time_label": "2박 3일 · 주제 '다음세대, 대상을 넘어 주체로' · 보도 기준, 주최 측 공지 미확인",
       "title": "제24회 한국선교지도자포럼 (한선지포)",
       "host": "한국세계선교협의회(KWMA)",
       "place": "경기 가평 필그림하우스",
@@ -973,7 +973,7 @@
       "section": "종교·선교",
       "tag": "목회",
       "start": "2026-11-02",
-      "time_label": "10:00–17:00",
+      "time_label": "10:00–17:00 · 보도 기준, 주최 측 공지 미확인",
       "title": "2027 목회계획세미나: AI와 함께하는 미래목회",
       "host": "한국교회정보센타",
       "place": "경기 군포제일교회",
@@ -1197,7 +1197,7 @@
       "host": "NeurIPS",
       "place": "호주 시드니 · 애틀랜타·파리 위성행사 12.09–12.13",
       "fee": "등록 조건은 공식 안내 확인",
-      "status": "check",
+      "status": "confirmed",
       "links": [
         {
           "type": "주최 측 안내",
@@ -1211,12 +1211,12 @@
       "tag": "과학 학회",
       "start": "2026-11-06",
       "end": "2026-11-09",
-      "time_label": "11.06 올해의 과학 돌파 일부 부문 발표",
+      "time_label": "11.06 Engage·Venture 피치 · 11.09 올해의 과학 돌파 발표",
       "title": "Falling Walls Science Summit 2026",
       "host": "Falling Walls Foundation",
       "place": "독일 베를린",
       "fee": "참가와 중계 조건은 공식 안내 확인",
-      "status": "check",
+      "status": "confirmed",
       "links": [
         {
           "type": "주최 측 안내",
