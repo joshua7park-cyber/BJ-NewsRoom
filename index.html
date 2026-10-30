@@ -32,6 +32,39 @@ async function loadActualNews(){
  }catch(e){bar.textContent='실제 뉴스 데이터 연결 실패: '+e.message+' · 가상 기사를 대신 표시하지 않습니다.'}
 }
 loadActualNews();
+async function loadReadingRoom(){
+ const host=document.getElementById('stories');if(!host)return;
+ try{
+ const res=await fetch('./site/reading-room.json?ts='+Date.now(),{cache:'no-store'});
+ if(!res.ok)throw Error('HTTP '+res.status);
+ const data=await res.json();
+ if(data.schema_version!==1||!Array.isArray(data.articles))throw Error('invalid schema');
+ const panel=document.createElement('section');panel.id='editorialReadingRoom';panel.style.cssText='padding:18px;background:#fff;border:1px solid #dbe4f1;border-radius:16px;margin:0 0 18px';
+ const heading=document.createElement('h2');heading.textContent='검증 범위를 밝힌 심층 읽기 · '+data.articles.length+'편';heading.style.cssText='font-size:1.15em;margin:0 0 8px';
+ const note=document.createElement('p');note.style.cssText='font-size:.84em;color:#64748b;margin:0 0 15px';note.textContent='직접 작성한 핵심 요약 · 원자료와 보도 확인 범위 명시 · 타 언론사의 기사 전문 복제 없음';
+ panel.append(heading,note);
+ for(const story of data.articles){
+  const detail=document.createElement('details');detail.className='story';
+  const summary=document.createElement('summary');summary.style.cssText='padding:15px;cursor:pointer';
+  const label=document.createElement('div');label.className='meta';label.textContent=story.section+' · 편집 우선 '+story.rank+' · '+story.published_at;
+  const title=document.createElement('h3');title.textContent=story.headline;title.style.margin='7px 0';
+  const teaser=document.createElement('p');teaser.textContent=story.subtitle;
+  summary.append(label,title,teaser);detail.append(summary);
+  const reading=document.createElement('div');reading.className='reading';
+  for(const pair of [['핵심 사실',story.summary],['읽어야 하는 이유',story.why],['보도 비교·맥락',story.context],['확인 범위',story.verification]]){
+   const h=document.createElement('h4');h.textContent=pair[0];const p=document.createElement('p');p.textContent=pair[1];reading.append(h,p);
+  }
+  const label2=document.createElement('h4');label2.textContent='참고 출처 · 선택 열람';reading.append(label2);
+  for(const src of story.sources||[]){try{const u=new URL(src.url);if(u.protocol!=='https:')continue;const a=document.createElement('a');a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';a.textContent=src.name+' ('+src.type+')';a.style.cssText='display:inline-block;margin:5px 13px 5px 0';reading.append(a)}catch(e){}}
+  const caveat=document.createElement('p');caveat.style.cssText='font-size:.76em;color:#708099';caveat.textContent='공식 조회수·시청 횟수 자료가 없어 인기 순위로 표시하지 않습니다.';reading.append(caveat);
+  detail.append(reading);panel.append(detail);
+ }
+ const existing=document.getElementById('editorialReadingRoom');if(existing)existing.remove();
+ host.before(panel);
+ }catch(e){const existing=document.getElementById('editorialReadingRoom');if(existing)existing.remove();}
+}
+loadReadingRoom();
+
 // 교육·세미나 공식 자료: 사용자 요청에 따라 기사와 별도 패널에 배치합니다.
 // 링크는 주최기관 공식 페이지이며 실시간 접수 상태를 보장하지 않습니다.
 const EDUCATION_EVENTS=[
