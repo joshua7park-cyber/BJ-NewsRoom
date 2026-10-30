@@ -12,8 +12,8 @@ DAY = date.fromisoformat(ED['edition_date'])
 
 
 def first(section=None, grade=None):
-    return next(s for s in ED['stories'] if (section is None or s['section'] == section)
-                and (grade is None or s['grade'] == grade))
+    return next((s for s in ED['stories'] if (section is None or s['section'] == section)
+                 and (grade is None or s['grade'] == grade)), None)
 
 
 class EditionGate(unittest.TestCase):
@@ -36,19 +36,21 @@ class EditionGate(unittest.TestCase):
 
     def test_handwritten_event_weekday_is_rejected(self):
         ed = copy.deepcopy(ED)
+        if not ed['events']:
+            self.skipTest('이번 판에 일정 없음')
         ed['events'][0]['time_label'] = '11.11(화) 18:00'
         self.assertTrue(any('요일' in e for e in self.errs(ed)))
 
     def test_a_grade_needs_two_domains(self):
-        s = first(grade='A')
-        ed = self.changed(s['id'], sources=[s['sources'][0], dict(s['sources'][0], name='같은 매체')])
+        s = first()
+        ed = self.changed(s['id'], grade='A', sources=[s['sources'][0], dict(s['sources'][0], name='같은 매체')])
         self.assertTrue(any('A급' in e for e in self.errs(ed)))
 
     def test_domestic_a_grade_needs_major_outlet(self):
-        s = first(section='경제', grade='A')
+        s = first()
         minor = [{'name': '지역지 하나', 'url': 'https://www.example-local.kr/a', 'kind': '국내'},
                  {'name': '지역지 둘', 'url': 'https://news.another-local.kr/b', 'kind': '국내'}]
-        ed = self.changed(s['id'], sources=minor)
+        ed = self.changed(s['id'], section='경제', check='국내외 금리', grade='A', sources=minor)
         self.assertTrue(any('주요 방송·신문·통신' in e for e in self.errs(ed)))
 
     def test_source_names_have_no_memo(self):
@@ -67,8 +69,8 @@ class EditionGate(unittest.TestCase):
         self.assertTrue(any('제목' in e for e in self.errs(ed)))
 
     def test_checkpoint_must_belong_to_section(self):
-        s = first(section='경제')
-        ed = self.changed(s['id'], check='우주')
+        s = first()
+        ed = self.changed(s['id'], check='어느 섹션에도 없는 항목')
         self.assertTrue(any('체크 포인트' in e for e in self.errs(ed)))
 
     def test_old_story_is_rejected(self):
@@ -83,10 +85,8 @@ class EditionGate(unittest.TestCase):
         self.assertTrue(any('더미' in e for e in self.errs(ed)))
 
     def test_figures_must_come_from_story(self):
-        s = next(x for x in ED['stories'] if x.get('figures'))
-        figs = copy.deepcopy(s['figures'])
-        figs[0]['value'] = '987,654'
-        ed = self.changed(s['id'], figures=figs)
+        s = first()
+        ed = self.changed(s['id'], figures=[{'label': '지어낸 숫자', 'value': '987,654'}])
         self.assertTrue(any('핵심 숫자' in e for e in self.errs(ed)))
 
     def test_stale_edition_fails_only_when_today_required(self):
@@ -123,26 +123,38 @@ class EditionGate(unittest.TestCase):
 
     def test_stale_market_number_is_rejected(self):
         ed = copy.deepcopy(ED)
-        market = next(x for x in ed['indicators'] if x['type'] == '시세')
-        market['as_of'] = (DAY - timedelta(days=10)).isoformat()
+        ed['indicators'] = [{'name': '코스피', 'value': '1', 'type': '시세', 'note': '마감',
+                             'as_of': (DAY - timedelta(days=10)).isoformat(),
+                             'source': {'name': '연합뉴스', 'url': 'https://www.yna.co.kr/'}}]
         self.assertTrue(any('기준일' in e for e in self.errs(ed)))
 
     def test_events_only_under_event_sections(self):
         ed = copy.deepcopy(ED)
+        if not ed['events']:
+            self.skipTest('이번 판에 일정 없음')
         ed['events'][0]['section'] = '경제'
         self.assertTrue(any('일정은' in e for e in self.errs(ed)))
 
     def test_confirmed_event_needs_official_link(self):
         ed = copy.deepcopy(ED)
-        e = next(x for x in ed['events'] if x['status'] == 'confirmed')
+        if not ed['events']:
+            self.skipTest('이번 판에 일정 없음')
+        e = ed['events'][0]
+        e['status'] = 'confirmed'
         e['links'] = [{'type': '관련 보도', 'url': 'https://news.example.com/a'}]
         self.assertTrue(any('일정 확인됨' in x for x in self.errs(ed)))
 
     def test_original_seminars_are_listed(self):
-        # BJ님 처음 시안의 종교·과학 교육 일정은 빠짐없이 싣습니다 (확인 전이면 '확인 필요'로).
+        # BJ님 처음 시안의 종교·과학 교육 일정은 끝나기 전까지 빠짐없이 싣습니다 (확인 전이면 '확인 필요'로).
+        # 취소되거나 실제로 없는 것으로 밝혀지면 '검증 보류'에 이유를 적고 뺄 수 있습니다.
+        required = {'kwma-forum': ('2026-11-04', '한국선교지도자포럼'), 'perspectives': ('2026-11-02', '퍼스펙티브스'),
+                    'quantum-taiwan': ('2026-11-11', 'Quantum Taiwan'), 'kaia-fall': ('2026-11-20', '인공지능학회'),
+                    'epic-quantum': ('2026-11-23', 'Photonics for Quantum')}
         ids = {e['id'] for e in ED['events']}
-        for needed in ('kwma-forum', 'perspectives', 'quantum-taiwan', 'kaia-fall', 'epic-quantum'):
-            self.assertIn(needed, ids)
+        held = ' '.join(h['title'] for h in ED['held'])
+        for needed, (end, name) in required.items():
+            if DAY <= date.fromisoformat(end):
+                self.assertTrue(needed in ids or name in held, f'{name} 일정이 빠졌습니다 (취소면 검증 보류에 사유)')
 
     def test_domain_grouping(self):
         self.assertEqual(domain('https://www.ytn.co.kr/a'), 'ytn.co.kr')
@@ -153,6 +165,8 @@ class EditionGate(unittest.TestCase):
 class LinkGate(unittest.TestCase):
     def test_a_grade_with_one_live_source_blocks_deploy(self):
         a = first(grade='A')
+        if a is None:
+            self.skipTest('이번 판에 A급 없음')
         results = [{'url': x['url'], 'status': 'broken'} for x in a['sources'][1:]]
         self.assertTrue(any(a['id'] in p for p in judge(ED, results)))
 
@@ -160,15 +174,18 @@ class LinkGate(unittest.TestCase):
         results = [{'url': x['url'], 'status': 'blocked'} for s in ED['stories'] for x in s['sources']]
         self.assertEqual(judge(ED, results), [])
 
+    def event_case(self, status):
+        ed = copy.deepcopy(ED)
+        ed['events'] = [{'id': 'case', 'status': status, 'links': [{'type': '신청', 'url': 'https://example.org/apply'}]}]
+        return ed, [{'url': 'https://example.org/apply', 'status': 'broken'}]
+
     def test_confirmed_event_with_all_official_links_broken_blocks(self):
-        e = next(x for x in ED['events'] if x['status'] == 'confirmed')
-        results = [{'url': ln['url'], 'status': 'broken'} for ln in e['links'] if ln['type'] in ('신청', '주최 측 안내')]
-        self.assertTrue(any(e['id'] in p for p in judge(ED, results)))
+        ed, results = self.event_case('confirmed')
+        self.assertTrue(any('case' in p for p in judge(ed, results)))
 
     def test_unconfirmed_event_link_does_not_block(self):
-        e = next(x for x in ED['events'] if x['status'] == 'check')
-        results = [{'url': ln['url'], 'status': 'broken'} for ln in e['links']]
-        self.assertFalse(any(e['id'] in p for p in judge(ED, results)))
+        ed, results = self.event_case('check')
+        self.assertFalse(any('case' in p for p in judge(ed, results)))
 
 
 class PageContract(unittest.TestCase):
