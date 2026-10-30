@@ -1,0 +1,35 @@
+name: BJ Newsroom quality gates
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'site/newsroom.json'
+      - 'tests/**'
+      - '.github/workflows/newsroom-quality.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python regression suite
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Verify source diversity
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+          d=json.load(open('site/newsroom.json'))
+          news=[n for n in d['news'] if n['section']=='domestic']
+          assert news, 'Missing domestic news'
+          counts=Counter(n['source'] for n in news)
+          assert max(counts.values())<=2, counts
+          print('Domestic source count:',len(counts),'articles:',len(news))
+          print('Direct original URLs:',sum('news.google.com' not in n['url'] for n in news),'of',len(news))
+          PY
