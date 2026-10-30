@@ -44,6 +44,19 @@ jobs:
           PY
           node --check /tmp/newsroom-app.js
 
+      - name: Check editorial provenance and regression tests
+        run: |
+          python -m unittest discover -s tests -p 'test_*.py' -v
+          python - <<'PY'
+          import json
+          d=json.load(open('site/reading-room.json',encoding='utf8'))
+          assert d['schema_version']==1 and d['articles']
+          for article in d['articles']:
+              assert article['sources'] and article['verification']
+              assert all(x['url'].startswith('https://') for x in article['sources'])
+          print('READING ROOM VALIDATED:',len(d['articles']))
+          PY
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
@@ -60,7 +73,7 @@ jobs:
           python - <<'PY'
           import os, time, urllib.request
           url=os.environ['PUBLIC_URL'].rstrip('/')+'/'
-          for path, needle in [('', b'BJ INTELLIGENCE'), ('site/newsroom.json', b'"schema_version"')]:
+          for path, needle in [('', b'BJ INTELLIGENCE'), ('site/newsroom.json', b'"schema_version"'),('site/reading-room.json', b'"articles"')]:
            for attempt in range(6):
             try:
              with urllib.request.urlopen(url+path, timeout=15) as r: body=r.read()
