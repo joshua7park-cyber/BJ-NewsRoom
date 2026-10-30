@@ -200,7 +200,35 @@ main{padding-block:18px 36px;display:grid;grid-template-columns:minmax(0,1fr);ga
 footer{border-top:1px solid var(--line);padding-block:20px 32px;font-size:.8rem;color:var(--ink-3)}
 footer .wrap{display:grid;gap:6px}
 </style>
-</head>
+<style id="bj-calm">
+/* Essential-first reading surface: five cards, no metrics wall. */
+body{background:#f7f9fc!important}
+.mast{background:#fff!important;box-shadow:none!important;border-bottom:1px solid #e8edf5!important}
+.mast>.wrap{min-height:76px!important}
+.mode,.legend,#kpis,#status,footer .wrap,.cal-wrap .cal-header{display:none!important}
+.tools{background:#fff!important;border-bottom:1px solid #edf1f6!important}
+.tools>.wrap{padding-top:11px!important;padding-bottom:11px!important;gap:8px!important}
+main.gut{max-width:1120px!important;margin:0 auto!important}
+#view{margin-top:18px!important}
+.bj-simple{max-width:800px;margin:14px auto 28px}
+.bj-intro{padding:4px 4px 17px}
+.bj-intro h1{font-size:clamp(1.55rem,3vw,2.1rem);letter-spacing:-.055em;line-height:1.3;margin:6px 0}
+.bj-intro p{font-size:.83rem;color:#77869c;margin:0}
+.bj-five{display:grid;gap:11px}
+.bj-five .st{box-shadow:0 5px 18px #10274408;background:#fff;border-radius:17px}
+.bj-five .st:first-child{background:linear-gradient(115deg,#eaf3ff,#fff 90%);border-color:#dce8f8}
+.bj-five .st>summary{padding:19px 21px}
+.bj-five .st h3{font-size:1.02rem;margin:4px 0 3px}
+.bj-five .st .dek{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;font-size:.82rem;color:#7b8799}
+.bj-five .st[open] .dek{-webkit-line-clamp:2}
+.bj-lower{margin-top:17px;border-radius:14px;border:1px solid #e6edf5;background:#fff}
+.bj-lower>summary{padding:15px 17px;font-size:.85rem;color:#4a6281;cursor:pointer}
+.bj-events{margin-top:18px}
+.bj-events>summary{font-size:.89rem;font-weight:750;background:#f0f5fc;padding:16px 18px;border-radius:12px;cursor:pointer}
+.bj-events>div{margin-top:10px}
+#idx{max-width:800px;margin:12px auto!important}
+@media(max-width:700px){.tools .wrap{justify-content:flex-start!important}.bj-simple{margin:12px auto}.bj-five .st>summary{padding:16px}.bj-intro{padding:2px 3px 16px}}
+</style></head>
 <body>
 <header class="mast gut">
   <div class="wrap">
@@ -381,11 +409,31 @@ function renderIndex(){
       h('ul',{},groups[sec].slice(0,6).map(n=>h('li',{},h('a',{href:n.url,target:'_blank',rel:'noopener noreferrer'},n.title),h('small',{},(n.source||'')+' · '+when(n.date)))))))));
   box.open=open;
 }
+
+function viewCalm(){
+ const selected=byP(ED.stories.filter(s=>(TAB==='전체'||s.section===TAB)&&hit(s))).slice(0,5);
+ const tabs=h('div',{class:'tabs',role:'group','aria-label':'관심 분야'},
+  ['전체',...SECS].map(t=>h('button',{type:'button','aria-pressed':String(TAB===t),onclick:()=>{TAB=t;render()}},t)));
+ const cards=h('div',{class:'bj-five'},selected.map(x=>story(x)));
+ const header=h('div',{class:'bj-intro'},h('div',{class:'k'},'TODAY’S ESSENTIALS'),
+  h('h1',{},TAB==='전체'?'오늘의 하이라이트':TAB+' · 핵심 뉴스'),
+  h('p',{},'먼저 5건만. 제목을 누르면 이 화면에서 읽을 수 있습니다.'));
+ const root=h('div',{class:'bj-simple'},header,tabs,selected.length?cards:h('p',{class:'empty'},'이 분야의 확인된 편집 뉴스가 아직 없습니다.'));
+ const relevant=SECS.filter(x=>x==='Religion'||x==='과학·AI').map(x=>events(x)).filter(Boolean);
+ if(relevant.length){
+  const ev=h('details',{class:'bj-events'},h('summary',{},'다가오는 교육·세미나 · 눌러서 보기'),h('div',{},relevant));
+  root.append(ev);
+ }
+ const rest=byP(ED.stories.filter(s=>hit(s)&&!selected.some(x=>x.id===s.id))).slice(0,3);
+ if(rest.length)root.append(h('details',{class:'bj-lower'},h('summary',{},'다른 뉴스 3건 더 보기'),h('div',{class:'bj-five'},rest.map(x=>story(x)))));
+ return root;
+}
+
 function render(){
   if(!ED)return;
   document.querySelectorAll('.mode button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===MODE)));
-  $('#view').replaceChildren(MODE==='desk'?viewDesk():viewPortal());
-  renderStatus();renderCal();renderIndex();
+  $('#view').replaceChildren(viewCalm());
+  renderIndex();
   $('#ex').textContent='모두 펼치기';
 }
 
