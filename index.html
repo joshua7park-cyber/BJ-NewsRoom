@@ -95,14 +95,14 @@ main.wrap{padding-top:25px}.story>summary{grid-template-columns:30px minmax(0,1f
 </main>
 <footer><div class="wrap">BJ Intelligence Newsroom · 기사 전문을 복제하지 않고 확인 가능한 근거로 직접 요약합니다.</div></footer>
 <script>
-const tabs=[['all','Home'],['국내','국내'],['국제','국제'],['이스라엘·중동','이스라엘'],['Religion','Religion'],['과학·AI','과학'],['과학·AI','AI 교육']];
+const tabs=[['all','Home'],['경제·금융','경제'],['정치·사회','정치·사회'],['테크·산업','테크·산업'],['국제','국제'],['이스라엘','이스라엘'],['Religion','Religion'],['과학','과학'],['AI 교육','AI 교육']];
 const $=id=>document.getElementById(id);
 let data=null,tab='all',query='',font='system',zoom=1;
 const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=String(text);return n};
 const validUrl=v=>{try{const x=new URL(v);return x.protocol==='https:'?x.href:null}catch{return null}};
-function match(s){return (tab==='all'||s.section===tab)&&(!query||[s.title,s.dek,s.core,s.section,s.why].join(' ').toLowerCase().includes(query))}
-function eventMatch(e){return tab==='all'||e.section===tab||(tab==='과학·AI'&&e.section==='과학·AI')}
-function nav(){const box=$('tabs');box.replaceChildren();tabs.forEach(([id,name],i)=>{const b=make('button','',name);b.type='button';b.setAttribute('aria-pressed',String(tab===id&&(id!=='과학·AI'||i===5)));b.onclick=()=>{tab=id;render()};box.append(b)})}
+function match(s){return (tab==='all'||(s.topics||[]).includes(tab))&&(!query||[s.title,s.dek,s.core,s.section,s.why,...(s.topics||[])].join(' ').toLowerCase().includes(query))}
+function eventMatch(e){return tab==='all'||(tab==='Religion'&&e.section==='Religion')||(['과학','테크·산업','AI 교육'].includes(tab)&&e.section==='과학·AI')}
+function nav(){const box=$('tabs');box.replaceChildren();tabs.forEach(([id,name],i)=>{const b=make('button','',name);b.type='button';b.setAttribute('aria-pressed',String(tab===id));b.onclick=()=>{tab=id;render()};box.append(b)})}
 function story(x,i){
  const d=make('details',i===0?'story lead':'story'),s=make('summary');
  const rank=make('span','rank',String(i+1).padStart(2,'0'));
@@ -127,7 +127,7 @@ function renderEvents(){
 function render(){
  nav();const list=$('stories');list.replaceChildren();
  const kstToday=(()=>{const p=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const g=k=>p.find(x=>x.type===k).value;return g('year')+'-'+g('month')+'-'+g('day')})();const isFresh=data?.edition_date===kstToday;
- $('heading').textContent=tab==='all'?(isFresh?'오늘의 하이라이트':'최근 확인된 하이라이트'):tab+' · 핵심 뉴스';
+ $('heading').textContent=tab==='all'?(isFresh?'오늘의 하이라이트':'최근 확인된 하이라이트'):(tabs.find(x=>x[0]===tab)?.[1]||tab)+' · 핵심 뉴스';
  $('subtitle').textContent='먼저 최대 5건만. 제목을 누르면 바로 읽을 수 있습니다.';
  if(!data){list.append(make('div','empty','편집 뉴스 불러오는 중…'));$('events').hidden=true;return}
  let rows=[...data.stories].filter(match).sort((a,b)=>a.priority-b.priority).slice(0,5);
