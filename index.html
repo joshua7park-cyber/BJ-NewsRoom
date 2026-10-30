@@ -1,164 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="description" content="중요한 뉴스 다섯 건만 먼저 읽는 BJ Intelligence Newsroom">
-<title>BJ Newsroom · 오늘의 하이라이트</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BJ Intelligence Newsroom · Premium Sample</title>
 <style>
-:root{--ink:#1a2c45;--sub:#74849b;--blue:#255fc5;--line:#e3eaf3;--font:system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;--scale:1}
-*{box-sizing:border-box}
-body{margin:0;background:#f9fbfe;color:var(--ink);font-family:var(--font);font-size:calc(16px * var(--scale));-webkit-font-smoothing:antialiased}
-button,input,select{font:inherit}button{cursor:pointer}
-a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #e9ab4e;outline-offset:3px}
-.wrap{max-width:940px;padding:0 24px;margin:auto}
-.top{background:#fff;border-bottom:1px solid #e8eef6}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:74px}
-.logo{font-size:1.25em;font-weight:900;letter-spacing:-.06em;white-space:nowrap}
-.logo b{color:var(--blue)}
-.logo small{display:block;font-size:.51em;color:#91a0b5;font-weight:680;letter-spacing:.135em;margin-top:5px}
-.tools{display:flex;justify-content:flex-end;gap:7px;align-items:center}
-.search{min-width:0;width:184px;background:#f7faff;border:1px solid #dfe8f3;color:var(--ink);padding:10px 12px;border-radius:11px;font-size:.76em}
-.font,.btn{border:1px solid #dfe8f3;background:#fff;color:#51647c;border-radius:10px;padding:9px 10px;font-size:.75em}
-.btn{min-width:35px;font-weight:830}
-.font:hover,.btn:hover{background:#f1f6ff}
-.nav{background:white;border-bottom:1px solid #eff2f7}
-.nav .wrap{display:flex;align-items:center;gap:5px;overflow-x:auto;scrollbar-width:none;padding-top:9px;padding-bottom:10px}
-.nav .wrap::-webkit-scrollbar{display:none}
-.nav button{background:transparent;border:0;border-radius:10px;padding:10px 12px;color:#738197;white-space:nowrap;font-size:.82em;font-weight:750}
-.nav button[aria-pressed="true"]{background:#eaf2ff;color:#235bbc}
-main.wrap{padding-top:31px;padding-bottom:42px}
-.kicker{font-size:.7em;color:#3466b9;font-weight:900;letter-spacing:.11em}
-h1{font-size:clamp(1.65em,3.9vw,2.18em);font-weight:870;letter-spacing:-.055em;line-height:1.24;margin:8px 0 9px}
-.meta-top{display:flex;justify-content:space-between;gap:9px;flex-wrap:wrap;align-items:center;margin:0 0 21px}
-.meta-top p{margin:0;color:#7c8ba0;font-size:.81em;line-height:1.5}
-.edition{color:#8999ae;font-size:.72em}
-.stories{display:grid;gap:11px}
-.story{border:1px solid var(--line);border-radius:16px;background:white;box-shadow:0 5px 19px #19345306;overflow:hidden}
-.story.lead{background:linear-gradient(108deg,#ebf4ff,#fff 84%);border-color:#d6e5f8}
-.story>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:35px minmax(0,1fr) 25px;gap:14px;align-items:center;padding:19px 21px}
-.story>summary::-webkit-details-marker{display:none}
-.rank{width:34px;height:34px;border-radius:11px;background:#edf3fb;color:#557294;display:grid;place-items:center;font-size:.74em;font-weight:860}
-.lead .rank{background:var(--blue);color:#fff}
-.category{font-size:.7em;font-weight:820;color:#3770c6;margin-bottom:5px}
-.story h2{font-size:1.03em;letter-spacing:-.033em;line-height:1.43;margin:0;font-weight:820}
-.sub{margin:6px 0 0;color:#8190a4;font-size:.78em;line-height:1.55;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden}
-.story[open] .sub{-webkit-line-clamp:2}
-.chevron{width:25px;height:25px;background:#f0f5fb;color:#6d819c;border-radius:100%;display:grid;place-items:center;transition:transform .14s}
-.story[open] .chevron{transform:rotate(180deg);background:#e9f1ff;color:#275dc1}
-.reader{border-top:1px solid #e8edf5;margin:0 21px;padding:19px 1px 23px}
-.reader h3{font-size:.81em;color:#345e9b;margin:18px 0 6px}.reader h3:first-child{margin-top:0}
-.reader p{color:#344d69;font-size:.9em;line-height:1.84;margin:0}
-.sources{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.sources a{background:#edf4ff;padding:7px 10px;border-radius:8px;font-size:.73em;font-weight:760}
-.evidence{color:#7c8a9d!important;border-top:1px solid #edf2f8;margin-top:16px!important;padding-top:11px;font-size:.74em!important}
-.fold{border:1px solid var(--line);border-radius:15px;background:#fff;margin-top:21px;overflow:hidden}
-.fold>summary{list-style:none;cursor:pointer;padding:18px 19px;font-size:.86em;font-weight:800;display:flex;justify-content:space-between;gap:9px}
-.fold>summary::-webkit-details-marker{display:none}
-.fold>summary small{font-size:.8em;color:#8a9bb0;font-weight:500}
-.event-inner{padding:0 19px 8px;border-top:1px solid #edf2f7}
-.event{padding:13px 0;border-bottom:1px solid #eef2f6}.event:last-child{border:0}
-.event-date{font-size:.72em;color:#2864c5;font-weight:840}
-.event-title{font-size:.87em;font-weight:780;line-height:1.46;margin:4px 0}
-.event-sub{font-size:.73em;color:#8190a4;line-height:1.58;margin:0}
-.event a{display:inline-block;margin-top:6px;font-size:.74em;font-weight:750}
-.empty{padding:24px;border:1px dashed #d9e3ef;border-radius:14px;color:#71839b;background:#fff;font-size:.86em;line-height:1.7}
-.note{font-size:.73em;line-height:1.7;color:#93a0b1;margin:18px 0 0}
-footer{border-top:1px solid #edf1f7;color:#97a3b3;font-size:.7em;line-height:1.7;padding:16px 0 30px}
-@media(max-width:650px){
-.wrap{padding:0 16px}.top .wrap{align-items:flex-start;flex-direction:column;gap:11px;padding-top:15px;padding-bottom:13px}
-.tools{justify-content:flex-start;flex-wrap:wrap;width:100%}.search{flex:1;width:auto;min-width:132px}
-.nav .wrap{padding-top:7px;padding-bottom:7px}.nav button{padding:9px 10px}
-main.wrap{padding-top:25px}.story>summary{grid-template-columns:30px minmax(0,1fr) 24px;gap:10px;padding:16px 13px}
-.rank{width:30px;height:30px}.story h2{font-size:.98em}.reader{margin:0 15px}h1{font-size:1.81em}
-}
+  :root{
+    --bg:#f4f7fb;
+    --panel:#ffffff;
+    --panel2:#eef4ff;
+    --text:#172b4d;
+    --sub:#5b6f93;
+    --line:#dfe8f5;
+    --brand:#3366d6;
+    --brand2:#6ea8ff;
+    --chip:#f0f5ff;
+    --shadow:0 10px 34px rgba(28,63,132,.08);
+    --radius:22px;
+    --scale:1;
+    --font:system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#eef5ff 0,#f7faff 18%,#f4f7fb 100%);color:var(--text);font-family:var(--font);font-size:calc(16px * var(--scale));}
+  a{text-decoration:none;color:inherit}
+  .shell{max-width:1440px;margin:0 auto;padding:20px 18px 48px;}
+  .topbar{display:flex;align-items:center;gap:20px;justify-content:space-between;margin-bottom:16px}
+  .brand{display:flex;align-items:flex-end;gap:8px;font-weight:900;font-size:2rem;letter-spacing:-.04em}
+  .brand .bj{color:var(--brand)}
+  .brand small{font-size:.9rem;color:#7b92ba;font-weight:800;letter-spacing:.08em}
+  .nav{display:flex;gap:10px;flex-wrap:wrap}
+  .nav button,.cat-card,.toolbtn,.linkbtn,.ghostbtn,.eventbtn,.actionpill,select,input{border:1px solid var(--line);background:var(--panel);border-radius:14px}
+  .nav button{padding:10px 14px;font-weight:800;color:#3f5b8b;cursor:pointer}
+  .nav button.active{background:var(--brand);border-color:var(--brand);color:#fff}
+  .tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+  .search{min-width:260px;max-width:340px;display:flex;align-items:center;padding:0 14px;height:46px;background:#fff}
+  .search input{border:none;outline:none;background:transparent;width:100%;font-size:.96rem;color:var(--text)}
+  .toolbtn,select{height:46px;padding:0 14px;font-weight:700;color:#4a618f;background:#fff;cursor:pointer}
+  .page{display:grid;grid-template-columns:minmax(0,1.8fr) 340px;gap:22px;align-items:start}
+  .hero{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:1.1fr 1fr;gap:22px;margin-bottom:18px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;color:#4d74c7;font-weight:900;font-size:.87rem;letter-spacing:.04em;text-transform:uppercase}
+  .eyebrow::before{content:'';width:8px;height:8px;background:var(--brand);border-radius:50%}
+  h1{font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.08;letter-spacing:-.05em;margin:12px 0 14px}
+  .lead{font-size:1rem;line-height:1.78;color:var(--sub);margin:0 0 18px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+  .linkbtn,.ghostbtn{padding:12px 18px;font-weight:800;display:inline-flex;align-items:center;gap:8px}
+  .linkbtn{background:var(--brand);border-color:var(--brand);color:#fff}
+  .ghostbtn{background:#fff;color:#3558a7}
+  .meta{display:flex;gap:12px;flex-wrap:wrap;color:#6a81ac;font-size:.92rem;font-weight:700}
+  .hero-media{background:linear-gradient(150deg,#1f4d9a,#1c3766 55%,#5088db);border-radius:26px;min-height:340px;position:relative;overflow:hidden}
+  .hero-media:before,.hero-media:after{content:'';position:absolute;border-radius:50%}
+  .hero-media:before{width:360px;height:360px;right:-70px;top:-46px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.35),rgba(255,255,255,0) 64%)}
+  .hero-media:after{width:260px;height:260px;left:26px;bottom:18px;background:radial-gradient(circle at 38% 30%,rgba(127,213,255,.45),rgba(127,213,255,0) 70%)}
+  .orb{position:absolute;width:168px;height:168px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 30% 30%,#b9e6ff,#5fa2ff 60%,#376bd2 100%);box-shadow:inset -20px -30px 60px rgba(0,0,0,.18)}
+  .orb:before{content:'';position:absolute;inset:32px 38px 42px 34px;background:rgba(126,210,177,.6);clip-path:polygon(8% 17%,39% 2%,62% 16%,54% 41%,77% 54%,73% 75%,43% 83%,15% 76%,3% 51%);filter:blur(.2px)}
+  .orb:after{content:'';position:absolute;inset:14px;border:2px solid rgba(255,255,255,.34);border-radius:50%;transform:rotate(24deg)}
+  .media-label{position:absolute;left:20px;bottom:18px;color:#eef6ff;font-weight:900;letter-spacing:.16em;font-size:.94rem}
+  .mini-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin-bottom:18px}
+  .cat-card{padding:14px 8px;text-align:center;background:rgba(255,255,255,.9);font-weight:800;color:#466396;cursor:pointer;box-shadow:var(--shadow)}
+  .cat-card span{display:block;font-size:1.35rem;margin-bottom:8px}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin:10px 0 12px}
+  .section-head h2{margin:0;font-size:1.55rem;letter-spacing:-.04em}
+  .section-head p{margin:0;color:#8091b3;font-weight:700}
+  .story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  details.story{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:18px 18px 16px;box-shadow:var(--shadow)}
+  details.story[open]{background:linear-gradient(180deg,#fff,#f8fbff)}
+  details summary{list-style:none;cursor:pointer;display:block}
+  details summary::-webkit-details-marker{display:none}
+  .story-top{display:flex;gap:14px;align-items:flex-start}
+  .story-rank{font-size:1.65rem;line-height:1;font-weight:900;color:var(--brand);min-width:36px}
+  .story-meta{font-size:.83rem;color:#5f79ab;font-weight:900;margin-bottom:6px}
+  .story-title{font-size:1.26rem;line-height:1.38;letter-spacing:-.03em;margin:0 0 10px}
+  .story-desc{font-size:.95rem;line-height:1.72;color:#60759a;margin:0 0 10px}
+  .plus{margin-left:auto;width:34px;height:34px;border:1px solid #bfd0ee;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#4f78cb;flex:0 0 auto}
+  .expand{padding-top:10px;border-top:1px dashed #d8e2f3;margin-top:10px;color:#486389}
+  .expand ul{margin:8px 0 12px 20px;padding:0;line-height:1.7}
+  .expand li{margin:3px 0}
+  .actions{display:flex;gap:8px;flex-wrap:wrap}
+  .actionpill{padding:10px 12px;font-size:.92rem;font-weight:800;color:#4466b0;background:var(--chip)}
+  .sidebar{display:flex;flex-direction:column;gap:18px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow)}
+  .panel h3{margin:0 0 14px;font-size:1.55rem;letter-spacing:-.04em}
+  .feature-item{display:grid;grid-template-columns:78px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #edf2fa}
+  .feature-item:last-child{border-bottom:none;padding-bottom:0}
+  .thumb{height:64px;border-radius:16px;background:linear-gradient(135deg,#83c0ff,#3466d6)}
+  .thumb.city{background:linear-gradient(135deg,#91d8ff,#6d93ff)}
+  .thumb.phone{background:linear-gradient(135deg,#a28cff,#4f58e1)}
+  .thumb.sun{background:linear-gradient(135deg,#ffd07f,#ff8d71)}
+  .thumb.ai{background:linear-gradient(135deg,#6bd2ff,#2f73d8)}
+  .thumb.korea{background:linear-gradient(135deg,#a2dcff,#577ff3)}
+  .feature-item strong{display:block;line-height:1.42;letter-spacing:-.02em}
+  .feature-item span,.smallnote{display:block;color:#7c90b5;font-size:.9rem;line-height:1.5}
+  .watchlist{margin:0;padding-left:22px;color:#3d5788}
+  .watchlist li{margin:10px 0;line-height:1.55;font-weight:700}
+  .cta{background:linear-gradient(180deg,#eef5ff,#f6faff);border-radius:20px;padding:20px}
+  .cta h4{margin:0 0 10px;font-size:1.55rem;letter-spacing:-.04em}
+  .cta p{margin:0 0 14px;color:#6880a9;line-height:1.7}
+  .events-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+  .event-card{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow)}
+  .event-card h3{margin:0 0 12px;font-size:1.28rem;letter-spacing:-.03em}
+  .event{padding:14px 0;border-top:1px solid #eef2f8}
+  .event:first-of-type{border-top:none;padding-top:0}
+  .event .tag{display:inline-block;font-size:.78rem;padding:6px 8px;border-radius:999px;background:#edf4ff;color:#3d67c2;font-weight:900;margin-bottom:8px}
+  .event strong{display:block;line-height:1.5;margin-bottom:6px}
+  .event p{margin:0 0 9px;color:#6a81ab;line-height:1.63;font-size:.94rem}
+  .eventbtn{display:inline-flex;padding:10px 12px;font-weight:800;color:#315ab8;background:#f3f7ff}
+  .status-strip{margin-top:20px;background:#ffffffc8;border:1px solid var(--line);border-radius:18px;padding:14px 16px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px;box-shadow:var(--shadow)}
+  .status-box strong{display:block;margin-bottom:6px}
+  .status-ok{color:#1d7c4a}.status-warn{color:#c7771c}.status-off{color:#b13c3c}
+  .footer-note{margin-top:18px;color:#7f91b1;font-size:.92rem;line-height:1.7}
+  .hide{display:none !important}
+  @media (max-width:1200px){.page{grid-template-columns:1fr}.sidebar{order:-1}.mini-grid{grid-template-columns:repeat(4,1fr)}.events-wrap{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero-media{min-height:270px}}
+  @media (max-width:720px){.shell{padding:14px 12px 36px}.brand{font-size:1.6rem}.topbar{flex-direction:column;align-items:stretch}.tools{justify-content:flex-start}.search{max-width:none;width:100%}.mini-grid{grid-template-columns:repeat(3,1fr)}.story-grid{grid-template-columns:1fr}.status-strip{grid-template-columns:1fr}.nav{overflow:auto;flex-wrap:nowrap;padding-bottom:4px}.nav button{white-space:nowrap}.hero{padding:16px;border-radius:22px}.panel,.event-card,details.story{border-radius:18px}}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap">
-<div class="logo"><b>BJ</b> Newsroom<small>INTELLIGENCE · ESSENTIAL FIRST</small></div>
-<div class="tools">
-<input class="search" id="search" type="search" placeholder="⌕ 뉴스 검색" aria-label="핵심 기사 검색">
-<select class="font" id="font" aria-label="글꼴 선택"><option value="system">기본</option><option value="gothic">고딕</option><option value="serif">명조</option></select>
-<button class="btn" id="minus" aria-label="글자 작게">A−</button><button class="btn" id="plus" aria-label="글자 크게">A+</button>
-</div></div></header>
-<nav class="nav" aria-label="뉴스 분야"><div class="wrap" id="tabs"></div></nav>
-<main class="wrap">
-<div class="kicker">TODAY'S ESSENTIALS</div>
-<h1 id="heading">오늘의 하이라이트</h1>
-<div class="meta-top"><p id="subtitle">꼭 필요한 5건만. 눌러서 바로 읽으세요.</p><span class="edition" id="edition">편집 자료 연결 중</span></div>
-<div class="stories" id="stories" aria-live="polite"><div class="empty">뉴스 불러오는 중…</div></div>
-<details class="fold" id="events"><summary>다가오는 교육·세미나 <small>선교·목회 / 과학·AI</small></summary><div class="event-inner" id="eventList"></div></details>
-<p class="note">선별된 핵심 기사는 편집 중요도순입니다. 조회수 순위가 아니며, 취재 사실과 검증 범위를 구분해 제공합니다.</p>
-</main>
-<footer><div class="wrap">BJ Intelligence Newsroom · 기사 전문을 복제하지 않고 확인 가능한 근거로 직접 요약합니다.</div></footer>
+<div class="shell">
+  <div class="topbar">
+    <div>
+      <div class="brand"><span class="bj">BJ</span>Newsroom <small>INTELLIGENCE</small></div>
+      <div class="nav" id="tabs"></div>
+    </div>
+    <div class="tools">
+      <label class="search"><input id="search" placeholder="뉴스·종교·AI 교육 검색" /></label>
+      <select id="fontSel" aria-label="폰트 선택">
+        <option value="system">기본</option>
+        <option value="gothic">고딕</option>
+        <option value="serif">명조</option>
+      </select>
+      <button class="toolbtn" id="minus">A−</button>
+      <button class="toolbtn" id="plus">A+</button>
+    </div>
+  </div>
+
+  <div class="page">
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">BJ INTELLIGENCE · MORNING EDITION</div><h1 id="heroTitle">새로운 소식을 불러오는 중입니다</h1>
+          <p class="lead" id="heroLead">오늘의 중요 뉴스 5건을 엄선해 보여드립니다.</p>
+          <div class="hero-actions">
+            <a id="heroLink" class="linkbtn" href="#stories">핵심 기사 보기</a><a id="heroSource" class="ghostbtn hide" href="#" target="_blank" rel="noopener noreferrer">출처 열기</a>
+          </div>
+          <div class="meta">
+            <span id="edition">편집자료 확인 중</span>
+            <span>첫 화면은 최대 5건만 표시</span>
+            <span>국내 기사: 한국 언론 우선</span>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="orb"></div>
+          <div class="media-label">GLOBAL INTELLIGENCE · MORNING BRIEF</div>
+        </div>
+      </section>
+
+      <div class="mini-grid" id="quickCats"></div>
+
+      <div class="section-head">
+        <div>
+          <h2 id="sectionTitle">오늘의 하이라이트</h2>
+          <p id="sectionSub">먼저 읽을 뉴스만 간결하게 정리했습니다.</p>
+        </div>
+        <p id="resultCount">현재 5건 보기</p>
+      </div>
+      <div class="story-grid" id="stories"></div>
+
+      <div class="events-wrap" id="eventsArea">
+        <section class="event-card" id="religionEventsWrap">
+          <h3>Religion · 선교 · 윤리 일정</h3>
+          <div id="religionEvents"></div>
+        </section>
+        <section class="event-card" id="scienceEventsWrap">
+          <h3>과학 · AI 교육 일정</h3>
+          <div id="scienceEvents"></div>
+        </section>
+      </div>
+
+      <p class="footer-note" id="editorialNote">자동 수집 자료는 RSS 제목·공개 요약만 확인한 정보이며, 심층 검증 보도와 구별됩니다.</p>
+    </main>
+
+    <aside class="sidebar">
+      <section class="panel">
+        <h3>Featured Stories</h3>
+        <div id="featured"></div>
+      </section>
+      <section class="panel">
+        <h3>오늘의 관전 포인트</h3>
+        <ol class="watchlist" id="watch"></ol>
+      </section>
+      <section class="panel cta">
+        <h4>Real News. Clear Context.</h4>
+        <p>중요한 소식만 간결하게, 자세한 내용은 클릭 한 번으로 읽습니다.</p>
+        <a class="linkbtn" href="#stories">전체 하이라이트 보기</a>
+      </section>
+    </aside>
+  </div>
+</div>
 <script>
-const tabs=[['all','Home'],['경제·금융','경제'],['정치·사회','정치·사회'],['테크·산업','테크·산업'],['국제','국제'],['이스라엘','이스라엘'],['Religion','Religion'],['과학','과학'],['AI 교육','AI 교육']];
+const TABS=[['all','Home'],['경제·금융','경제'],['정치·사회','정치·사회'],['테크·산업','테크·산업'],['국제','국제'],['이스라엘','이스라엘'],['Religion','Religion'],['과학','과학'],['AI 교육','AI 교육']];
+const QUICK=[['📰','주요 뉴스','all'],['💹','경제','경제·금융'],['🏛️','정치·사회','정치·사회'],['🌐','국제','국제'],['🕊️','이스라엘','이스라엘'],['✝️','Religion','Religion'],['🔬','과학','과학'],['🎓','AI 교육','AI 교육']];
+let DATA=null, TAB='all', QUERY='', ZOOM=1, SOURCE='none';
 const $=id=>document.getElementById(id);
-let data=null,tab='all',query='',font='system',zoom=1,sourceMode='archive';
-const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=String(text);return n};
-const validUrl=v=>{try{const x=new URL(v);return x.protocol==='https:'?x.href:null}catch{return null}};
-function match(s){return (tab==='all'||(s.topics||[]).includes(tab))&&(!query||[s.title,s.dek,s.core,s.section,s.why,...(s.topics||[])].join(' ').toLowerCase().includes(query))}
-function eventMatch(e){return tab==='all'||(tab==='Religion'&&e.section==='Religion')||(['과학','테크·산업','AI 교육'].includes(tab)&&e.section==='과학·AI')}
-function nav(){const box=$('tabs');box.replaceChildren();tabs.forEach(([id,name],i)=>{const b=make('button','',name);b.type='button';b.setAttribute('aria-pressed',String(tab===id));b.onclick=()=>{tab=id;render()};box.append(b)})}
-function story(x,i){
- const d=make('details',i===0?'story lead':'story'),s=make('summary');
- const rank=make('span','rank',String(i+1).padStart(2,'0'));
- const main=make('div');const category=make('div','category',x.section+' · '+(x.date_label||'기사')+(sourceMode==='live'?' · RSS 확인':' · 편집판'));
- const h=make('h2','',x.title),p=make('p','sub',x.dek);
- main.append(category,h,p);s.append(rank,main,make('span','chevron','⌄'));d.append(s);
- const reader=make('div','reader');
- [['핵심 내용',x.core],['왜 중요한가',x.why],['배경과 맥락',x.background]].forEach(([heading,text])=>{
- const block=make('h3','',heading),para=make('p','',text);reader.append(block,para)
- });
- const links=make('div','sources');(x.sources||[]).forEach(src=>{const url=validUrl(src.url);if(!url)return;const a=make('a','',src.name+' · 참고 출처');a.href=url;a.target='_blank';a.rel='noopener noreferrer';links.append(a)});reader.append(links);
- reader.append(make('p','evidence','확인 범위 · '+(x.verification||'추가 확인 필요')));
- d.append(reader);return d;
+const E=(tag,cls,txt)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(txt!==undefined)el.textContent=String(txt);return el};
+const https=url=>{try{const x=new URL(url);return x.protocol==='https:'?x.href:null}catch{return null}};
+const txt=x=>String(x||'').trim();
+const kst=()=>{const p=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()),g=k=>p.find(x=>x.type===k).value;return g('year')+'-'+g('month')+'-'+g('day')};
+function label(section){return TABS.find(x=>x[0]===section)?.[1]||section}
+function pickAll(){const stories=Array.isArray(DATA?.stories)?DATA.stories:[];return stories.filter(x=>{const topics=x.topics||[x.section];const m=TAB==='all'||topics.includes(TAB);return m&&(!QUERY||[x.title,x.dek,x.core,x.section,...topics].join(' ').toLowerCase().includes(QUERY))}).sort((a,b)=>(a.priority||99)-(b.priority||99)).slice(0,5)}
+function setTabs(){
+ const tabs=$('tabs'),quick=$('quickCats');tabs.replaceChildren();quick.replaceChildren();
+ for(const [id,title] of TABS){const b=E('button','',title);b.className=TAB===id?'active':'';b.setAttribute('aria-pressed',TAB===id?'true':'false');b.onclick=()=>{TAB=id;draw()};tabs.append(b)}
+ for(const [ico,name,id] of QUICK){const b=E('button','cat-card');b.append(E('span','',ico),document.createTextNode(name));b.onclick=()=>{TAB=id;draw()};quick.append(b)}
+}
+function sourceLink(source){const u=https(source.url);if(!u)return null;const a=E('a','actionpill',(source.name||'출처')+' ↗');a.href=u;a.target='_blank';a.rel='noopener noreferrer';return a}
+function makeCard(x,i){
+ const d=E('details','story'),sum=E('summary'),wrap=E('div','story-top'),number=E('div','story-rank',i+1),center=E('div');
+ center.style.flex='1';center.append(E('div','story-meta',label((x.topics||[])[0]||x.section)+' · '+(x.date_label||'')+(SOURCE==='live'?' · RSS':' · 검토 편집')),
+ E('h3','story-title',x.title),E('p','story-desc',x.dek||'기사 상세 확인 전'));wrap.append(number,center,E('div','plus','+'));sum.append(wrap);d.append(sum);
+ const content=E('div','expand');for(const [key,val] of [['핵심 내용',x.core],['의미와 관전 포인트',x.why],['배경·추가 확인',x.background]]){if(!val)continue;content.append(E('strong','',key),E('p','',val))}
+ const acts=E('div','actions');for(const src of x.sources||[]){const a=sourceLink(src);if(a)acts.append(a)}content.append(acts,E('p','smallnote','확인 범위: '+(x.verification||'추가 확인 필요')));d.append(content);return d;
+}
+function renderHero(rows){
+ const x=rows[0];$('heroTitle').textContent=x?x.title:'해당 분야의 소식을 준비 중입니다';
+ $('heroLead').textContent=x?(x.dek||x.core||'공개 보도에서 확인된 사실을 우선 제공합니다.'):'확인되지 않은 내용을 임의로 채우지 않습니다.';
+ $('heroLink').href=x?'#stories':'#eventsArea';
+ const src=x?.sources?.find(z=>https(z.url)),btn=$('heroSource');
+ btn.classList.toggle('hide',!src);if(src)btn.href=https(src.url);
+ $('edition').textContent=(DATA?.edition_label||DATA?.edition_date||'확인 중')+(SOURCE==='live'?' · 공개 RSS 자동 선별':' · 검토 편집판');
+ $('editorialNote').textContent=SOURCE==='live'?'RSS 제목과 짧은 공개 설명을 자동 선별한 자료입니다. 기사 본문 독립 검증이나 교차 확인이 완료된 심층 뉴스는 아닙니다.':(DATA?.edition_date===kst()?'기사별 근거와 검증 한계를 표시합니다.':'이전에 발행된 편집판입니다. 새 기사 확인 전이라는 점에 유의해 주세요.');
+}
+function renderFeatured(rows){const feat=$('featured'),watch=$('watch');feat.replaceChildren();watch.replaceChildren();
+ rows.slice(0,3).forEach((x,i)=>{const block=E('div','feature-item'),thumb=E('div','thumb '+['city','phone','sun'][i]),body=E('div'),a=sourceLink(x.sources?.[0]||{});body.append(E('strong','',x.title),E('span','',x.section||''));if(a){a.className='smallnote';a.textContent='출처 ↗';body.append(a)}block.append(thumb,body);feat.append(block)});
+ rows.forEach(x=>watch.append(E('li','',x.title)));
 }
 function renderEvents(){
- const host=$('eventList'),fold=$('events');host.replaceChildren();
- const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const get=k=>parts.find(p=>p.type===k).value;const now=get('year')+'-'+get('month')+'-'+get('day');
- const ev=(data?.events||[]).filter(e=>eventMatch(e)&&(e.end||e.start)>=now&&(!query||[e.title,e.host,e.section].join(' ').toLowerCase().includes(query))).slice(0,4);
- fold.hidden=ev.length===0;if(!ev.length)return;
- ev.forEach(e=>{const wrap=make('article','event');wrap.append(make('div','event-date',e.start+' · '+(e.time_label||'')),make('div','event-title',e.title),make('p','event-sub',e.host+' · '+(e.place||'')));const url=validUrl(e.apply_url);if(url){const a=make('a','','공식 안내·신청 ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';wrap.append(a)}host.append(wrap)});
-}
-function render(){
- nav();const list=$('stories');list.replaceChildren();
- const kstToday=(()=>{const p=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const g=k=>p.find(x=>x.type===k).value;return g('year')+'-'+g('month')+'-'+g('day')})();const isFresh=data?.edition_date===kstToday;
- $('heading').textContent=tab==='all'?(isFresh?'오늘의 하이라이트':'최근 확인된 하이라이트'):(tabs.find(x=>x[0]===tab)?.[1]||tab)+' · 핵심 뉴스';
- $('subtitle').textContent='먼저 최대 5건만. 제목을 누르면 바로 읽을 수 있습니다.';
- if(!data){list.append(make('div','empty','편집 뉴스 불러오는 중…'));$('events').hidden=true;return}
- let rows=[...data.stories].filter(match).sort((a,b)=>a.priority-b.priority).slice(0,5);
- if(!rows.length)list.append(make('div','empty','현재 이 분야에서 확인된 주요 뉴스가 없습니다.'));
- else rows.forEach((x,i)=>list.append(story(x,i)));
- $('edition').textContent=(data.edition_label||data.edition_date)+(sourceMode==='live'?' · RSS 자동 선별(본문 독립 검증 전)':(isFresh?' · 검토된 편집판':' · 지난 편집판'));
- $('subtitle').textContent=sourceMode==='live'?'공개 RSS의 제목·짧은 설명만 확인한 최신 소식입니다. 상세 내용을 확인한 심층 분석은 아닙니다.':'먼저 최대 5건만. 제목을 누르면 바로 읽을 수 있습니다.';
- renderEvents();
-}
-function settings(){const fonts={system:"system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif",gothic:"'Nanum Gothic','Malgun Gothic',sans-serif",serif:"'Noto Serif KR','Batang',serif"};document.documentElement.style.setProperty('--font',fonts[font]);document.documentElement.style.setProperty('--scale',String(zoom));$('font').value=font}
-$('search').oninput=e=>{query=e.target.value.toLowerCase().trim();render()};
-$('font').onchange=e=>{font=e.target.value;settings()};
-$('minus').onclick=()=>{zoom=Math.max(.85,Math.round((zoom-.05)*100)/100);settings()};
-$('plus').onclick=()=>{zoom=Math.min(1.35,Math.round((zoom+.05)*100)/100);settings()};
-async function load(){
- const get=async path=>{const r=await fetch(path+'?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);return r.json()};
- try{
-  const result=await Promise.allSettled([get('./site/live-edition.json'),get('./data/edition.json')]);
-  const live=result[0].status==='fulfilled'?result[0].value:null;
-  const archive=result[1].status==='fulfilled'?result[1].value:null;
-  const liveAge=live?.built_at?(Date.now()-Date.parse(live.built_at))/3600000:Infinity;
-  const recent=live&&live.schema_version===1&&live.kind==='rss_sourced_auto_digest'&&Array.isArray(live.stories)&&live.stories.length>=5&&liveAge>=-1&&liveAge<=30;
-  if(recent){data={...live,events:Array.isArray(archive?.events)?archive.events:[]};sourceMode='live'}
-  else if(archive&&archive.schema_version===1&&Array.isArray(archive.stories)){data=archive;sourceMode='archive'}
-  else throw Error('발행된 뉴스 데이터를 읽을 수 없습니다');
-  render();
- }catch(err){
-  $('stories').replaceChildren(make('div','empty','뉴스를 불러오지 못했습니다. 마지막 검증판도 읽지 못했습니다.'));
-  $('edition').textContent='연결 확인 필요';$('events').hidden=true;
+ const today=kst(), events=Array.isArray(DATA?.events)?DATA.events:[];
+ for(const [sec,id,area] of [['Religion','religionEvents','religionEventsWrap'],['과학·AI','scienceEvents','scienceEventsWrap']]){
+  const target=$(id);target.replaceChildren();let count=0;
+  for(const e of events){if(e.section!==sec||(e.end||e.start)<today||count>=3)continue;count++;
+   const box=E('div','event'),tag=E('span','tag',e.start||'날짜 확인'),title=E('strong','',e.title||''),info=E('p','',[(e.host||''),(e.place||''),(e.fee||'')].filter(Boolean).join(' · '));
+   box.append(tag,title,info);const u=https(e.apply_url);if(u){const a=E('a','eventbtn','주최기관 안내·신청 ↗');a.href=u;a.target='_blank';a.rel='noopener noreferrer';box.append(a)}target.append(box);
+  }
+  $(area).classList.toggle('hide',!count||!(TAB==='all'||TAB===sec||(sec==='과학·AI'&&['과학','테크·산업','AI 교육'].includes(TAB))));
  }
+ $('eventsArea').classList.toggle('hide',!$('religionEvents').children.length&&!$('scienceEvents').children.length);
 }
-settings();render();load();
+function draw(){
+ setTabs();if(!DATA){$('stories').replaceChildren(E('div','panel','뉴스 데이터를 불러오는 중입니다…'));return}
+ const rows=pickAll();$('sectionTitle').textContent=TAB==='all'?'오늘의 하이라이트':label(TAB)+' · 핵심 뉴스';
+ $('sectionSub').textContent='한 번에 최대 5건만 보여드립니다. 누르면 본문이 열립니다.';
+ $('resultCount').textContent=rows.length+'건 보기';const box=$('stories');box.replaceChildren();
+ if(!rows.length)box.append(E('div','panel','확인된 주요 기사가 없습니다. 다른 분야를 선택해 주세요.'));
+ rows.forEach((x,i)=>box.append(makeCard(x,i)));
+ renderHero(rows);renderFeatured(rows);renderEvents();
+}
+async function load(){
+ const grab=async path=>{const r=await fetch(path+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);return r.json()};
+ const pair=await Promise.allSettled([grab('./site/live-edition.json'),grab('./data/edition.json')]);
+ const live=pair[0].status==='fulfilled'?pair[0].value:null,arch=pair[1].status==='fulfilled'?pair[1].value:null;
+ const age=live?.built_at?(Date.now()-Date.parse(live.built_at))/3600000:Infinity;
+ const liveGood=live?.schema_version===1&&live?.kind==='rss_sourced_auto_digest'&&Array.isArray(live.stories)&&live.stories.length>=5&&age>=-1&&age<=30;
+ if(liveGood){DATA={...live,events:arch?.events||[]};SOURCE='live'}
+ else if(arch?.schema_version===1&&Array.isArray(arch?.stories)){DATA=arch;SOURCE='archive'}
+ else {DATA={stories:[],events:[],edition_label:'데이터 연결 실패'};SOURCE='none'}
+ draw();
+}
+$('search').oninput=e=>{QUERY=e.target.value.trim().toLowerCase();draw()};
+$('minus').onclick=()=>{ZOOM=Math.max(.85,Math.round((ZOOM-.05)*100)/100);document.documentElement.style.setProperty('--scale',ZOOM)};
+$('plus').onclick=()=>{ZOOM=Math.min(1.35,Math.round((ZOOM+.05)*100)/100);document.documentElement.style.setProperty('--scale',ZOOM)};
+$('fontSel').onchange=e=>{const fonts={system:"system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif",gothic:"'Nanum Gothic','Malgun Gothic',sans-serif",serif:"'Noto Serif KR','Batang',serif"};document.documentElement.style.setProperty('--font',fonts[e.target.value])};
+setTabs();load();setInterval(load,600000);
 </script>
-</body></html>
+</body>
+</html>
