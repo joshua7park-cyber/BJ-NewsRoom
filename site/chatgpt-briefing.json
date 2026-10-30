@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "date_kst": "2026-10-30",
+  "published_at": "2026-10-30T16:08:00+09:00",
+  "kind": "chatgpt_editorial",
+  "is_chatgpt_editorial": true,
+  "title": "BJ Intelligence Newsroom · 자동 게시 연동 리허설",
+  "status": "rehearsal_unverified_headlines",
+  "editorial_provenance": "이 대화에서 ChatGPT가 RSS 헤드라인을 바탕으로 작성한 수동 리허설. 오전 07:30 예약 실행물 아님.",
+  "notice": "원문 기사 내용을 직접 검증하지 않았습니다. '검증된 심층 브리핑'이 아니라 게시 연결 테스트용 원고입니다.",
+  "top": [
+    {
+      "title": "[단독] 중국산 차부품 ‘한국 라벨’ 붙여 쏙…급습하자 \"제보자 누구냐\" - JTBC",
+      "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+      "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+      "source": "JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBemJ6dW5PZkpqTVhicl9qYUhWOVJBUXdZVllOQmtQa0drajczOHRVUVpURFFqQUFmT21ncktfeUJQaWZjUlpER19qeEZRQl9qVDh0Xw?oc=5",
+      "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+    },
+    {
+      "title": "‘한국’ 딱 찍어서 노렸다···대부업체·병원 등 무차별 연쇄 해킹, ‘국내 해커’ 가능성 - 경향신문",
+      "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+      "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tdEFmdXRaUU80VkVUZ1Z0NVJCU3NCNVhOdnNxekxQQThoR3FxM2pGdTd2aXBzUWkydTZiODI0NmVpb2x6emtMV3NUdTh3ZkVmWnQ3YllycTRUd9IBX0FVX3lxTE9FSjVsZEg5N0VsTzk1RHNMSEg5ZjVuT295dlk5U3Zhb1F6RGFUaDFvZDV4SGdHdEtfMllZUS1TTUs2WUo1Y3RQbU1vcFpGbXl3QkpILUU1bk1xWWFIY3h3?oc=5",
+      "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+    },
+    {
+      "title": "지난해 온실가스 농도 또 역대 최고…한국 더 높아 - YTN 사이언스",
+      "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+      "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+      "source": "YTN 사이언스",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQajhhMkRCOTBUQTY2ZnUteEJKanFTYjYzcC10ZS01VkZrZWF1RnYxRVIyUUEyWVJOakczZXhSQ3k1N2E0QzVIbUV0cEJRMlZNVHhTdERGVHFUSVc5NkRCVTVfMkNNX21vd1hQV19HVjNhQnpCYk56R09rNC1ObGpleExza3RaZVRlcWZPRQ?oc=5",
+      "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+    },
+    {
+      "title": "부산시, ‘글로벌 AI 허브’ 유치전략 전격 발표… 인공지능 대전환(AX) 선도도시 도약(Busan City Unveils ‘Global AI Hub’ Attraction Strategy, Vaulting to a Leading AI Transformation (AX) Metropolis) - 글로벌휴먼타임즈",
+      "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+      "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+      "source": "글로벌휴먼타임즈",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WYmh6d20wZHcxOV9ZZ05pZkNmOThGeVZLVW5kUTNQWHhIY3B5Ri1RaTJNRmQwclVTWWJsN3JoM3FzejNETzM4cGtLVThwWHZ1UjJITFVsWUdVV1Z2akw3NGNsdGE2anI5UHVSS29yVWNQZw?oc=5",
+      "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+    }
+  ],
+  "sections": [
+    {
+      "id": "domestic",
+      "title": "국내",
+      "items": [
+        {
+          "title": "[단독] 중국산 차부품 ‘한국 라벨’ 붙여 쏙…급습하자 \"제보자 누구냐\" - JTBC",
+          "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+          "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+          "source": "JTBC",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBemJ6dW5PZkpqTVhicl9qYUhWOVJBUXdZVllOQmtQa0drajczOHRVUVpURFFqQUFmT21ncktfeUJQaWZjUlpER19qeEZRQl9qVDh0Xw?oc=5",
+          "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+        },
+        {
+          "title": "‘한국’ 딱 찍어서 노렸다···대부업체·병원 등 무차별 연쇄 해킹, ‘국내 해커’ 가능성 - 경향신문",
+          "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+          "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+          "source": "경향신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tdEFmdXRaUU80VkVUZ1Z0NVJCU3NCNVhOdnNxekxQQThoR3FxM2pGdTd2aXBzUWkydTZiODI0NmVpb2x6emtMV3NUdTh3ZkVmWnQ3YllycTRUd9IBX0FVX3lxTE9FSjVsZEg5N0VsTzk1RHNMSEg5ZjVuT295dlk5U3Zhb1F6RGFUaDFvZDV4SGdHdEtfMllZUS1TTUs2WUo1Y3RQbU1vcFpGbXl3QkpILUU1bk1xWWFIY3h3?oc=5",
+          "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+        },
+        {
+          "title": "지난해 온실가스 농도 또 역대 최고…한국 더 높아 - YTN 사이언스",
+          "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+          "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+          "source": "YTN 사이언스",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQajhhMkRCOTBUQTY2ZnUteEJKanFTYjYzcC10ZS01VkZrZWF1RnYxRVIyUUEyWVJOakczZXhSQ3k1N2E0QzVIbUV0cEJRMlZNVHhTdERGVHFUSVc5NkRCVTVfMkNNX21vd1hQV19HVjNhQnpCYk56R09rNC1ObGpleExza3RaZVRlcWZPRQ?oc=5",
+          "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "title": "국제",
+      "items": [
+        {
+          "title": "부산시, ‘글로벌 AI 허브’ 유치전략 전격 발표… 인공지능 대전환(AX) 선도도시 도약(Busan City Unveils ‘Global AI Hub’ Attraction Strategy, Vaulting to a Leading AI Transformation (AX) Metropolis) - 글로벌휴먼타임즈",
+          "summary": "공개 RSS에서 수집된 기사 제목입니다. 보도 내용의 세부 사항은 원문 확인이 필요합니다.",
+          "analysis": "편집 관점: 원문과 다른 독립 출처를 대조해 사실관계와 영향을 평가해야 합니다. 이 항목은 검증 전 리허설 자료입니다.",
+          "source": "글로벌휴먼타임즈",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WYmh6d20wZHcxOV9ZZ05pZkNmOThGeVZLVW5kUTNQWHhIY3B5Ri1RaTJNRmQwclVTWWJsN3JoM3FzejNETzM4cGtLVThwWHZ1UjJITFVsWUdVV1Z2akw3NGNsdGE2anI5UHVSS29yVWNQZw?oc=5",
+          "verification_note": "RSS 제목·발행처 확인, 기사 본문 및 링크 목적지 독립 검증 전"
+        }
+      ]
+    },
+    {
+      "id": "religion",
+      "title": "Religion",
+      "items": []
+    }
+  ]
+}
