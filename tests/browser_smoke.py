@@ -1,11 +1,13 @@
 """Browser regression for BJ newsroom. Execute after Playwright Chromium installation."""
 import asyncio
+import os
 import subprocess
 import time
 from playwright.async_api import async_playwright
 
 async def verify():
-    server = subprocess.Popen(["python", "-m", "http.server", "8765", "--bind", "127.0.0.1"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    base=os.environ.get("BJ_TEST_URL","http://127.0.0.1:8765/")
+    server = None if os.environ.get("BJ_TEST_URL") else subprocess.Popen(["python", "-m", "http.server", "8765", "--bind", "127.0.0.1"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
         await asyncio.sleep(1.5)
         async with async_playwright() as playwright:
@@ -13,7 +15,7 @@ async def verify():
             page = await browser.new_page(viewport={"width": 1300, "height": 900}, locale="ko-KR")
             errors=[]
             page.on("pageerror", lambda error: errors.append(str(error)))
-            await page.goto("http://127.0.0.1:8765/", wait_until="networkidle")
+            await page.goto(base, wait_until="networkidle", timeout=40000)
             await page.wait_for_selector(".story", timeout=20000)
             count=await page.locator(".story").count()
             assert 1 <= count <= 5, f"home page renders {count} articles, expected max 5"
@@ -39,9 +41,10 @@ async def verify():
             print("BROWSER PASS: 5 story limit, accordion, search, font, A+, tabs, mobile, console errors")
             await browser.close()
     finally:
-        server.terminate()
-        try: server.wait(timeout=4)
-        except subprocess.TimeoutExpired: server.kill()
+        if server:
+            server.terminate()
+            try: server.wait(timeout=4)
+            except subprocess.TimeoutExpired: server.kill()
 
 if __name__ == "__main__":
     asyncio.run(verify())
