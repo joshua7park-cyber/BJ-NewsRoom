@@ -75,17 +75,18 @@ class PageContract(unittest.TestCase):
 
     def test_reads_curated_data_only(self):
         self.assertIn('./data/edition.json',self.html)
+        self.assertIn('./site/live-edition.json',self.html)
         self.assertNotIn('site/newsroom.json',self.html)
         self.assertIn('.slice(0,5)',self.html)
         for label in ('경제·금융','정치·사회','테크·산업','국제','이스라엘','Religion','과학','AI 교육'):
             self.assertIn(label,self.html)
-        self.assertIn('(s.topics||[]).includes(tab)',self.html)
+        self.assertIn('topics.includes(TAB)',self.html)
 
     def test_five_story_ui_and_controls(self):
         for term in ('오늘의 하이라이트','국내','국제','이스라엘','Religion','과학','AI 교육',
-                     'id="search"','id="font"','id="minus"','id="plus"','id="events"'):
+                     'id="search"','id="fontSel"','id="minus"','id="plus"','id="eventsArea"'):
             self.assertIn(term,self.html)
-        self.assertIn("make('details'",self.html)
+        self.assertIn("E('details'",self.html)
         self.assertNotIn('51건',self.html)
 
     def test_no_inline_articles_in_page(self):
