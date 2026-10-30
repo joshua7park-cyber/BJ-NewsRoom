@@ -12,7 +12,7 @@ SITE=ROOT/'site'
 KST=timezone(timedelta(hours=9))
 SECTIONS=[('kbs','📺','KBS 뉴스9'),('domestic','🇰🇷','국내 종합'),('global','🌍','국제 정세·경제'),('israel','🛡️','이스라엘·중동'),('religion','✝️','Religion / 세계 종교'),('mission','🌐','글로벌 선교·생명 윤리'),('science','🔬','과학·첨단기술'),('ai','🎓','AI 교육·행사')]
 QUERIES={
- 'domestic':['한국 정치 경제 사회 교육 문화','South Korea economy politics education'],
+ 'domestic':['site:yna.co.kr 한국 주요 뉴스','site:news.kbs.co.kr 한국 주요 뉴스','site:imnews.imbc.com 한국 주요 뉴스','site:news.sbs.co.kr 한국 주요 뉴스','site:news.jtbc.co.kr 한국 주요 뉴스','site:ytn.co.kr 한국 주요 뉴스','site:hankookilbo.com 한국 주요 뉴스','site:hani.co.kr 한국 주요 뉴스','site:khan.co.kr 한국 주요 뉴스','site:joongang.co.kr 한국 주요 뉴스','site:donga.com 한국 주요 뉴스','site:chosun.com 한국 주요 뉴스','site:seoul.co.kr 한국 주요 뉴스','site:mk.co.kr 한국 경제','site:hankyung.com 한국 경제','site:sedaily.com 한국 경제','site:etnews.com 한국 산업','site:news1.kr 한국 주요 뉴스','site:newsis.com 한국 주요 뉴스'],
  'global':['international relations global economy','US China Japan Europe world economy'],
  'israel':['Israel Gaza Middle East diplomacy humanitarian','이스라엘 중동 외교 인도주의'],
  'religion':['religion catholic protestant buddhism islam ethics','세계 종교 가톨릭 불교 이슬람 윤리'],
@@ -22,6 +22,18 @@ QUERIES={
 }
 
 MAX_PER_SECTION=16
+DOMESTIC_PUBLISHERS=('연합뉴스','KBS','MBC','SBS','JTBC','YTN','한국일보','한겨레','경향신문','중앙일보','동아일보','조선일보','서울신문','매일경제','한국경제','서울경제','전자신문','뉴스1','뉴시스')
+def balanced_select(items,limit=MAX_PER_SECTION):
+ pool={}
+ for n in unique(items):
+  pool.setdefault(n['source'].strip(),[]).append(n)
+ result=[]
+ for i in range(2):
+  for name in sorted(pool):
+   if len(result)>=limit:break
+   if len(pool[name])>i:result.append(pool[name][i])
+ return result
+
 
 def fetch(url):
  req=urllib.request.Request(url,headers={'User-Agent':'BJNewsroomRSS/1.0 (news research dashboard)'})
@@ -41,6 +53,7 @@ def parse_feed(xml_bytes,section,now):
   pub=txt(item,'pubDate')
   source=txt(item,'source') or 'Google News RSS 색인'
   if not title or not url.startswith('https://'): continue
+  if section=='domestic' and not any(p.casefold() in source.casefold() for p in DOMESTIC_PUBLISHERS):continue
   try: date=parsedate_to_datetime(pub).astimezone(timezone.utc)
   except Exception: continue
   age=(now-date).total_seconds()/3600
@@ -89,7 +102,7 @@ def build(fetcher=fetch,now=None):
    rss='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':query+' when:3d','hl':'ko','gl':'KR','ceid':'KR:ko'})
    try: collected.extend(parse_feed(fetcher(rss),section,now))
    except Exception as ex:feed_errors.append({'section':section,'query':query,'error':str(ex)[:160]})
-  collected=unique(collected)[:MAX_PER_SECTION]
+  collected=balanced_select(collected) if section=='domestic' else unique(collected)[:MAX_PER_SECTION]
   records.extend(collected);counts[section]=len(collected)
  events=load_events(now)
  # Event category: only official curated events count toward verified event goal.
