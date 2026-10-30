@@ -148,7 +148,8 @@ async function load(){
   const result=await Promise.allSettled([get('./site/live-edition.json'),get('./data/edition.json')]);
   const live=result[0].status==='fulfilled'?result[0].value:null;
   const archive=result[1].status==='fulfilled'?result[1].value:null;
-  const recent=live&&live.schema_version===1&&live.kind==='rss_sourced_auto_digest'&&Array.isArray(live.stories)&&live.stories.length>=5;
+  const liveAge=live?.built_at?(Date.now()-Date.parse(live.built_at))/3600000:Infinity;
+  const recent=live&&live.schema_version===1&&live.kind==='rss_sourced_auto_digest'&&Array.isArray(live.stories)&&live.stories.length>=5&&liveAge>=-1&&liveAge<=30;
   if(recent){data={...live,events:Array.isArray(archive?.events)?archive.events:[]};sourceMode='live'}
   else if(archive&&archive.schema_version===1&&Array.isArray(archive.stories)){data=archive;sourceMode='archive'}
   else throw Error('발행된 뉴스 데이터를 읽을 수 없습니다');
