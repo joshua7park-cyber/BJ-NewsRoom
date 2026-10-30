@@ -106,7 +106,7 @@ async function loadChatgptEditorial(){
   const d=await r.json();
   if(d.is_chatgpt_editorial!==true||d.kind!=='chatgpt_editorial'||!Array.isArray(d.top)||!d.published_at)throw Error('원고 형식 또는 출처 확인 실패');
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-  status.textContent=(d.date_kst||'날짜 미표시')+' · '+(d.date_kst===today?'오늘 발행본':'이전 발행본')+' · ChatGPT 편집 원고 (개별 원문 확인 범위는 기사별 참조)';
+  status.textContent=d.status==='rehearsal_unverified_headlines'?'게시 연동 시험 성공 · 실제 07:30 예약 브리핑 아님 · 원문 미검증':(d.date_kst||'날짜 미표시')+' · '+(d.date_kst===today?'오늘 발행본':'이전 발행본')+' · ChatGPT 편집 원고 (기사별 검증 상태 확인)';
   area.replaceChildren();
   for(const x of d.top.slice(0,5)){
    if(!x.title||!x.source||!x.url)continue;
