@@ -53,7 +53,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -65,31 +67,37 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-10-30T02:47:57+00:00",
+      "date": "2026-10-30T05:46:26+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
-      "title": "게임으로 즐기는 '한국전쟁' 괜찮을까? [이브닝 브리핑] - SBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0NnNTdDlOeXpuVmNDelpycjg1RExKYVNndGV1V1dDWFE1MHNWeEQ3M0NOc3RLRnc0MkVKc3k0c1VNeHo4RG5sRHNxREhJWmxiUWZURzZhT2NnQUVSNi1XMVprRUdUVndDclE?oc=5",
-      "date": "2026-10-27T05:50:28+00:00",
+      "title": "한국가스공사, 연장 끝에 승리…공동 5위 도약 - SBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xY2lsX1VCN3pmUmtsT2xPUUhxSXgwUlZjRWlkRDM3dHZRRXJlOG5XczdwY29kREhGV3VHQjhGWG1QOHpwTFBjYVV1eks2WGVhTjJjQS1TTkZyZ2tVaXI5a1VpQjFxaHVsekHSAWZBVV95cUxPUFAxcENpZzJGS3UzYUxBSDRaV1E1MF84TkxTTnpVeXFYWGxGUHNsb1dhc0ZXbUstaU1UMUt2eFBtMTFhRmZVekNiYlhGQ1F4UHR2VGdLcXhxeTNpeEJQVnJOaW5CdEE?oc=5",
+      "date": "2026-10-28T23:04:49+00:00",
       "source": "SBS 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -101,7 +109,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -113,19 +123,37 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
-      "title": "[라이브] SBS 12시 뉴스｜10/26(일) - \"협상 타결 가까워져..한국 준비되면 나도 준비돼\" 外 - news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45NVc4NG8yTUxjWVJoTFBPTFFnWGNoTzE1ejdFMk9KVXM4eTFxcjVRTDFLak53aEZNM3VtMXJxSlZMYTdSc3RPMWpBbFlKckdMOThsU0xnTkc3NHFKYUppZ2hqSWF5UQ?oc=5",
-      "date": "2026-10-27T13:31:13+00:00",
+      "title": "2026 농구협회 코리아컵 최강전, 31일 동국대서 개막 - m.news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5OVUZGc1hUVThZc2tOZDNGSTR3UE5zT2tfNEk2QzZ6T2xMT0t3REpqWXNGR2lvNkJ1OHdIUk5kT0MxaGFFcTF3dHYtQXItSTl1NVcwbVRrdGZCMEV6M0JPTUpMcDNpRHNTNURB?oc=5",
+      "date": "2026-10-28T00:20:53+00:00",
+      "source": "m.news.sbs.co.kr",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "domestic",
+      "title": "[SBS 뉴스 시청자 게시판] 외신(한국은죽도록파업만하는나라)파업노조 1등공신! - news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4ydkl3clRiSmtMYTI4eHAxUUdfVWhhRTBTQlUwWDBBMWlBUjRjUnFzMWdwelJwdDlMaVVfZzZhY0Z4VlpuUkt4UlZYcWU5S242ZzdjRnBoX2czUEFjZlhN?oc=5",
+      "date": "2026-10-28T15:35:54+00:00",
       "source": "news.sbs.co.kr",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -137,7 +165,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -149,7 +179,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -161,19 +193,23 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-10-29T14:16:59+00:00",
+      "date": "2026-10-29T14:14:18+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -185,7 +221,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -197,7 +235,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -209,7 +249,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "domestic",
@@ -221,19 +263,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "domestic",
-      "title": "엔비디아 매디슨 황, 내달 한국 또 찾는다…피지컬 AI 협력 주목 - 연합뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wWHdMOU90M2c3YlZRbFN6VXc0R20yZjN3RjYzTUFhQXJLRW5KOFlUOWdXb1R6WWhNN3hBTVdfV0dsU00wT3dwSFE0M0hHcXZYMzVKZFRaME9YNGfSAWBBVV95cUxQb1FKYXBiekl6eHhENjQzZGdmN1YxbzI5dlpPSFJTU1BucG9CbVJ4Yk1xZ1AxYWhyQUt5S0EwY3VvY1MtU2FVTE9VaTJSelpJRUd3dnVRZXpyNE1NRkpqeXA?oc=5",
-      "date": "2026-10-27T21:30:02+00:00",
-      "source": "연합뉴스",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -245,7 +277,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -257,7 +291,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -269,7 +305,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -281,7 +319,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -293,7 +333,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -305,7 +347,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -317,7 +361,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -329,7 +375,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -341,7 +389,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -353,7 +403,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -365,7 +417,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -377,7 +431,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -389,7 +445,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -401,7 +459,23 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "global",
+      "title": "Broadcom Rallies Over 3% on Massive $63B AI Chip Financing : 기업주식정보 : JKN - 재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5ZGE2eE9wZ0pvdDM2VVVLQTMtVFVrRzEwUFp3OG1sZHhVeWxTUjV5Tm1vS0pWNzl2ZGh5WUYxV3V3cWlKamdqLU1iS3VONDJwLVpkbmFLUlgwVE9JaWhKNGNn?oc=5",
+      "date": "2026-10-27T15:36:00+00:00",
+      "source": "재경일보",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "global",
@@ -413,31 +487,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "global",
-      "title": "Dell Technologies Surges Over Seven Percent on Wall Street : 기업주식정보 : JKN - 재경일보",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTd3JMU01BOElXa2pTZldUS09RUWRYdXdsRkEwdWo0YlJzcUxZQ2ZRRUFIaDdZOHJXTVlLY0tndjJicS1nWU9HMVlfdU56UENta1BDaU1IUnZLd3M3dTdwbHh3?oc=5",
-      "date": "2026-10-27T15:08:00+00:00",
-      "source": "재경일보",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "‘저장 용량 마진 80%’ 애플, 낸드플래시 가격 폭등에 수익성 비상 - 사이언스모니터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4ybC0zaUdTRFpBLXpSMkV1b1NDY3BCQWRhMEo2YWpET09NZnZXOGhRZ01OanpqSFRLTzI3RFBybWRzcUVkckhvNFJ1ZFNwLXZNcnVfME15b2MwVWVoZ2pwWXdfT2hjb1luQW1vcnlWeXd2Zw?oc=5",
-      "date": "2026-10-29T06:37:30+00:00",
-      "source": "사이언스모니터",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -449,7 +501,23 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "‘저장 용량 마진 80%’ 애플, 낸드플래시 가격 폭등에 수익성 비상 - 사이언스모니터",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4ybC0zaUdTRFpBLXpSMkV1b1NDY3BCQWRhMEo2YWpET09NZnZXOGhRZ01OanpqSFRLTzI3RFBybWRzcUVkckhvNFJ1ZFNwLXZNcnVfME15b2MwVWVoZ2pwWXdfT2hjb1luQW1vcnlWeXd2Zw?oc=5",
+      "date": "2026-10-29T06:37:30+00:00",
+      "source": "사이언스모니터",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -461,79 +529,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "이재명 “한·독 정상회담 합의, 구체적 성과로”…첨단산업·방산 협력 확대 - 뉴스로드",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5OZW1IY1NZdkczN2J1YVNYYy03X3ItbE1SeWdSMUVnTmRnb3MtQUFndWNhOHVBT0Etd3FuV1dlYTN0TzBES3UxRUdSR09ITC1xcDVNSm1xRm5XVTBaN0xTbU5sMWU2aWRnUWNqNUhja9IBb0FVX3lxTE5OZW1IY1NZdkczN2J1YVNYYy03X3ItbE1SeWdSMUVnTmRnb3MtQUFndWNhOHVBT0Etd3FuV1dlYTN0TzBES3UxRUdSR09ITC1xcDVNSm1xRm5XVTBaN0xTbU5sMWU2aWRnUWNqNUhjaw?oc=5",
-      "date": "2026-10-30T03:18:43+00:00",
-      "source": "뉴스로드",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "이재명 대통령, 독일과 전략적 동반자 관계 격상 … 첨단산업과 방산 협력 확대 - 한국뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51UXIwNGRwWnlMZGJ3ajJyMC1xdGVrVGF6WEV2T3RYWkhVRnlRWVEtMFQyeVc5VWhTTkU4RkJ6WFV6XzVCanZVN1VJTjlwUjZvT3lrM1hUbGNlTU5vMnZ6Z1F1RzRHWTjSAWtBVV95cUxNellYRE1iX3ltdE5GODRqeDJBWlBfaUFVeW9MazJIYVhhbGhJV3RrUFgzUjRBNkhpZm5xWFZULUowTTFYTGJBaHJqMjIxdnZPcXlNSFRESnUxYkJoWlN5VWRycVMwLV8yNHN0OA?oc=5",
-      "date": "2026-10-29T23:55:45+00:00",
-      "source": "한국뉴스",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "한·독, ‘강화된 전략적 동반자 관계’ 수립…첨단산업·안보 협력 본격화 - 한국미디어창업뉴스",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAtaFNFWTR2TzNYN0E3ZFBxWGFheGFpRjJpSG4xS21FSmU0QzNWeFBPblVfaFpMb1czTlZMdlpKR1hvV1lBM3ZNQVFkWTJPTUE0akRSbFhEaWUzNkVIakY4T0dBMTY4M0R2VkdQS0JPS3XSAXBBVV95cUxQLWhTRVk0dk8zWDdBN2RQcVhhYXhhaUYyaUhuMUttRUplNEMzVnhQT25VX2haTG9XM05WTHZaSkdYb1dZQTN2TUFRZFkyT01BNGpEUmxYRGllMzZFSGpGOE9HQTE2ODNEdlZHUEtCT0t1?oc=5",
-      "date": "2026-10-30T02:47:25+00:00",
-      "source": "한국미디어창업뉴스",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "韓·獨, 첨단산업·방산 협력 확대…李 “IAA서 EU국가와 동등 대우 요청” - 전자신문",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LcGdYWjREaUFZdGJMdDlOeURRc1pQNkRRUUplM2t2T3NiOTZRY24wc2UzSFR5RVNvVlFKQzU2M2Z5Q1hrX3dndDR6Y0ZBUQ?oc=5",
-      "date": "2026-10-29T11:30:00+00:00",
-      "source": "전자신문",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "李대통령 \"한독 경제협력, 반도체·AI로 확대…공급망 공조 강화\" - KB Think",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9mWE5fODJFajdkZm9sMGQ5MGMzUWhtY3hTdkFWSXZ3YVYtall1U29HcWlIS192NkpXalRkd1F2eUZXdEFSUzZWVm9BZldJS2xaZGZ6eGZoLW5kYzUxc0RGeVRDYXFJQU5Ub0otUGpWN2VSQQ?oc=5",
-      "date": "2026-10-29T09:48:14+00:00",
-      "source": "KB Think",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
-    },
-    {
-      "section": "science",
-      "title": "한-독, '강화된 전략적 동반자' 수립…방산·반도체 공조 확대 - 동행미디어 시대",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PaV9HcFhBVzFsTUszSkxTLUh6Rm8tT3hiZlQ3R0Y0M2FCcW5DZ1VaZGplSnVYQ1ppcW10UWdQc3ZsdFZfNERXaXI0MkdTbERFNzZoWms5SS1lYlNYenc?oc=5",
-      "date": "2026-10-29T11:22:42+00:00",
-      "source": "동행미디어 시대",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -545,7 +543,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -557,7 +557,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -569,19 +571,51 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
-      "title": "AI·우주항공 등 신안보 기업 538곳 발굴…'K-팔란티어' 키운다 - 중소기업투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5XeGlzSmRFYS01TGl5VWVyMXNNeG9NNy1NOG1JU0pONGJkd2V2cHdIeXUwdExSNFZZUXluOC02b1pDc3BFTm1FcjFJdlBQNThUSkVCMnhuM2szQUUySzIzRm95cmY5T1Rs0gFsQVVfeXFMTTBIWDZpRFpMYTJ6M1JiVW9DTmJkVzE0V19KZ0pzRERvZ1lNeDdoN3NzSDMtTUttUEtsTXdIZUhTWmluZnFGQXFmNktPUDREREZSZUR3UkpfNWpaWF8wcjFRczhpOGY4bWZZOEpF?oc=5",
-      "date": "2026-10-28T09:06:12+00:00",
-      "source": "중소기업투데이",
+      "title": "李-메르츠, 한독 관계 격상…반도체·AI·방산까지 경제안보 협력 강화 - 이데일리TV",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE53RWFJODJxaTJMUWRyaWdNRDFsZjBMWkMxUmxIQ1k3N01sSllEekJUWWhZQ2NmaTIxZ3hWOWc3cDJQUnVTTXY5a3Uwa3NKN0ZtRi1WN3J3WGI4UGhwWlF5QkdYQWt0WTFHSnk4VmJUNEkzQ3U1a0tpbGg0UQ?oc=5",
+      "date": "2026-10-28T23:40:00+00:00",
+      "source": "이데일리TV",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "韓·獨, 첨단산업·방산 협력 확대…李 “IAA서 EU국가와 동등 대우 요청” - 전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LcGdYWjREaUFZdGJMdDlOeURRc1pQNkRRUUplM2t2T3NiOTZRY24wc2UzSFR5RVNvVlFKQzU2M2Z5Q1hrX3dndDR6Y0ZBUQ?oc=5",
+      "date": "2026-10-29T11:30:00+00:00",
+      "source": "전자신문",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "중기부, 신안보 기업 1차 후보군 구축…수요기관 참여 R&D 추진 - 연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kQWdWMG1mbVNCUG91dGgzVGh4dFl4TWU1Z3E0XzdHSkt3dHNfUlpPYktpeFhmUVBSTk9ocTdEd0dXdEFXbnhnUXRlSUYtdTk0cnNZSzlrRXowUTRyWFJMRtIBYEFVX3lxTE9kQWdWMG1mbVNCUG91dGgzVGh4dFl4TWU1Z3E0XzdHSkt3dHNfUlpPYktpeFhmUVBSTk9ocTdEd0dXdEFXbnhnUXRlSUYtdTk0cnNZSzlrRXowUTRyWFJMRg?oc=5",
+      "date": "2026-10-28T07:58:24+00:00",
+      "source": "연합뉴스",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -593,19 +627,23 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
-      "title": "한독, ‘강화된 전략적 동반자 관계’ 수립…반도체·AI·방산 협력 확대 - www.4ihjnews.com",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBlaTlBWDBReHhVb0o1N0FOdnloYXVmcG1FQXpuZXNTTE5la0lKWHhwZ3FjbHIwQTQ0NEphM0NFSENMd0stYkVyaGhKMWxGWk12OGF0SDd1Smo4d1dfUXdmMEdFUGtROENjdjdQR1ZaMlJqMVlKa3k0V0lQeHhzMFk?oc=5",
-      "date": "2026-10-29T11:23:00+00:00",
-      "source": "www.4ihjnews.com",
+      "title": "AI·우주항공 등 신안보 기업 538곳 발굴…'K-팔란티어' 키운다 - 중소기업투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5XeGlzSmRFYS01TGl5VWVyMXNNeG9NNy1NOG1JU0pONGJkd2V2cHdIeXUwdExSNFZZUXluOC02b1pDc3BFTm1FcjFJdlBQNThUSkVCMnhuM2szQUUySzIzRm95cmY5T1Rs0gFsQVVfeXFMTTBIWDZpRFpMYTJ6M1JiVW9DTmJkVzE0V19KZ0pzRERvZ1lNeDdoN3NzSDMtTUttUEtsTXdIZUhTWmluZnFGQXFmNktPUDREREZSZUR3UkpfNWpaWF8wcjFRczhpOGY4bWZZOEpF?oc=5",
+      "date": "2026-10-28T09:06:12+00:00",
+      "source": "중소기업투데이",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "science",
@@ -617,7 +655,65 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "중기부, 안보기술 기업 538곳 첫 명단 - 중소기업신문",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLX0JyU2U1NXlkckRJTDZ0X25aTEROWTB4cEVrSm1QY0owMDI5YWw5RFhvVklRUl84RDlyUnozVlEwNWphNXdyS1hZb2M5enlBQ1dRZDBsMHo4eVJ1NTcxTUpGc1g1NllISjc4OFln?oc=5",
+      "date": "2026-10-28T13:29:41+00:00",
+      "source": "중소기업신문",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "한-독, '강화된 전략적 동반자' 수립…방산·반도체 공조 확대 - 동행미디어 시대",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PaV9HcFhBVzFsTUszSkxTLUh6Rm8tT3hiZlQ3R0Y0M2FCcW5DZ1VaZGplSnVYQ1ppcW10UWdQc3ZsdFZfNERXaXI0MkdTbERFNzZoWms5SS1lYlNYenc?oc=5",
+      "date": "2026-10-29T11:22:42+00:00",
+      "source": "동행미디어 시대",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "AI·드론·우주항공 등 신안보 기업 키운다…최대 100억 원 R&D 지원 추진 - 뉴스라운드",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zZE9YMmQyRTg0YXViMXBsVU9Nc1cxVG5nZ0l2VS1qUWJlSTBkcVQyQ1JxMTQycjhoYUoyNnFEbmh4VFUyNHNCNjh5b0d5aUFGNU1tTU1kbXdIcXl6M3pZX25YVjFwdnFxYllBX9IBcEFVX3lxTE5lb3llVzB4bjZOWmpZMFI0RUdtMGh2dF9iekZ1SFZDQXE0S1l3bG9iZEpQeG5fMVdYalo0MUxsZFpheTBtSnF4Mlh0MkNzWHlMeGNNOWdOMHVYeTNCZmxhc1NudmM1ZjJZQ3V4M3B1cVo?oc=5",
+      "date": "2026-10-28T07:16:00+00:00",
+      "source": "뉴스라운드",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "한·독 ‘강화된 전략적 동반자’ 수립…李대통령 \"양자·다자 협력 대폭 강화\" - 이투데이",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LSnc4WU9PXzgzc01vR1drWlNnQWpWSTB0VVotTDNxQmxsYTVJelRsZ3ZpdnF6ZW1idTdSZXk3QjlDM1BkSk9ORkNPLTBRVTVETTAwVjJVM1QybG44dEg4ZUVtQkZlSzU0R0wyUUQ5ODBVRTdH?oc=5",
+      "date": "2026-10-29T09:58:00+00:00",
+      "source": "이투데이",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "ai",
@@ -629,7 +725,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     },
     {
       "section": "ai",
@@ -641,7 +739,9 @@
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
       "verification_level": "indexed",
-      "kind": "news"
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     }
   ],
   "events": [],
@@ -663,6 +763,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-10-30T05:50:19.650417+00:00",
-  "stale_after": "2026-10-30T08:50:19.650417+00:00"
+  "built_at": "2026-10-30T06:58:53.064086+00:00",
+  "stale_after": "2026-10-30T09:58:53.064086+00:00"
 }
