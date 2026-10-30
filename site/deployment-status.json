@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "latest_run_status": "not_yet_verified",
+  "observed_at_utc": null,
+  "run_id": null,
+  "revision": null,
+  "deploy": null,
+  "public_browser": null,
+  "public_http": null,
+  "site_url": "https://joshua7park-cyber.github.io/BJ-NewsRoom/",
+  "note": "GitHub Actions 배포와 외부 접속을 실제 통과한 뒤에만 success로 바뀝니다."
+}
