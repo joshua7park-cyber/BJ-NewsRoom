@@ -952,7 +952,7 @@
       "host": "한국세계선교협의회(KWMA)",
       "place": "경기 가평 필그림하우스",
       "fee": "참가비 15만원 · 사전등록제(현장등록 없음) · 문의 1833-3110",
-      "status": "confirmed",
+      "status": "check",
       "links": [
         {
           "type": "주최 측 안내",
@@ -978,7 +978,7 @@
       "host": "한국교회정보센타",
       "place": "경기 군포제일교회",
       "fee": "3만원 · 선착순 300명 · 전화 1566-3004",
-      "status": "confirmed",
+      "status": "check",
       "links": [
         {
           "type": "주최 측 안내",
@@ -1197,7 +1197,7 @@
       "host": "NeurIPS",
       "place": "호주 시드니 · 애틀랜타·파리 위성행사 12.09–12.13",
       "fee": "등록 조건은 공식 안내 확인",
-      "status": "confirmed",
+      "status": "check",
       "links": [
         {
           "type": "주최 측 안내",
@@ -1216,7 +1216,7 @@
       "host": "Falling Walls Foundation",
       "place": "독일 베를린",
       "fee": "참가와 중계 조건은 공식 안내 확인",
-      "status": "confirmed",
+      "status": "check",
       "links": [
         {
           "type": "주최 측 안내",
