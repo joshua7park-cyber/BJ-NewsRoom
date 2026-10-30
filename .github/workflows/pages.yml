@@ -70,7 +70,12 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: 5. Public page check
+      - name: 5. Real public Chromium regression
+        env:
+          BJ_TEST_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python tests/browser_smoke.py
+
+      - name: 6. Public page check
         env:
           PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
