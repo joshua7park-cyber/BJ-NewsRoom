@@ -22,6 +22,7 @@ QUERIES={
 }
 
 MAX_PER_SECTION=16
+TRUSTED_KOREAN_DOMAINS=('yna.co.kr','kbs.co.kr','imbc.com','sbs.co.kr','jtbc.co.kr','ytn.co.kr','hankookilbo.com','hani.co.kr','khan.co.kr','joongang.co.kr','donga.com','chosun.com','seoul.co.kr','mk.co.kr','hankyung.com','sedaily.com','etnews.com','news1.kr','newsis.com')
 DOMESTIC_PUBLISHERS=('연합뉴스','KBS','MBC','SBS','JTBC','YTN','한국일보','한겨레','경향신문','중앙일보','동아일보','조선일보','서울신문','매일경제','한국경제','서울경제','전자신문','뉴스1','뉴시스')
 def balanced_select(items,limit=MAX_PER_SECTION):
  pool={}
@@ -44,6 +45,29 @@ def txt(element,name):
  found=element.find(name)
  return ''.join(found.itertext()).strip() if found is not None else ''
 
+def trusted_original(url):
+ """Return independently validated Korean publisher URL; never claim an aggregator is original."""
+ try:
+  u=urllib.parse.urlsplit(url)
+  if u.scheme!='https':return None
+  host=(u.hostname or '').lower()
+  if any(host==d or host.endswith('.'+d) for d in TRUSTED_KOREAN_DOMAINS):
+   return url
+ except ValueError:pass
+ return None
+
+def resolve_original(url, opener=None):
+ """Best-effort redirect check; fail closed if Google does not redirect to publisher."""
+ if trusted_original(url):return url
+ if not url.startswith('https://news.google.com/'):return None
+ opener=opener or urllib.request.urlopen
+ try:
+  request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; BJNewsroom/1.0)'})
+  with opener(request,timeout=6) as res:
+   final=res.geturl()
+  return trusted_original(final)
+ except (OSError, ValueError):return None
+
 def parse_feed(xml_bytes,section,now):
  root=ET.fromstring(xml_bytes)
  items=[]
@@ -62,7 +86,8 @@ def parse_feed(xml_bytes,section,now):
   items.append({'section':section,'title':title[:280], 'url':url,'date':date.isoformat(),
    'source':source,'summary':'RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.',
    'insight':'자동 생성된 분석 없음','verification_status':'자동 수집 · 원문 사실검증 전',
-   'verification_level':'indexed','kind':'news'})
+   'verification_level':'indexed','kind':'news',
+   'original_url':trusted_original(url),'link_type':'publisher_direct' if trusted_original(url) else 'aggregator'})
  return items
 
 def unique(items):
@@ -103,6 +128,12 @@ def build(fetcher=fetch,now=None):
    try: collected.extend(parse_feed(fetcher(rss),section,now))
    except Exception as ex:feed_errors.append({'section':section,'query':query,'error':str(ex)[:160]})
   collected=balanced_select(collected) if section=='domestic' else unique(collected)[:MAX_PER_SECTION]
+  if section=='domestic':
+   for story in collected:
+    original=resolve_original(story['url'])
+    if original:
+     story['url']=original;story['original_url']=original;story['link_type']='publisher_direct'
+    else:story['link_type']='aggregator'
   records.extend(collected);counts[section]=len(collected)
  events=load_events(now)
  # Event category: only official curated events count toward verified event goal.
