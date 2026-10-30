@@ -1,0 +1,25 @@
+name: BJ Newsroom checks
+# Same gates as the deploy, for branches and pull requests (no deploy).
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_edition.py
+      - run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Page JavaScript syntax
+        run: |
+          python -c "import re,pathlib;h=pathlib.Path('index.html').read_text(encoding='utf-8');pathlib.Path('/tmp/app.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',h,re.S)),encoding='utf-8')"
+          node --check /tmp/app.js
+      - name: Link report (informational on branches)
+        run: python scripts/check_links.py --report-only

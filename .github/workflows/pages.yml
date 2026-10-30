@@ -1,10 +1,13 @@
 name: BJ Newsroom Deploy
+# Gate → deploy → public check. Nothing reaches the public page unless every gate passes.
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '41 22 * * *'   # 07:41 KST: re-check links and the public page after the 07:30 edition
   workflow_run:
-    workflows: ['BJ Newsroom - hourly feed refresh', 'BJ Morning 07:30 RSS edition']
+    workflows: ['BJ Newsroom - hourly feed refresh']
     types: [completed]
 
 permissions:
@@ -13,7 +16,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -23,64 +26,64 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/configure-pages@v5
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: 1. Edition data gate (schema, grades, weekdays, dummy text)
+        run: python scripts/validate_edition.py
 
-      - name: Validate HTML JavaScript syntax and news JSON
+      - name: 2. Regression tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: 3. Page JavaScript syntax
         run: |
           python - <<'PY'
-          import re, json, pathlib
-          html=pathlib.Path('index.html').read_text(encoding='utf-8')
-          scripts=re.findall(r'<script[^>]*>(.*?)</script>',html,re.S|re.I)
-          assert scripts, 'No inline JavaScript'
-          pathlib.Path('/tmp/newsroom-app.js').write_text(chr(10).join(scripts),encoding='utf-8')
-          d=json.loads(pathlib.Path('site/newsroom.json').read_text(encoding='utf-8'))
-          assert d.get('schema_version')==2 and isinstance(d.get('news'),list)
+          import re, pathlib
+          html = pathlib.Path('index.html').read_text(encoding='utf-8')
+          js = re.findall(r'<script>(.*?)</script>', html, re.S)
+          assert js, 'index.html에 스크립트가 없습니다'
+          pathlib.Path('/tmp/app.js').write_text('\n'.join(js), encoding='utf-8')
           PY
-          node --check /tmp/newsroom-app.js
+          node --check /tmp/app.js
 
-      - name: Check editorial provenance and regression tests
-        run: |
-          python -m unittest discover -s tests -p 'test_*.py' -v
-          python - <<'PY'
-          import json
-          d=json.load(open('site/reading-room.json',encoding='utf8'))
-          assert d['schema_version']==1 and d['articles']
-          for article in d['articles']:
-              assert article['sources'] and article['verification']
-              assert all(x['url'].startswith('https://') for x in article['sources'])
-          print('READING ROOM VALIDATED:',len(d['articles']))
-          PY
+      - name: 4. Source and sign-up links
+        run: python scripts/check_links.py
 
-      - name: Upload website
+      - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "."
+          path: '.'
 
-      - name: Deploy website
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Smoke-test public Pages after deployment
+      - name: 5. Public page check
         env:
           PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
           python - <<'PY'
-          import os, time, urllib.request
-          url=os.environ['PUBLIC_URL'].rstrip('/')+'/'
-          for path, needle in [('', b'BJ INTELLIGENCE'), ('site/newsroom.json', b'"schema_version"'),('site/reading-room.json', b'"articles"')]:
-           for attempt in range(6):
-            try:
-             with urllib.request.urlopen(url+path, timeout=15) as r: body=r.read()
-             assert len(body)>500 and needle in body
-             print('PUBLIC PASS',url+path, len(body))
-             break
-            except Exception as e:
-             if attempt==5: raise
-             time.sleep(10)
+          import json, os, time, urllib.request
+          base = os.environ['PUBLIC_URL'].rstrip('/') + '/'
+          want = json.load(open('data/edition.json', encoding='utf-8'))['edition_date']
+          checks = [('', '오늘 아침판을 불러오는 중'), ('data/edition.json', want),
+                    ('site/link-report.json', want), ('site/newsroom.json', 'schema_version')]
+          for path, needle in checks:
+              for attempt in range(8):
+                  try:
+                      with urllib.request.urlopen(f'{base}{path}?v={time.time()}', timeout=20) as r:
+                          body = r.read().decode('utf-8')
+                      assert needle in body, f'{needle!r} not in {path or "index.html"}'
+                      print('PUBLIC PASS', base + path)
+                      break
+                  except Exception as ex:
+                      if attempt == 7:
+                          raise SystemExit(f'PUBLIC FAIL {base}{path}: {ex}')
+                      time.sleep(15)
           PY

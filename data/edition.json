@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "edition_date": "2026-10-30",
+  "edition_label": "2026년 10월 30일(금) 아침판",
+  "published_at": "2026-10-30T07:30:00+09:00",
+  "collected_range": "10.27–10.30",
+  "stories": [
+    {
+      "id": "yoon-appeal",
+      "section": "국내",
+      "grade": "A",
+      "priority": 1,
+      "published_date": "2026-10-29",
+      "date_label": "10.29(목)",
+      "title": "내란특검, 윤석열 전 대통령 항소심에서도 사형 구형",
+      "dek": "서울고법 결심공판에서 특검은 1심 무기징역이 \"너무 가볍다\"고 주장했습니다. 다음 기일에 최후진술을 듣고 선고일을 정합니다.",
+      "core": "내란특검은 29일 서울고법 형사12-1부 심리로 열린 내란 우두머리 혐의 항소심 결심공판에서 윤석열 전 대통령에게 사형을 구형했습니다. 김용현 전 국방부 장관 무기징역, 노상원 전 국군정보사령관 징역 30년, 조지호 전 경찰청장 징역 20년, 김봉식 전 서울경찰청장 징역 15년도 함께 구형했습니다.",
+      "why": "전직 대통령 내란 사건에 대한 2심 판단이 임박했습니다. 선고 결과는 향후 정치 일정과 사회적 논쟁의 방향에 직접 영향을 줍니다.",
+      "background": "1심 재판부는 지난 2월 19일 사형 구형에도 무기징역을 선고했습니다. 윤 전 대통령 측은 계엄이 \"메시지성\"이었다는 주장을 유지하고 있습니다.",
+      "verification": "법률신문·YTN·주간경향·파이낸셜뉴스 4개 매체의 보도 내용이 일치합니다. 다음 기일은 11월 3일로 보도됐지만 11월 5일로 쓴 매체도 있어 법원 공지로 다시 확인합니다.",
+      "sources": [
+        {"name": "법률신문", "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=228571", "kind": "국내"},
+        {"name": "YTN", "url": "https://www.ytn.co.kr/_ln/0103_202610291234109168", "kind": "국내"},
+        {"name": "주간경향", "url": "https://weekly.khan.co.kr/article/202610291251001/", "kind": "국내"},
+        {"name": "파이낸셜뉴스", "url": "https://www.fnnews.com/news/202610291810109721", "kind": "국내"}
+      ]
+    },
+    {
+      "id": "israel-election",
+      "section": "이스라엘·중동",
+      "grade": "A",
+      "priority": 2,
+      "published_date": "2026-10-28",
+      "date_label": "10.28(수)",
+      "title": "이스라엘 총선, 네타냐후 블록 과반(61석) 미달 집계",
+      "dek": "개표 막바지까지 친네타냐후 진영은 53~56석에 머물렀습니다. 다음 정부는 연정 협상에서 결정됩니다.",
+      "core": "10월 27일 치러진 크네세트(120석) 총선에서 중앙선관위 부분 집계(약 72% 개표) 기준 친네타냐후 블록 54석, 가디 아이젠코트가 이끄는 야권 블록 48석으로 나타났습니다. 이후 개표율에 따라 매체별로 53~56석이 보도됐습니다.",
+      "why": "가자지구 전후 처리, 이란과의 전쟁, 사법개혁 논쟁 등 중동 정세 전반이 다음 정부 구성에 달려 있습니다.",
+      "background": "출구조사부터 엇갈렸습니다. 채널12는 네타냐후 블록 50석, 친정부 성향 채널14는 60석을 예측했습니다. 선관위는 개표가 10월 30일까지 이어질 수 있다고 밝혔습니다.",
+      "verification": "알자지라·예루살렘포스트·이스라엘하욤은 정치 성향이 서로 다른 매체인데, 세 곳 모두 \"과반 미달\"로 보도했습니다. 최종 의석은 선관위 공식 결과로 갱신합니다.",
+      "sources": [
+        {"name": "Al Jazeera", "url": "https://aljazeera.com/news/2026/10/28/five-key-takeaways-from-israels-parliamentary-elections", "kind": "외신"},
+        {"name": "Jerusalem Post", "url": "https://www.jpost.com/israel-election-2026/2026-10-28/live-updates-913081", "kind": "외신"},
+        {"name": "Israel Hayom", "url": "https://www.israelhayom.com/2026/10/27/israel-election-2026-exit-polls-full-results/", "kind": "외신"}
+      ]
+    },
+    {
+      "id": "samsung-q3",
+      "section": "국내",
+      "grade": "A",
+      "priority": 3,
+      "published_date": "2026-10-08",
+      "date_label": "10.08(목) 공시",
+      "title": "삼성전자 3분기 영업이익 107.4조원(잠정), 국내 기업 첫 분기 100조 돌파",
+      "dek": "AI 메모리 수요가 실적을 끌어올렸습니다. 매출은 약 195조원으로 시장 기대에 조금 못 미쳤습니다.",
+      "core": "삼성전자의 3분기 잠정 영업이익은 107조4천억원으로 전년 동기(12조2천억원)보다 약 783% 늘었고, 전 분기보다 약 20% 증가했습니다. 매출은 약 195조원입니다.",
+      "why": "반도체가 한국의 수출·증시·세수를 좌우하는 국면입니다. 투자, 고용, 지역경제를 판단할 때 기준선이 됩니다.",
+      "background": "삼성전자와 SK하이닉스는 AI 데이터센터용 HBM 등 고부가 메모리 생산을 늘려 왔습니다. 두 회사의 상반기 시설투자는 합계 43조원대로 전년보다 35% 늘었다는 집계가 있습니다.",
+      "verification": "회사 공식 뉴스룸 공시와 YTN 보도로 확인했습니다. 잠정치라서 확정 실적과 다를 수 있고, 증가율은 매체에 따라 782.5%와 783.1%로 조금 다르게 표기됩니다.",
+      "sources": [
+        {"name": "삼성반도체 뉴스룸", "url": "https://news.samsungsemiconductor.com/kr/?p=37675", "kind": "공식"},
+        {"name": "YTN", "url": "https://www.ytn.co.kr/_ln/0102_202610080800410809", "kind": "국내"}
+      ]
+    },
+    {
+      "id": "spain-rail",
+      "section": "국제",
+      "grade": "A",
+      "priority": 4,
+      "published_date": "2026-10-28",
+      "date_label": "10.28(수)",
+      "title": "스페인 고속열차 추돌, 최소 64명 사망…3일간 국가 애도",
+      "dek": "마드리드–세비야 노선에서 정차해 있던 열차를 뒤따르던 고속열차가 들이받았습니다.",
+      "core": "10월 28일 톨레도주 우르다 인근에서 렌페 AVE 열차와 이리오 열차가 추돌해 객차 2량이 탈선했습니다. 사망자는 최소 64명이며 일부 매체는 68명으로 집계했습니다. 부상자는 80~100여 명입니다.",
+      "why": "같은 노선에서 올해 두 번째 대형 사고입니다(1월 아다무스 사고 45명 사망). 유럽 고속철 신호·제어 체계 전반에 대한 점검으로 이어질 수 있습니다.",
+      "background": "오스카르 푸엔테 교통장관은 자동제어 시스템에 기술 결함이 있었는데도 열차에 \"오류로\" 운행 지시가 내려졌다고 밝혔습니다. 렌페 기관사들은 29일 안전 문제로 24시간 전국 파업을 했습니다.",
+      "verification": "AP 기사(타임스오브이스라엘 전재)와 알자지라, 쿠웨이트타임스로 교차 확인했습니다. 사망자 수가 매체마다 달라 가장 보수적인 최소치(64명)를 표기했습니다.",
+      "sources": [
+        {"name": "AP · Times of Israel", "url": "https://www.timesofisrael.com/at-least-64-killed-as-high-speed-trains-collide-in-central-spain/", "kind": "외신"},
+        {"name": "Al Jazeera", "url": "https://aljazeera.com/news/2026/10/28/injuries-reported-after-two-trains-collide-in-spain", "kind": "외신"},
+        {"name": "Kuwait Times", "url": "https://kuwaittimes.com/article/52562/top-stories/spain-high-speed-train-crash-kills-68-injures-over-100/", "kind": "외신"}
+      ]
+    },
+    {
+      "id": "ethiopia-orthodox",
+      "section": "Religion",
+      "grade": "A",
+      "priority": 5,
+      "published_date": "2026-10-27",
+      "date_label": "10.27(화)",
+      "title": "에티오피아 오로미아에서 정교회 신자 60여 명 피살",
+      "dek": "에티오피아정교회 성주교회의(Holy Synod)가 정부에 민간인 보호와 책임자 처벌을 촉구했습니다.",
+      "core": "교회 측 발표에 따르면 10월 20일 메르티 지구에서 14명, 24일 시르카 지구에서 46명이 공격으로 숨졌습니다. 주택 20여 채가 불탔고 20여 명이 중상으로 입원했습니다.",
+      "why": "아프리카 최대 기독교 공동체 가운데 하나가 반복적인 폭력에 노출되어 있습니다. 현지 선교·구호 사역의 안전 판단과 중보기도에 직접 관련됩니다.",
+      "background": "지역 정부는 반군 연합이 종교 갈등을 노리고 공격했다고 주장했지만 증거를 제시하지 않았고, 반군 측은 오히려 지방정부를 비난했습니다. 에티오피아인권위원회는 지난 4년간 이 지역에서 458명이 숨졌다고 보고했습니다(2026년 7월).",
+      "verification": "로이터(카트만두포스트 전재)·알자지라·아프리카뉴스·뱁티스트프레스가 같은 수치를 보도했습니다. 가해 주체는 아직 확인되지 않았습니다.",
+      "sources": [
+        {"name": "Reuters · Kathmandu Post", "url": "https://kathmandupost.com/world/2026/10/27/attackers-kill-60-people-in-ethiopia-s-conflict-hit-oromiya-region-orthodox-church-says", "kind": "외신"},
+        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/27/sixty-christians-killed-in-ethiopias-oromia-region", "kind": "외신"},
+        {"name": "Africanews", "url": "https://www.africanews.com/amp/2026/10/27/ethiopia-at-least-60-christians-killed-in-attacks-in-oromia-region/", "kind": "외신"},
+        {"name": "Baptist Press", "url": "https://www.baptistpress.com/resource-library/news/60-or-more-christians-killed-in-diverse-region-of-ethiopia-marked-by-violence/", "kind": "교계"}
+      ]
+    },
+    {
+      "id": "gyeonggi-bus",
+      "section": "국내",
+      "grade": "A",
+      "priority": 6,
+      "published_date": "2026-10-30",
+      "date_label": "10.30(금) 새벽",
+      "title": "경기 버스 노사 30일 새벽 극적 타결, 첫차부터 정상 운행",
+      "dek": "시급 3.2% 인상에 합의해 파업이 철회됐습니다. 서울 버스와의 임금격차 문제는 추후 논의하기로 했습니다.",
+      "core": "경기지역자동차노조와 사용자 측은 29일 오후 3시부터 이어진 최종 조정회의 끝에 30일 오전 2시 30분께 경기지방노동위원회 조정안에 합의했습니다. 준공영제·민영제 노선 모두 시급을 3.2% 올리고, 인상 소급분은 내년 2월 말 지급합니다. 854개 노선 4,130여 대가 첫차부터 정상 운행했습니다.",
+      "why": "수도권 출근길 교통 대란을 피했습니다. 경기도와 15개 시·군이 준비한 전세버스 투입 등 비상수송대책도 즉시 해제됐습니다.",
+      "background": "노조는 파업 찬반투표에서 97.7% 찬성으로 파업을 가결했었습니다. 합의안에는 주 2일 고정휴일제, 무사고자 연 3일 포상휴가 등도 담겼습니다. 가장 큰 쟁점이던 서울과의 임금격차 해소는 미뤄져 불씨가 남았습니다.",
+      "verification": "파이낸셜뉴스·이투데이·SBS Biz 보도와 경기도 대변인 브리핑 내용이 일치합니다. 운행 대수 표현은 매체마다 조금 다릅니다.",
+      "sources": [
+        {"name": "파이낸셜뉴스", "url": "https://www.fnnews.com/news/202610300254260965", "kind": "국내"},
+        {"name": "이투데이", "url": "https://www.etoday.co.kr/news/view/2641997", "kind": "국내"},
+        {"name": "SBS Biz", "url": "https://biz.sbs.co.kr/article/20000343167", "kind": "국내"},
+        {"name": "경기도 대변인 브리핑", "url": "https://www.gbtopnews.net/news/articleView.html?idxno=236469", "kind": "공식"}
+      ]
+    },
+    {
+      "id": "fomc-oct",
+      "section": "국제",
+      "grade": "B",
+      "priority": 7,
+      "published_date": "2026-10-28",
+      "date_label": "10.28(수) 현지",
+      "title": "미 연준, 기준금리 3.75~4.00% 동결…반대 2표는 \"인상\" 주장",
+      "dek": "지난달 인상 뒤 한 차례 쉬어 갔습니다. 시장의 관심은 12월 회의로 넘어갔습니다.",
+      "core": "연방공개시장위원회(FOMC)는 10월 28일(현지) 기준금리 목표 범위를 3.75~4.00%로 유지했습니다. 표결은 10대 2였고, 반대한 2명은 금리 인상을 주장했습니다.",
+      "why": "한·미 금리차는 원·달러 환율, 국내 대출금리, 수출기업의 자금조달 비용으로 이어집니다.",
+      "background": "연준은 직전 회의에서 금리를 올렸습니다. 연준 의장은 경제와 투자가 견조하다고 진단하면서 물가 2% 목표를 위해 가격 안정을 우선하겠다고 밝혔습니다.",
+      "verification": "국내 매체 보도로 확인했습니다. 연준 공식 성명 원문과의 대조가 끝나면 A급으로 올립니다.",
+      "sources": [
+        {"name": "미주중앙일보", "url": "https://www.koreadaily.com/article/20261028131547892", "kind": "국내"},
+        {"name": "경북매일", "url": "https://www.kbmaeil.com/article/20261029500017", "kind": "국내"},
+        {"name": "연준 보도자료", "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm", "kind": "공식"}
+      ]
+    },
+    {
+      "id": "hormuz-mines",
+      "section": "이스라엘·중동",
+      "grade": "C",
+      "priority": 8,
+      "published_date": "2026-10-24",
+      "date_label": "10.17–10.24",
+      "title": "호르무즈 해협 유조선 기뢰 피격 주장, 독립 확인은 아직",
+      "dek": "이란혁명수비대가 잇따라 피격을 발표했지만 제3자 확인은 없습니다. 유가와 해상운임에 직결되는 사안입니다.",
+      "core": "이란혁명수비대(IRGC)는 10월 17~24일 사이 유조선 여러 척이 해협에서 기뢰에 부딪혀 불이 나거나 폭발했다고 발표했습니다. 24일에는 원유 450만 배럴 이상을 실은 초대형 유조선 2척이 피격됐다고 주장했습니다.",
+      "why": "원유 수입 대부분을 중동에 의존하는 한국에는 유가와 물가 충격으로 이어집니다.",
+      "background": "이란은 통항 전 자국 허가를 요구하며 해협을 사실상 봉쇄했고, 미국은 이란 원유 수출을 막는 해상 역봉쇄로 대응하고 있습니다. 해운 데이터업체 Kpler 집계로 해협 통과 원유는 10월 8일 약 2,080만 배럴에서 11일 290만 배럴로 줄었습니다.",
+      "verification": "1차 정보원이 이란 측(타스님 등)이고, 로이터는 \"독립 확인 없음\"이라고 전했습니다. 그래서 C급으로 표시했습니다.",
+      "sources": [
+        {"name": "gCaptain (Reuters)", "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/", "kind": "외신"},
+        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz", "kind": "외신"},
+        {"name": "Tasnim (이란 측)", "url": "https://www.tasnimnews.ir/en/news/2026/10/24/3730555/two-supertankers-explode-after-hitting-mines-in-strait-of-hormuz-irgc", "kind": "당사자"}
+      ]
+    },
+    {
+      "id": "nobel-2026",
+      "section": "과학·AI",
+      "grade": "B",
+      "priority": 9,
+      "published_date": "2026-10-07",
+      "date_label": "10.05–10.07",
+      "title": "2026 노벨 과학상: 광유전학, 중성미자 관측, 거울상 분자",
+      "dek": "생리의학상은 빛으로 신경세포를 켜고 끄는 광유전학에 돌아갔습니다. 한국인 첫 과학상 수상은 이번에도 나오지 않았습니다.",
+      "core": "생리의학상은 칼 다이서로스(스탠퍼드대), 페터 헤게만(훔볼트대), 게오르크 나겔(뷔르츠부르크대)이 받았습니다. 물리학상은 남극 아이스큐브 관측소로 초고에너지 중성미자를 포착한 프랜시스 할젠, 화학상은 거울상 이성질체 형성 메커니즘을 밝힌 앙리 카강과 소아이 겐소에게 돌아갔습니다.",
+      "why": "뇌질환 치료와 신경과학, 우주 관측, 신약 합성의 기반이 되는 연구들입니다. 연구 투자와 진로 교육의 방향을 가늠하는 지표이기도 합니다.",
+      "background": "올해는 GLP-1 비만치료제 연구가 유력하다는 예상이 많았지만 빗나갔습니다.",
+      "verification": "국내 매체 보도 기준입니다. 수상자 한글 표기가 매체마다 달라(나겔/니켈) 노벨위원회 공식 발표로 확인하시길 권합니다.",
+      "sources": [
+        {"name": "에스콰이어 코리아", "url": "https://www.esquirekorea.co.kr/article/1911295", "kind": "국내"},
+        {"name": "머니투데이", "url": "https://www.mt.co.kr/tech/2026/10/03/2026100214403725977", "kind": "국내"},
+        {"name": "노벨상 공식", "url": "https://www.nobelprize.org/", "kind": "공식"}
+      ]
+    },
+    {
+      "id": "nk-missionaries",
+      "section": "Religion",
+      "grade": "B",
+      "priority": 10,
+      "ongoing": true,
+      "published_date": "2026-05-22",
+      "date_label": "지속 이슈",
+      "title": "북한 억류 한국인 선교사 3인, 10년 넘게 생사 미확인",
+      "dek": "김정욱·김국기·최춘길 선교사의 송환을 요구하는 기도회와 국제회의가 올해 이어졌습니다.",
+      "core": "2026년 5월 서울에서 북한억류국민가족회, 전환기정의워킹그룹(TJWG), 연세대 동서문제연구원이 \"북한억류 한국선교사 3인을 집으로!\" 국제회의를 열었습니다. 1월에는 서울 오늘의교회에서 송환을 위한 연합기도회가 열렸습니다.",
+      "why": "한국교회가 당사자로 기억해야 할 사안입니다. 남북 관계나 인권 의제가 논의될 때마다 다시 확인해야 할 기도 제목입니다.",
+      "background": "10월 27일 교단협의회 포럼 보도도 있었지만 단일 출처라 본문에는 반영하지 않았습니다.",
+      "verification": "RFA와 노컷뉴스 보도로 확인했습니다.",
+      "sources": [
+        {"name": "RFA 자유아시아방송", "url": "https://rfa.org/korean/in-focus/2026/05/22/north-korea-missionary-detainees-family/", "kind": "외신"},
+        {"name": "노컷뉴스", "url": "https://www.nocutnews.co.kr/news/6456962", "kind": "국내"}
+      ]
+    },
+    {
+      "id": "ai-week",
+      "section": "과학·AI",
+      "grade": "C",
+      "priority": 11,
+      "published_date": "2026-10-30",
+      "date_label": "10.26–10.30",
+      "title": "이번 주 AI: 보안 특화 모델 경쟁과 AI 행동 지침 개정",
+      "dek": "구글은 사이버 방어 전용 모델을 제한 공개했고, OpenAI는 모델 행동 지침을 개정했습니다.",
+      "core": "구글은 10월 28일 사이버 보안·장기 코딩 작업용 \"Gemini 4 Carbon\"을 일부 사이버 방어 기관에 먼저 공개했습니다. OpenAI는 29일 설득, 딥페이크, 허위정보 관련 조항을 담아 모델 행동 지침(Model Spec)을 개정했습니다. 스웨덴 정부가 공무용 PC에서 ChatGPT와 Claude 사용을 차단했다는 보도도 있습니다.",
+      "why": "AI가 업무 도구를 넘어 안보 자산으로 다뤄지기 시작했습니다. 교회, 학교, 기관이 AI 사용 지침을 만들 때 참고할 흐름입니다.",
+      "background": "미국 중간선거를 앞두고 AI 안전장치를 강화해야 한다는 여론이 높아지고 있습니다.",
+      "verification": "2차 집계 사이트 기준이라 C급입니다. 각 기업 공식 블로그 원문과 대조한 뒤 등급을 올립니다.",
+      "sources": [
+        {"name": "Newegg Insider", "url": "https://www.newegg.com/insider/ai-news-this-week-october-26-30-2026", "kind": "2차"},
+        {"name": "The Neuron", "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026", "kind": "2차"},
+        {"name": "Emergent", "url": "https://emergent.sh/news/openai-updates-model-spec-safer-more-capable", "kind": "2차"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "kcdc-2027-plan",
+      "section": "Religion",
+      "start": "2026-11-02",
+      "time_label": "10:00–17:00",
+      "title": "2027 목회계획세미나: AI와 함께하는 미래목회",
+      "host": "한국교회정보센타",
+      "place": "군포제일교회",
+      "fee": "3만원 · 선착순 300명 · 전화 1566-3004",
+      "status": "confirmed",
+      "apply_url": "https://www.kcdc.net/",
+      "ref_url": "https://www.christiantoday.co.kr/news/377825"
+    },
+    {
+      "id": "coffee-break-workshop",
+      "section": "Religion",
+      "start": "2026-11-03",
+      "extra_dates": ["2026-11-10", "2026-11-17"],
+      "time_label": "08:00–11:30 (한국시간)",
+      "title": "목회자를 위한 커피브레이크 소그룹 인도자 워크숍",
+      "host": "Coffee Break Ministry",
+      "place": "온라인 Zoom · 3회",
+      "fee": "등록비 $25",
+      "status": "confirmed",
+      "apply_url": "https://kr.christianitydaily.com/articles/133466/20261023/%EB%AA%A9%ED%9A%8C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%BB%A4%ED%94%BC%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC-%EC%86%8C%EA%B7%B8%EB%A3%B9-%EC%9D%B8%EB%8F%84%EC%9E%90-%EC%9B%8C%ED%81%AC%EC%88%8D-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B0%9C%EC%B5%9C.htm"
+    },
+    {
+      "id": "kingdom-at-work",
+      "section": "Religion",
+      "start": "2026-11-07",
+      "time_label": "14:00–18:00",
+      "title": "KINGDOM AT WORK 2026 일터사역 컨퍼런스",
+      "host": "KINGDOM AT WORK 준비위원회",
+      "place": "장소·신청은 안내 기사 참조",
+      "fee": "참가비는 안내 기사에서 확인",
+      "status": "confirmed",
+      "apply_url": "https://www.cupnews.kr/news/articleView.html?idxno=30489"
+    },
+    {
+      "id": "lausanne-interact",
+      "section": "Religion",
+      "start": "2026-11-10",
+      "time_label": "시간은 안내 페이지 확인",
+      "title": "로잔운동 INTERACT 라운드테이블 (온라인)",
+      "host": "Lausanne Movement",
+      "place": "온라인 · 영어",
+      "fee": "참가 조건은 안내 페이지 확인",
+      "status": "check",
+      "apply_url": "https://lausanne.org/gathering"
+    },
+    {
+      "id": "aiot-expo",
+      "section": "과학·AI",
+      "start": "2026-11-03",
+      "end": "2026-11-05",
+      "time_label": "10:00–17:00 · 11.04 AIoT 국제컨퍼런스",
+      "title": "AIoT 국제전시회 · 국제컨퍼런스",
+      "host": "AIoT 국제전시회 사무국",
+      "place": "코엑스 D홀 / 컨퍼런스룸 E1–E4",
+      "fee": "11.02 18시까지 온라인 사전등록 시 무료 · 현장 등록 1만원",
+      "status": "confirmed",
+      "apply_url": "https://www.kmjournal.net/news/articleView.html?idxno=13990"
+    },
+    {
+      "id": "falling-walls",
+      "section": "과학·AI",
+      "start": "2026-11-06",
+      "end": "2026-11-09",
+      "time_label": "11.06 올해의 과학 돌파 발표",
+      "title": "Falling Walls Science Summit 2026",
+      "host": "Falling Walls Foundation",
+      "place": "독일 베를린",
+      "fee": "참가·중계 조건은 공식 안내 확인",
+      "status": "confirmed",
+      "apply_url": "https://falling-walls.com/finalists-2026"
+    },
+    {
+      "id": "neurips-2026",
+      "section": "과학·AI",
+      "start": "2026-12-06",
+      "end": "2026-12-12",
+      "time_label": "본회의 12.08–12.10",
+      "title": "NeurIPS 2026 (세계 최대 AI 학회)",
+      "host": "NeurIPS",
+      "place": "호주 시드니 · 애틀랜타·파리 위성행사 12.09–12.13",
+      "fee": "등록 조건은 공식 안내 확인",
+      "status": "confirmed",
+      "apply_url": "https://neurips.cc/Conferences/2026/Dates"
+    }
+  ],
+  "watch": [
+    {"date": "2026-10-30", "text": "이스라엘 선관위 최종 개표 · 연정 협상 시작"},
+    {"date": "2026-11-02", "text": "AIoT 전시 무료 사전등록 마감 18:00"},
+    {"date": "2026-11-02", "text": "목회계획세미나(군포제일교회) 당일, 선착순 300명"},
+    {"date": "2026-11-03", "text": "윤석열 항소심 최후진술, 이후 선고일 지정 예정"},
+    {"date": "2026-11-06", "text": "Falling Walls 올해의 과학 돌파 발표"}
+  ],
+  "held": [
+    {"title": "제24회 한국선교지도자포럼 (11.02–11.04)", "reason": "이전 시안에 있던 일정입니다. KWMA 공지나 보도로 확인되지 않아 제외했습니다."},
+    {"title": "한국인공지능학회 추계학술대회 (11.19–11.20)", "reason": "확인되지 않았습니다. 올해 확인된 행사는 8월 하계학술대회입니다."},
+    {"title": "선교적 성경해석학 컨퍼런스 \"11.11(화)\"", "reason": "2026년 11월 11일은 수요일입니다. 지난해 행사 페이지로 보고 제외했습니다."},
+    {"title": "인공지능반도체포럼 11월 조찬강연회", "reason": "공지는 있지만 일자를 확인하지 못했습니다. 날짜가 확인되면 일정에 올립니다."},
+    {"title": "원로 배우 별세설", "reason": "검색 요약 문구에만 나오고 언론 보도는 없습니다. 게재하지 않습니다."},
+    {"title": "우크라이나 기차역 드론 공격 · 가자 알마와시 공습", "reason": "요약 출처 1곳뿐이고 원문을 확인하지 못했습니다. 확인 후 게재합니다."}
+  ]
+}
