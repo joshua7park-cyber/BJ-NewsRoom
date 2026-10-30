@@ -32,7 +32,7 @@ class NewsroomRegression(unittest.TestCase):
             self.assertNotIn('ap news', n.get('source','').lower())
 
     def test_status_honesty(self):
-        self.assertIn('자동 게시되지 않습니다', self.html)
+        self.assertIn('공개 RSS 색인', self.html)
         self.assertTrue(all(n.get('verification_level')=='indexed' for n in self.data['news']))
 
     @unittest.expectedFailure
@@ -41,6 +41,17 @@ class NewsroomRegression(unittest.TestCase):
         self.assertFalse(any('news.google.com' in n['url'] for n in domestic),
                          'Known blocker: Google News redirects not verified direct originals')
 
+    def test_editorial_reading_room(self):
+        editorial=json.loads((ROOT/'site/reading-room.json').read_text(encoding='utf8'))
+        self.assertEqual(editorial['schema_version'],1)
+        self.assertGreater(len(editorial['articles']),0)
+        self.assertIn('site/reading-room.json',self.html)
+        for article in editorial['articles']:
+            for field in ('summary','why','context','verification','sources'):
+                self.assertTrue(article[field])
+            self.assertTrue(all(x['url'].startswith('https://') for x in article['sources']))
+            self.assertIsNone(article.get('popular_metric'))
+
     def test_morning_workflow_and_label(self):
         workflow=(ROOT/'.github/workflows/morning-edition.yml').read_text(encoding='utf8')
         pages=(ROOT/'.github/workflows/pages.yml').read_text(encoding='utf8')
@@ -48,8 +59,8 @@ class NewsroomRegression(unittest.TestCase):
         self.assertIn("cron: '30 22 * * *'",workflow)  # 07:30 KST
         self.assertIn('BJ Morning 07:30 RSS edition',pages)
         self.assertIn('is_chatgpt_editorial',generator)
-        self.assertIn('loadMorningEdition',self.html)
-        self.assertIn('ChatGPT 심층 브리핑 아님',self.html)
+        self.assertIn('loadReadingRoom',self.html)
+        self.assertIn('공식 조회수',self.html)
 
 if __name__ == '__main__':
     unittest.main()
