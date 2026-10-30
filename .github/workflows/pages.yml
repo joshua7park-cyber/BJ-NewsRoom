@@ -6,9 +6,6 @@ on:
   workflow_run:
     workflows: ['BJ Newsroom - hourly feed refresh']
     types: [completed]
-  workflow_run:
-    workflows: ['BJ Newsroom - hourly feed refresh']
-    types: [completed]
 
 permissions:
   contents: read
