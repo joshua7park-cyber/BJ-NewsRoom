@@ -92,8 +92,11 @@ def main(argv):
     for r in results:
         if r['status'] != 'ok':
             print(f"  {r['status']:7} {r.get('code')} {r['url']}")
+            if r['status'] == 'broken':  # visible in the Actions summary without opening logs
+                print(f"::warning title=링크 오류 {r.get('code') or r.get('error', '')[:60]}::{r['url']} ({', '.join(r['used_by'])})")
     for p in problems:
         print('  PROBLEM', p)
+        print(f'::error title=배포 중단::{p}')
     return 0 if '--report-only' in argv or not problems else 1
 
 
