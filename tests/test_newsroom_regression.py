@@ -41,5 +41,15 @@ class NewsroomRegression(unittest.TestCase):
         self.assertFalse(any('news.google.com' in n['url'] for n in domestic),
                          'Known blocker: Google News redirects not verified direct originals')
 
+    def test_morning_workflow_and_label(self):
+        workflow=(ROOT/'.github/workflows/morning-edition.yml').read_text(encoding='utf8')
+        pages=(ROOT/'.github/workflows/pages.yml').read_text(encoding='utf8')
+        generator=(ROOT/'scripts/build_morning_index.py').read_text(encoding='utf8')
+        self.assertIn("cron: '30 22 * * *'",workflow)  # 07:30 KST
+        self.assertIn('BJ Morning 07:30 RSS edition',pages)
+        self.assertIn('is_chatgpt_editorial',generator)
+        self.assertIn('loadMorningEdition',self.html)
+        self.assertIn('ChatGPT 심층 브리핑 아님',self.html)
+
 if __name__ == '__main__':
     unittest.main()
