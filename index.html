@@ -105,6 +105,15 @@
             <div class="bg-blue-50 text-blue-600 text-xs font-bold px-3 py-1.5 rounded-full">실시간 날씨</div>
         </div>
 
+        <!-- Auto RSS: separate from the historical editorial snapshot -->
+        <section id="bj-live-news" class="bg-white rounded-3xl p-5 border border-slate-200/80 shadow-xs" aria-label="자동 수집 최신 기사">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <div><h2 class="font-extrabold text-xl text-slate-900">최신 기사 · 국내 언론 우선</h2>
+              <p class="text-xs text-slate-500 mt-1">실시간 RSS 색인 · 본문 사실관계 미검증 · 아래의 이전 편집 기사와 구분</p></div>
+            <span id="bj-live-status" class="text-xs text-slate-500" role="status">최신 뉴스 확인 중…</span>
+          </div>
+          <div id="bj-live-list" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+        </section>
         <!-- News Feed Container -->
         <div id="newsFeedContainer" class="space-y-8">
             <!-- Dynamically rendered via JS -->
@@ -422,6 +431,44 @@
         document.addEventListener('DOMContentLoaded', () => {
             renderApp();
         });
+
+        async function loadBJLiveNews() {
+          const status = document.getElementById('bj-live-status');
+          const list = document.getElementById('bj-live-list');
+          if (!status || !list) return;
+          try {
+            const res = await fetch('./site/newsroom.json?updated=' + Math.floor(Date.now()/300000), {cache:'no-store'});
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const payload = await res.json();
+            if (payload.schema_version !== 2 || !Array.isArray(payload.news)) throw new Error('데이터 형식 오류');
+            const domestic = payload.news.filter(x => x.section === 'domestic' && /^https:\/\//.test(x.url || '') && x.source);
+            const other = payload.news.filter(x => x.section !== 'domestic' && /^https:\/\//.test(x.url || '') && x.source);
+            const selected = [...domestic.slice(0,8), ...other.slice(0,4)];
+            list.replaceChildren();
+            for (const article of selected) {
+              const a = document.createElement('a');
+              a.href = article.url;
+              a.target = '_blank'; a.rel = 'noopener noreferrer';
+              a.className = 'block border border-slate-200 p-3 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-colors';
+              const source = document.createElement('p');
+              source.className = 'text-xs text-blue-700 font-bold mb-1';
+              source.textContent = (article.section === 'domestic' ? '국내 · ' : '국제/전문 · ') + article.source;
+              const heading = document.createElement('h3');
+              heading.className = 'text-sm font-bold text-slate-900 leading-snug';
+              heading.textContent = article.title;
+              const note = document.createElement('p');
+              note.className = 'text-xs text-slate-500 mt-2';
+              note.textContent = '자동 수집 · 원문 미검증' + (new URL(article.url).hostname === 'news.google.com' ? ' · Google News 경유' : '');
+              a.append(source,heading,note);
+              list.append(a);
+            }
+            status.textContent = selected.length ? '기사 ' + selected.length + '건 · ' + new Date(payload.built_at).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'}) + ' 기준' : '현재 표시할 기사 없음';
+          } catch(e) {
+            status.textContent = '최신 데이터 연결 실패 · 이전 편집 화면 유지';
+            list.replaceChildren();
+          }
+        }
+        document.addEventListener('DOMContentLoaded',loadBJLiveNews);
     </script>
 </body>
 </html>
