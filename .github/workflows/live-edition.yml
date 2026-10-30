@@ -1,0 +1,51 @@
+name: BJ Newsroom — fresh 07:30 edition
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 22 * * *' # 07:20 Korea time, prepare ahead of morning publication
+permissions:
+  contents: write
+concurrency:
+  group: bj-live-edition
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect fresh public RSS and prepare honestly labeled briefing
+        run: python scripts/build_live_edition.py
+      - name: Validate source links, timestamp and categories
+        run: |
+          python - <<'PY'
+          import json,datetime
+          from pathlib import Path
+          d=json.loads(Path('site/live-edition.json').read_text(encoding='utf8'))
+          assert d['kind']=='rss_sourced_auto_digest' and d['schema_version']==1
+          assert len(d['stories'])>=5
+          assert d['edition_date']==datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat()
+          assert all(x['sources'] and x['sources'][0]['url'].startswith('https://') for x in d['stories'])
+          assert all('교차확인 전' in x['verification'] for x in d['stories'])
+          print('PASS: checked',len(d['stories']),'headlines; feed errors',len(d['errors']))
+          PY
+      - name: Save edition with safe push retry
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          cp site/live-edition.json /tmp/bj-edition.json
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/bj-edition.json site/live-edition.json
+            git add site/live-edition.json
+            if git diff --cached --quiet; then echo "Already current"; exit 0; fi
+            git commit -m "data: refresh live curated edition"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 4
+          done
+          exit 1
