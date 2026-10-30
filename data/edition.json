@@ -19,10 +19,29 @@
       "background": "1심 재판부는 지난 2월 19일 사형 구형에도 무기징역을 선고했습니다. 윤 전 대통령 측은 계엄이 \"메시지성\"이었다는 주장을 유지하고 있습니다.",
       "verification": "법률신문·YTN·주간경향·파이낸셜뉴스 4개 매체의 보도 내용이 일치합니다. 다음 기일은 11월 3일로 보도됐지만 11월 5일로 쓴 매체도 있어 법원 공지로 다시 확인합니다.",
       "sources": [
-        {"name": "법률신문", "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=228571", "kind": "국내"},
-        {"name": "YTN", "url": "https://www.ytn.co.kr/_ln/0103_202610291234109168", "kind": "국내"},
-        {"name": "주간경향", "url": "https://weekly.khan.co.kr/article/202610291251001/", "kind": "국내"},
-        {"name": "파이낸셜뉴스", "url": "https://www.fnnews.com/news/202610291810109721", "kind": "국내"}
+        {
+          "name": "법률신문",
+          "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=228571",
+          "kind": "국내"
+        },
+        {
+          "name": "YTN",
+          "url": "https://www.ytn.co.kr/_ln/0103_202610291234109168",
+          "kind": "국내"
+        },
+        {
+          "name": "주간경향",
+          "url": "https://weekly.khan.co.kr/article/202610291251001/",
+          "kind": "국내"
+        },
+        {
+          "name": "파이낸셜뉴스",
+          "url": "https://www.fnnews.com/news/202610291810109721",
+          "kind": "국내"
+        }
+      ],
+      "topics": [
+        "정치·사회"
       ]
     },
     {
@@ -39,9 +58,25 @@
       "background": "출구조사부터 엇갈렸습니다. 채널12는 네타냐후 블록 50석, 친정부 성향 채널14는 60석을 예측했습니다. 선관위는 개표가 10월 30일까지 이어질 수 있다고 밝혔습니다.",
       "verification": "알자지라·예루살렘포스트·이스라엘하욤은 정치 성향이 서로 다른 매체인데, 세 곳 모두 \"과반 미달\"로 보도했습니다. 최종 의석은 선관위 공식 결과로 갱신합니다.",
       "sources": [
-        {"name": "Al Jazeera", "url": "https://aljazeera.com/news/2026/10/28/five-key-takeaways-from-israels-parliamentary-elections", "kind": "외신"},
-        {"name": "Jerusalem Post", "url": "https://www.jpost.com/israel-election-2026/2026-10-28/live-updates-913081", "kind": "외신"},
-        {"name": "Israel Hayom", "url": "https://www.israelhayom.com/2026/10/27/israel-election-2026-exit-polls-full-results/", "kind": "외신"}
+        {
+          "name": "Al Jazeera",
+          "url": "https://aljazeera.com/news/2026/10/28/five-key-takeaways-from-israels-parliamentary-elections",
+          "kind": "외신"
+        },
+        {
+          "name": "Jerusalem Post",
+          "url": "https://www.jpost.com/israel-election-2026/2026-10-28/live-updates-913081",
+          "kind": "외신"
+        },
+        {
+          "name": "Israel Hayom",
+          "url": "https://www.israelhayom.com/2026/10/27/israel-election-2026-exit-polls-full-results/",
+          "kind": "외신"
+        }
+      ],
+      "topics": [
+        "이스라엘",
+        "국제"
       ]
     },
     {
@@ -58,8 +93,20 @@
       "background": "삼성전자와 SK하이닉스는 AI 데이터센터용 HBM 등 고부가 메모리 생산을 늘려 왔습니다. 두 회사의 상반기 시설투자는 합계 43조원대로 전년보다 35% 늘었다는 집계가 있습니다.",
       "verification": "회사 공식 뉴스룸 공시와 YTN 보도로 확인했습니다. 잠정치라서 확정 실적과 다를 수 있고, 증가율은 매체에 따라 782.5%와 783.1%로 조금 다르게 표기됩니다.",
       "sources": [
-        {"name": "삼성반도체 뉴스룸", "url": "https://news.samsungsemiconductor.com/kr/?p=37675", "kind": "공식"},
-        {"name": "YTN", "url": "https://www.ytn.co.kr/_ln/0102_202610080800410809", "kind": "국내"}
+        {
+          "name": "삼성반도체 뉴스룸",
+          "url": "https://news.samsungsemiconductor.com/kr/?p=37675",
+          "kind": "공식"
+        },
+        {
+          "name": "YTN",
+          "url": "https://www.ytn.co.kr/_ln/0102_202610080800410809",
+          "kind": "국내"
+        }
+      ],
+      "topics": [
+        "경제·금융",
+        "테크·산업"
       ]
     },
     {
@@ -76,9 +123,25 @@
       "background": "오스카르 푸엔테 교통장관은 자동제어 시스템에 기술 결함이 있었는데도 열차에 \"오류로\" 운행 지시가 내려졌다고 밝혔습니다. 렌페 기관사들은 29일 안전 문제로 24시간 전국 파업을 했습니다.",
       "verification": "AP 기사(타임스오브이스라엘 전재)와 알자지라, 쿠웨이트타임스로 교차 확인했습니다. 사망자 수가 매체마다 달라 가장 보수적인 최소치(64명)를 표기했습니다.",
       "sources": [
-        {"name": "AP · Times of Israel", "url": "https://www.timesofisrael.com/at-least-64-killed-as-high-speed-trains-collide-in-central-spain/", "kind": "외신"},
-        {"name": "Al Jazeera", "url": "https://aljazeera.com/news/2026/10/28/injuries-reported-after-two-trains-collide-in-spain", "kind": "외신"},
-        {"name": "Kuwait Times", "url": "https://kuwaittimes.com/article/52562/top-stories/spain-high-speed-train-crash-kills-68-injures-over-100/", "kind": "외신"}
+        {
+          "name": "AP · Times of Israel",
+          "url": "https://www.timesofisrael.com/at-least-64-killed-as-high-speed-trains-collide-in-central-spain/",
+          "kind": "외신"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://aljazeera.com/news/2026/10/28/injuries-reported-after-two-trains-collide-in-spain",
+          "kind": "외신"
+        },
+        {
+          "name": "Kuwait Times",
+          "url": "https://kuwaittimes.com/article/52562/top-stories/spain-high-speed-train-crash-kills-68-injures-over-100/",
+          "kind": "외신"
+        }
+      ],
+      "topics": [
+        "국제",
+        "정치·사회"
       ]
     },
     {
@@ -95,10 +158,29 @@
       "background": "지역 정부는 반군 연합이 종교 갈등을 노리고 공격했다고 주장했지만 증거를 제시하지 않았고, 반군 측은 오히려 지방정부를 비난했습니다. 에티오피아인권위원회는 지난 4년간 이 지역에서 458명이 숨졌다고 보고했습니다(2026년 7월).",
       "verification": "로이터(카트만두포스트 전재)·알자지라·아프리카뉴스·뱁티스트프레스가 같은 수치를 보도했습니다. 가해 주체는 아직 확인되지 않았습니다.",
       "sources": [
-        {"name": "Reuters · Kathmandu Post", "url": "https://kathmandupost.com/world/2026/10/27/attackers-kill-60-people-in-ethiopia-s-conflict-hit-oromiya-region-orthodox-church-says", "kind": "외신"},
-        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/27/sixty-christians-killed-in-ethiopias-oromia-region", "kind": "외신"},
-        {"name": "Africanews", "url": "https://www.africanews.com/amp/2026/10/27/ethiopia-at-least-60-christians-killed-in-attacks-in-oromia-region/", "kind": "외신"},
-        {"name": "Baptist Press", "url": "https://www.baptistpress.com/resource-library/news/60-or-more-christians-killed-in-diverse-region-of-ethiopia-marked-by-violence/", "kind": "교계"}
+        {
+          "name": "Reuters · Kathmandu Post",
+          "url": "https://kathmandupost.com/world/2026/10/27/attackers-kill-60-people-in-ethiopia-s-conflict-hit-oromiya-region-orthodox-church-says",
+          "kind": "외신"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/27/sixty-christians-killed-in-ethiopias-oromia-region",
+          "kind": "외신"
+        },
+        {
+          "name": "Africanews",
+          "url": "https://www.africanews.com/amp/2026/10/27/ethiopia-at-least-60-christians-killed-in-attacks-in-oromia-region/",
+          "kind": "외신"
+        },
+        {
+          "name": "Baptist Press",
+          "url": "https://www.baptistpress.com/resource-library/news/60-or-more-christians-killed-in-diverse-region-of-ethiopia-marked-by-violence/",
+          "kind": "교계"
+        }
+      ],
+      "topics": [
+        "Religion"
       ]
     },
     {
@@ -115,10 +197,30 @@
       "background": "노조는 파업 찬반투표에서 97.7% 찬성으로 파업을 가결했었습니다. 합의안에는 주 2일 고정휴일제, 무사고자 연 3일 포상휴가 등도 담겼습니다. 가장 큰 쟁점이던 서울과의 임금격차 해소는 미뤄져 불씨가 남았습니다.",
       "verification": "파이낸셜뉴스·이투데이·SBS Biz 보도와 경기도 대변인 브리핑 내용이 일치합니다. 운행 대수 표현은 매체마다 조금 다릅니다.",
       "sources": [
-        {"name": "파이낸셜뉴스", "url": "https://www.fnnews.com/news/202610300254260965", "kind": "국내"},
-        {"name": "이투데이", "url": "https://www.etoday.co.kr/news/view/2641997", "kind": "국내"},
-        {"name": "SBS Biz", "url": "https://biz.sbs.co.kr/article/20000343167", "kind": "국내"},
-        {"name": "경기도 대변인 브리핑", "url": "https://www.gbtopnews.net/news/articleView.html?idxno=236469", "kind": "공식"}
+        {
+          "name": "파이낸셜뉴스",
+          "url": "https://www.fnnews.com/news/202610300254260965",
+          "kind": "국내"
+        },
+        {
+          "name": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2641997",
+          "kind": "국내"
+        },
+        {
+          "name": "SBS Biz",
+          "url": "https://biz.sbs.co.kr/article/20000343167",
+          "kind": "국내"
+        },
+        {
+          "name": "경기도 대변인 브리핑",
+          "url": "https://www.gbtopnews.net/news/articleView.html?idxno=236469",
+          "kind": "공식"
+        }
+      ],
+      "topics": [
+        "정치·사회",
+        "경제·금융"
       ]
     },
     {
@@ -135,9 +237,25 @@
       "background": "연준은 직전 회의에서 금리를 올렸습니다. 연준 의장은 경제와 투자가 견조하다고 진단하면서 물가 2% 목표를 위해 가격 안정을 우선하겠다고 밝혔습니다.",
       "verification": "국내 매체 보도로 확인했습니다. 연준 공식 성명 원문과의 대조가 끝나면 A급으로 올립니다.",
       "sources": [
-        {"name": "미주중앙일보", "url": "https://www.koreadaily.com/article/20261028131547892", "kind": "국내"},
-        {"name": "경북매일", "url": "https://www.kbmaeil.com/article/20261029500017", "kind": "국내"},
-        {"name": "연준 보도자료", "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm", "kind": "공식"}
+        {
+          "name": "미주중앙일보",
+          "url": "https://www.koreadaily.com/article/20261028131547892",
+          "kind": "국내"
+        },
+        {
+          "name": "경북매일",
+          "url": "https://www.kbmaeil.com/article/20261029500017",
+          "kind": "국내"
+        },
+        {
+          "name": "연준 보도자료",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
+          "kind": "공식"
+        }
+      ],
+      "topics": [
+        "경제·금융",
+        "국제"
       ]
     },
     {
@@ -154,9 +272,26 @@
       "background": "이란은 통항 전 자국 허가를 요구하며 해협을 사실상 봉쇄했고, 미국은 이란 원유 수출을 막는 해상 역봉쇄로 대응하고 있습니다. 해운 데이터업체 Kpler 집계로 해협 통과 원유는 10월 8일 약 2,080만 배럴에서 11일 290만 배럴로 줄었습니다.",
       "verification": "1차 정보원이 이란 측(타스님 등)이고, 로이터는 \"독립 확인 없음\"이라고 전했습니다. 그래서 C급으로 표시했습니다.",
       "sources": [
-        {"name": "gCaptain (Reuters)", "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/", "kind": "외신"},
-        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz", "kind": "외신"},
-        {"name": "Tasnim (이란 측)", "url": "https://www.tasnimnews.ir/en/news/2026/10/24/3730555/two-supertankers-explode-after-hitting-mines-in-strait-of-hormuz-irgc", "kind": "당사자"}
+        {
+          "name": "gCaptain (Reuters)",
+          "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
+          "kind": "외신"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz",
+          "kind": "외신"
+        },
+        {
+          "name": "Tasnim (이란 측)",
+          "url": "https://www.tasnimnews.ir/en/news/2026/10/24/3730555/two-supertankers-explode-after-hitting-mines-in-strait-of-hormuz-irgc",
+          "kind": "당사자"
+        }
+      ],
+      "topics": [
+        "이스라엘",
+        "국제",
+        "경제·금융"
       ]
     },
     {
@@ -173,9 +308,25 @@
       "background": "올해는 GLP-1 비만치료제 연구가 유력하다는 예상이 많았지만 빗나갔습니다.",
       "verification": "국내 매체 보도 기준입니다. 수상자 한글 표기가 매체마다 달라(나겔/니켈) 노벨위원회 공식 발표로 확인하시길 권합니다.",
       "sources": [
-        {"name": "에스콰이어 코리아", "url": "https://www.esquirekorea.co.kr/article/1911295", "kind": "국내"},
-        {"name": "머니투데이", "url": "https://www.mt.co.kr/tech/2026/10/03/2026100214403725977", "kind": "국내"},
-        {"name": "노벨상 공식", "url": "https://www.nobelprize.org/", "kind": "공식"}
+        {
+          "name": "에스콰이어 코리아",
+          "url": "https://www.esquirekorea.co.kr/article/1911295",
+          "kind": "국내"
+        },
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/tech/2026/10/03/2026100214403725977",
+          "kind": "국내"
+        },
+        {
+          "name": "노벨상 공식",
+          "url": "https://www.nobelprize.org/",
+          "kind": "공식"
+        }
+      ],
+      "topics": [
+        "과학",
+        "테크·산업"
       ]
     },
     {
@@ -193,8 +344,20 @@
       "background": "10월 27일 교단협의회 포럼 보도도 있었지만 단일 출처라 본문에는 반영하지 않았습니다.",
       "verification": "RFA와 노컷뉴스 보도로 확인했습니다.",
       "sources": [
-        {"name": "RFA 자유아시아방송", "url": "https://rfa.org/korean/in-focus/2026/05/22/north-korea-missionary-detainees-family/", "kind": "외신"},
-        {"name": "노컷뉴스", "url": "https://www.nocutnews.co.kr/news/6456962", "kind": "국내"}
+        {
+          "name": "RFA 자유아시아방송",
+          "url": "https://rfa.org/korean/in-focus/2026/05/22/north-korea-missionary-detainees-family/",
+          "kind": "외신"
+        },
+        {
+          "name": "노컷뉴스",
+          "url": "https://www.nocutnews.co.kr/news/6456962",
+          "kind": "국내"
+        }
+      ],
+      "topics": [
+        "Religion",
+        "정치·사회"
       ]
     },
     {
@@ -211,9 +374,25 @@
       "background": "미국 중간선거를 앞두고 AI 안전장치를 강화해야 한다는 여론이 높아지고 있습니다.",
       "verification": "2차 집계 사이트 기준이라 C급입니다. 각 기업 공식 블로그 원문과 대조한 뒤 등급을 올립니다.",
       "sources": [
-        {"name": "Newegg Insider", "url": "https://www.newegg.com/insider/ai-news-this-week-october-26-30-2026", "kind": "2차"},
-        {"name": "The Neuron", "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026", "kind": "2차"},
-        {"name": "Emergent", "url": "https://emergent.sh/news/openai-updates-model-spec-safer-more-capable", "kind": "2차"}
+        {
+          "name": "Newegg Insider",
+          "url": "https://www.newegg.com/insider/ai-news-this-week-october-26-30-2026",
+          "kind": "2차"
+        },
+        {
+          "name": "The Neuron",
+          "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026",
+          "kind": "2차"
+        },
+        {
+          "name": "Emergent",
+          "url": "https://emergent.sh/news/openai-updates-model-spec-safer-more-capable",
+          "kind": "2차"
+        }
+      ],
+      "topics": [
+        "테크·산업",
+        "AI 교육"
       ]
     }
   ],
@@ -235,7 +414,10 @@
       "id": "coffee-break-workshop",
       "section": "Religion",
       "start": "2026-11-03",
-      "extra_dates": ["2026-11-10", "2026-11-17"],
+      "extra_dates": [
+        "2026-11-10",
+        "2026-11-17"
+      ],
       "time_label": "08:00–11:30 (한국시간)",
       "title": "목회자를 위한 커피브레이크 소그룹 인도자 워크숍",
       "host": "Coffee Break Ministry",
@@ -309,18 +491,51 @@
     }
   ],
   "watch": [
-    {"date": "2026-10-30", "text": "이스라엘 선관위 최종 개표 · 연정 협상 시작"},
-    {"date": "2026-11-02", "text": "AIoT 전시 무료 사전등록 마감 18:00"},
-    {"date": "2026-11-02", "text": "목회계획세미나(군포제일교회) 당일, 선착순 300명"},
-    {"date": "2026-11-03", "text": "윤석열 항소심 최후진술, 이후 선고일 지정 예정"},
-    {"date": "2026-11-06", "text": "Falling Walls 올해의 과학 돌파 발표"}
+    {
+      "date": "2026-10-30",
+      "text": "이스라엘 선관위 최종 개표 · 연정 협상 시작"
+    },
+    {
+      "date": "2026-11-02",
+      "text": "AIoT 전시 무료 사전등록 마감 18:00"
+    },
+    {
+      "date": "2026-11-02",
+      "text": "목회계획세미나(군포제일교회) 당일, 선착순 300명"
+    },
+    {
+      "date": "2026-11-03",
+      "text": "윤석열 항소심 최후진술, 이후 선고일 지정 예정"
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Falling Walls 올해의 과학 돌파 발표"
+    }
   ],
   "held": [
-    {"title": "제24회 한국선교지도자포럼 (11.02–11.04)", "reason": "이전 시안에 있던 일정입니다. KWMA 공지나 보도로 확인되지 않아 제외했습니다."},
-    {"title": "한국인공지능학회 추계학술대회 (11.19–11.20)", "reason": "확인되지 않았습니다. 올해 확인된 행사는 8월 하계학술대회입니다."},
-    {"title": "선교적 성경해석학 컨퍼런스 \"11.11(화)\"", "reason": "2026년 11월 11일은 수요일입니다. 지난해 행사 페이지로 보고 제외했습니다."},
-    {"title": "인공지능반도체포럼 11월 조찬강연회", "reason": "공지는 있지만 일자를 확인하지 못했습니다. 날짜가 확인되면 일정에 올립니다."},
-    {"title": "원로 배우 별세설", "reason": "검색 요약 문구에만 나오고 언론 보도는 없습니다. 게재하지 않습니다."},
-    {"title": "우크라이나 기차역 드론 공격 · 가자 알마와시 공습", "reason": "요약 출처 1곳뿐이고 원문을 확인하지 못했습니다. 확인 후 게재합니다."}
+    {
+      "title": "제24회 한국선교지도자포럼 (11.02–11.04)",
+      "reason": "이전 시안에 있던 일정입니다. KWMA 공지나 보도로 확인되지 않아 제외했습니다."
+    },
+    {
+      "title": "한국인공지능학회 추계학술대회 (11.19–11.20)",
+      "reason": "확인되지 않았습니다. 올해 확인된 행사는 8월 하계학술대회입니다."
+    },
+    {
+      "title": "선교적 성경해석학 컨퍼런스 \"11.11(화)\"",
+      "reason": "2026년 11월 11일은 수요일입니다. 지난해 행사 페이지로 보고 제외했습니다."
+    },
+    {
+      "title": "인공지능반도체포럼 11월 조찬강연회",
+      "reason": "공지는 있지만 일자를 확인하지 못했습니다. 날짜가 확인되면 일정에 올립니다."
+    },
+    {
+      "title": "원로 배우 별세설",
+      "reason": "검색 요약 문구에만 나오고 언론 보도는 없습니다. 게재하지 않습니다."
+    },
+    {
+      "title": "우크라이나 기차역 드론 공격 · 가자 알마와시 공습",
+      "reason": "요약 출처 1곳뿐이고 원문을 확인하지 못했습니다. 확인 후 게재합니다."
+    }
   ]
 }
