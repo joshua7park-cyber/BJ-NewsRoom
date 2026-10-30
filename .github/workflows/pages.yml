@@ -31,6 +31,19 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Validate HTML JavaScript syntax and news JSON
+        run: |
+          python - <<'PY'
+          import re, json, pathlib
+          html=pathlib.Path('index.html').read_text(encoding='utf-8')
+          scripts=re.findall(r'<script(?:\\s[^>]*)?>(.*?)</script>',html,re.S|re.I)
+          assert scripts, 'No inline JavaScript'
+          pathlib.Path('/tmp/newsroom-app.js').write_text('\\n'.join(scripts),encoding='utf-8')
+          d=json.loads(pathlib.Path('site/newsroom.json').read_text(encoding='utf-8'))
+          assert d.get('schema_version')==2 and isinstance(d.get('news'),list)
+          PY
+          node --check /tmp/newsroom-app.js
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
