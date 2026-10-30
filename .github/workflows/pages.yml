@@ -52,3 +52,22 @@ jobs:
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Smoke-test public Pages after deployment
+        env:
+          PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import os, time, urllib.request
+          url=os.environ['PUBLIC_URL'].rstrip('/')+'/'
+          for path, needle in [('', b'BJ INTELLIGENCE'), ('site/newsroom.json', b'"schema_version"')]:
+           for attempt in range(6):
+            try:
+             with urllib.request.urlopen(url+path, timeout=15) as r: body=r.read()
+             assert len(body)>500 and needle in body
+             print('PUBLIC PASS',url+path, len(body))
+             break
+            except Exception as e:
+             if attempt==5: raise
+             time.sleep(10)
+          PY
