@@ -25,7 +25,7 @@ async def verify():
             assert await page.locator(".story").first.evaluate("(e)=>e.open"), "accordion did not open"
             await page.locator("#plus").click()
             assert float(await page.evaluate("getComputedStyle(document.documentElement).getPropertyValue('--scale')")) > 1
-            await page.locator("#font").select_option("serif")
+            await page.locator("#fontSel").select_option("serif")
             assert await page.evaluate("getComputedStyle(document.documentElement).getPropertyValue('--font')") != ""
             await page.locator("#search").fill("검색 결과가 없어야 하는 임의의 단어 998877")
             assert await page.locator(".story").count() == 0
