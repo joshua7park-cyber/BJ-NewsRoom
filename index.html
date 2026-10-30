@@ -119,7 +119,7 @@ function story(x,i){
 }
 function renderEvents(){
  const host=$('eventList'),fold=$('events');host.replaceChildren();
- const now=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Seoul'});
+ const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const get=k=>parts.find(p=>p.type===k).value;const now=get('year')+'-'+get('month')+'-'+get('day');
  const ev=(data?.events||[]).filter(e=>eventMatch(e)&&(e.end||e.start)>=now&&(!query||[e.title,e.host,e.section].join(' ').toLowerCase().includes(query))).slice(0,4);
  fold.hidden=ev.length===0;if(!ev.length)return;
  ev.forEach(e=>{const wrap=make('article','event');wrap.append(make('div','event-date',e.start+' · '+(e.time_label||'')),make('div','event-title',e.title),make('p','event-sub',e.host+' · '+(e.place||'')));const url=validUrl(e.apply_url);if(url){const a=make('a','','공식 안내·신청 ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';wrap.append(a)}host.append(wrap)});
