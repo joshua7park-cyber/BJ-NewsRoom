@@ -205,7 +205,7 @@ class PageContract(unittest.TestCase):
                      '실시간 제목 색인', '기본 4대 섹션', 'BJ 관심 섹션', '오늘 아침 5분', '오늘의 3줄',
                      '오늘의 지표', '5분 헤드라인', '오늘의 대문', 'Featured', '검증된 뉴스만 싣습니다',
                      '오늘의 검증 뉴스', '오늘의 관전 포인트', '다가오는 교육·세미나', '핵심 정리',
-                     '앞으로 볼 것', '매일 08:00'):
+                     '앞으로 볼 것', '매일 07:30'):
             self.assertIn(name, self.html)
 
     def test_page_sections_match_gate(self):
