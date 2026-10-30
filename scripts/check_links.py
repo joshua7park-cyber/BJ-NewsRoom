@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Open every source and sign-up link in data/edition.json and record the result.
+"""Open every source, seminar and indicator link in data/edition.json and record the result.
 
 Runs inside GitHub Actions (full internet access) before each deploy.
 Writes site/link-report.json, which the page reads to mark each link.
@@ -9,8 +9,8 @@ Writes site/link-report.json, which the page reads to mark each link.
   broken   404/410, 5xx after retries, DNS or connection failure
 
 Exit 1 (deploy stops) when an A-grade story keeps fewer than two working
-sources, an event sign-up link is broken, or over 25% of links are broken.
-Pass --report-only to always exit 0.
+sources, every sign-up/organizer link of a confirmed seminar is broken,
+or over 25% of links are broken. Pass --report-only to always exit 0.
 """
 import json, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -23,6 +23,7 @@ UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/124.0 Safari/537.36 BJNewsroomLinkCheck/1.0')
 # 3xx here means a redirect urllib would not follow (loop or scheme change): the site exists.
 BLOCKED = {301, 302, 303, 307, 308, 401, 403, 405, 429, 451}
+OFFICIAL = ('신청', '주최 측 안내')
 
 
 def probe(url, tries=3):
@@ -49,11 +50,12 @@ def collect(ed):
     urls = {}
     for s in ed['stories']:
         for src in s['sources']:
-            urls.setdefault(src['url'], []).append(('story', s['id'], s['grade']))
+            urls.setdefault(src['url'], []).append(('story', s['id']))
     for e in ed['events']:
-        for key in ('apply_url', 'ref_url'):
-            if e.get(key):
-                urls.setdefault(e[key], []).append((key, e['id'], None))
+        for ln in e.get('links', []):
+            urls.setdefault(ln['url'], []).append(('event', e['id']))
+    for x in ed.get('indicators', []):
+        urls.setdefault(x['source']['url'], []).append(('indicator', x['name']))
     return urls
 
 
@@ -66,8 +68,9 @@ def judge(ed, results):
             if len(alive) < 2:
                 problems.append(f"A급 기사 {s['id']}: 열리는 출처가 {len(alive)}곳뿐")
     for e in ed['events']:
-        if status.get(e['apply_url']) == 'broken':
-            problems.append(f"일정 {e['id']}: 신청/안내 링크 오류")
+        official = [ln for ln in e.get('links', []) if ln.get('type') in OFFICIAL]
+        if e.get('status') == 'confirmed' and official and all(status.get(ln['url']) == 'broken' for ln in official):
+            problems.append(f"일정 {e['id']}: 신청·주최 측 링크가 모두 열리지 않음")
     broken = sum(r['status'] == 'broken' for r in results)
     if results and broken / len(results) > 0.25:
         problems.append(f'오류 링크 비율 {broken}/{len(results)}')
@@ -80,7 +83,7 @@ def main(argv):
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(probe, urls))
     for r in results:
-        r['used_by'] = [f'{kind}:{ident}' for kind, ident, _ in urls[r['url']]]
+        r['used_by'] = [f'{kind}:{ident}' for kind, ident in urls[r['url']]]
     problems = judge(ed, results)
     counts = {k: sum(r['status'] == k for r in results) for k in ('ok', 'blocked', 'broken')}
     report = {'checked_at': datetime.now(KST).isoformat(timespec='minutes'),

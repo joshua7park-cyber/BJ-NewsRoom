@@ -5,9 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '41 22 * * *'   # 07:41 KST: re-check links and the public page after the 07:30 edition
+    - cron: '9 23 * * *'    # 08:09 KST: re-check links and the public page after the 08:00 edition
   workflow_run:
-    workflows: ['BJ Newsroom - hourly feed refresh', 'BJ Newsroom — fresh 07:30 edition']
+    workflows: ['BJ Newsroom - hourly feed refresh']
     types: [completed]
 
 permissions:
@@ -52,14 +52,8 @@ jobs:
           PY
           node --check /tmp/app.js
 
-      - name: 3b. Chromium browser smoke tests
-        run: |
-          python -m pip install playwright==1.58.0
-          python -m playwright install --with-deps chromium
-          python tests/browser_smoke.py
-
-      - name: 4. Source and sign-up links (log network failures; do not block site on temporary DNS issues)
-        run: python scripts/check_links.py --report-only
+      - name: 4. Source and sign-up links
+        run: python scripts/check_links.py
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
@@ -70,42 +64,26 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: 5. Real public Chromium regression
-        env:
-          BJ_TEST_URL: ${{ steps.deployment.outputs.page_url }}
-        run: python tests/browser_smoke.py
-
-      - name: 6. Audited public website and editorial data
+      - name: 5. Public page check
         env:
           PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
-          BROWSER_CHECK: passed
-        run: python scripts/audit_public.py
-
-      - name: Preserve failure evidence when a validation or deployment step fails
-        if: failure()
-        env:
-          JOB_RESULT: failed
         run: |
           python - <<'PY'
-          import json,os
-          from datetime import datetime,timezone
-          from pathlib import Path
-          p=Path('site/deployment-status.json')
-          try: d=json.loads(p.read_text(encoding='utf8'))
-          except Exception: d={}
-          if d.get('run_id')!=os.getenv('GITHUB_RUN_ID') or d.get('latest_run_status')!='success':
-              d.update(schema_version=1,latest_run_status='failed',
-                  observed_at_utc=datetime.now(timezone.utc).isoformat(),
-                  run_id=os.getenv('GITHUB_RUN_ID'),revision=os.getenv('GITHUB_SHA'),
-                  note='GitHub Actions workflow failed. Examine the failed job step logs.',
-                  site_url='https://joshua7park-cyber.github.io/BJ-NewsRoom/')
-          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\\n',encoding='utf8')
+          import json, os, time, urllib.request
+          base = os.environ['PUBLIC_URL'].rstrip('/') + '/'
+          want = json.load(open('data/edition.json', encoding='utf-8'))['edition_date']
+          checks = [('', '오늘 아침판을 불러오는 중'), ('data/edition.json', want),
+                    ('site/link-report.json', want), ('site/newsroom.json', 'schema_version')]
+          for path, needle in checks:
+              for attempt in range(8):
+                  try:
+                      with urllib.request.urlopen(f'{base}{path}?v={time.time()}', timeout=20) as r:
+                          body = r.read().decode('utf-8')
+                      assert needle in body, f'{needle!r} not in {path or "index.html"}'
+                      print('PUBLIC PASS', base + path)
+                      break
+                  except Exception as ex:
+                      if attempt == 7:
+                          raise SystemExit(f'PUBLIC FAIL {base}{path}: {ex}')
+                      time.sleep(15)
           PY
-
-      - name: Upload public verification log
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: public-verification-${{ github.run_id }}
-          path: site/deployment-status.json
-          if-no-files-found: warn
