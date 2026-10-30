@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
   workflow_run:
-    workflows: ['BJ Newsroom - hourly feed refresh']
+    workflows: ['BJ Newsroom - hourly feed refresh', 'BJ Morning 07:30 RSS edition']
     types: [completed]
 
 permissions:
