@@ -5,8 +5,6 @@ on:
     - cron: '17 * * * *'
 permissions:
   contents: write
-  pages: write
-  id-token: write
 concurrency:
   group: bj-feed-refresh
   cancel-in-progress: false
@@ -41,14 +39,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add site/newsroom.json
           if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
-          git commit -m 'chore: refresh newsroom RSS index [skip ci]'
+          git commit -m 'data: refresh newsroom RSS index'
           git push
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - name: Deploy new feed and existing site
-        id: deployment
-        uses: actions/deploy-pages@v4
