@@ -7,7 +7,7 @@ on:
   schedule:
     - cron: '41 22 * * *'   # 07:41 KST: re-check links and the public page after the 07:30 edition
   workflow_run:
-    workflows: ['BJ Newsroom - hourly feed refresh']
+    workflows: ['BJ Newsroom - hourly feed refresh', 'BJ Newsroom — fresh 07:30 edition']
     types: [completed]
 
 permissions:
