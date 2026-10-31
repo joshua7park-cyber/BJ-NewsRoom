@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-10-31T10:08:18+00:00",
+      "date": "2026-10-31T10:46:21+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-10-30T14:45:56+00:00",
+      "date": "2026-10-30T14:44:10+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -549,6 +549,20 @@
     },
     {
       "section": "science",
+      "title": "이 대통령·독일 총리, 전략적 동반자 관계 강화…반도체·AI·방산 협력 확대 - 시사타파NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EanBzQjhrNlhZTnRVemRxQU9VQUtrWUNqY0RZMlYzMjg4ekhSR1BiQU1KNi1UV3g3VGtoRnVWWFNldmMwdkNMbExNdk1hNVhrYXVLanVxRV9KcFNGd0HSAWtBVV95cUxQN0tQR3ItT2NDMHJpWG1zcXhjUW9wWmJpTks5MUpqXzd2el95T2FMU3BZdW15Zm9jMVRnUi1jMlFTcTVMaFRCXzhUZW9aeG96VVFpQW51SGU4RnNYZkUzQ1ppOUhESTBKbXZ1MA?oc=5",
+      "date": "2026-10-29T10:45:03+00:00",
+      "source": "시사타파NEWS",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "韓·獨 “군사비밀보호 협정 조속 체결” - 세계일보",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1oQVRMZ0FEenVHWVdXci1wNC1XTXFoRnBSRG9yX3hoOFg4MVg3dTdWYnhmVE5HdDhwcG9uZl9ndVlkTG1lRjFVNzRKRVhWVnRRMUtjemFZYkfSAVRBVV95cUxQbnlSUTZ5bkVhTkt2bGtmdklMUlN1S1BYemV3NDRxcmVKbjNiSE9mLVJsbUFucEdwWGJZQ1RlV0dzM0xZRTJzTENjWU51OGJGWHZpV1E?oc=5",
       "date": "2026-10-29T12:15:00+00:00",
@@ -576,39 +590,11 @@
       "link_type": "aggregator"
     },
     {
-      "section": "science",
-      "title": "중기부, 안보기술 기업 538곳 첫 명단 - 중소기업신문",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLX0JyU2U1NXlkckRJTDZ0X25aTEROWTB4cEVrSm1QY0owMDI5YWw5RFhvVklRUl84RDlyUnozVlEwNWphNXdyS1hZb2M5enlBQ1dRZDBsMHo4eVJ1NTcxTUpGc1g1NllISjc4OFln?oc=5",
-      "date": "2026-10-28T13:29:41+00:00",
-      "source": "중소기업신문",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
       "section": "ai",
       "title": "산업교육연구소, 최신 ChatGPT 활용부터 업무자동화까지! 실습 중심 구축 전략 3차 세미나 개최 - 데브타임즈",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fbTFuRHhtZjlBMEMxOTdBSU1pTWFIVDdIbW5yaEV4bVQ3Y3NJRnhCMG56TzFlU0FXYzdoU1dQQWg3WHUyZGc5SFlCZ1RsYTA?oc=5",
       "date": "2026-10-29T08:42:29+00:00",
       "source": "데브타임즈",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "ai",
-      "title": "\"행정도 AI 시대\"…동국대 WISE캠퍼스, 교직원 AI 실무교육 확대 - 국제뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5JQzFqOVVELWJ0aG9na1BaMUYxcjJJS2VDSXN3OU9RWDBLNjlLWWNUUGJCcFM0LU0wOHUxYW5lS3JhNUhQbzNHS3NZRHh5Z0pCWTdLRnM2RmUxRFEzU2tRTmV6dXRmNWp2SE5Iczl3?oc=5",
-      "date": "2026-10-30T13:13:55+00:00",
-      "source": "국제뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -672,6 +658,20 @@
       "kind": "news",
       "original_url": null,
       "link_type": "aggregator"
+    },
+    {
+      "section": "ai",
+      "title": "\"행정도 AI 시대\"…동국대 WISE캠퍼스, 교직원 AI 실무교육 확대 - 국제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5JQzFqOVVELWJ0aG9na1BaMUYxcjJJS2VDSXN3OU9RWDBLNjlLWWNUUGJCcFM0LU0wOHUxYW5lS3JhNUhQbzNHS3NZRHh5Z0pCWTdLRnM2RmUxRFEzU2tRTmV6dXRmNWp2SE5Iczl3?oc=5",
+      "date": "2026-10-30T13:13:55+00:00",
+      "source": "국제뉴스",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     }
   ],
   "events": [],
@@ -693,6 +693,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-10-31T12:52:05.819096+00:00",
-  "stale_after": "2026-10-31T15:52:05.819096+00:00"
+  "built_at": "2026-10-31T13:48:35.545604+00:00",
+  "stale_after": "2026-10-31T16:48:35.545604+00:00"
 }
