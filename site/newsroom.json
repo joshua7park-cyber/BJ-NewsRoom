@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-10-31T14:42:33+00:00",
+      "date": "2026-10-31T17:45:50+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -199,9 +199,9 @@
     },
     {
       "section": "domestic",
-      "title": "지역관광과 함께하는 면세점 할인…'코리아 듀티프리 페스타' 개막 - 뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuOFlNSlVkTkJfSWl1Q1hrdlhDYXJsVTJpV1dTd0VzZ25tMi1vZW5rN2Z4cnJ0eUtmZkZqU2tzalVndXZvNVlXNzlzbTRPcjBnSk5QMmpCd3VDeVR4TXJ5Z9IBeEFVX3lxTFBsajVyNEZHWXZwbTJ0TE8wT2pMWG1paFF2OXpJdTlrT0xidmRLaG8zWWFHemtxODVpUzgyOHZmR3R6dEhNYUtRME45UTBEV0Mxa3BFOVBPYmsxNXl6UGNxNkJ2QnpvOXZkSm1VUm1OY1ZEUHJKbFp3NA?oc=5",
-      "date": "2026-10-29T04:26:21+00:00",
+      "title": "이 대통령·메르츠 만찬에 정의선 등 기업인 참석…靑 \"한독 경제협력 증진\" - 뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9EeTE2d2F3Uko0RE5TejBoWkhxM0VmTVFfd2xVM1ZYR0xaTTB0LWNRWE1jSGVmUE01TkpEeXB4NGI0UlQzOTgxRktOOTBFMUFWSWh1akN6OUJYNmc5RzNqS9IBeEFVX3lxTFA0d1ozUzFFSHlYMW9kM21zeFdRWmQwOXFmcUpYQ01QYWdmZDE4RzVpQXUzdWhkcjlIX0hLVjRDXy1NSi1CVVJPOWpxN01iS0JLeFdkakRuazk3b0ZvaGpzN0x6YnR3RzZPbHQzRlJ1SnF0UWtnYUxxbA?oc=5",
+      "date": "2026-10-29T00:50:25+00:00",
       "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-10-30T17:05:22+00:00",
+      "date": "2026-10-30T17:43:24+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -227,7 +227,7 @@
     },
     {
       "section": "domestic",
-      "title": "“블랙 먼데이 또 올까 무서워”…나스닥100 한달 새 2700조 증발 - 매일경제",
+      "title": "“월요일 개장이 두렵습니다”…나스닥100 한달 새 2700조 증발 - 매일경제",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mekZkODlrZWdnRDZxU3lrWk1qRV9hWFZVUXhFOGRUdUhld0UwbklLS2JqcEJ3UWpVRXJTaFZScWRWSHJyY0wtWXpKWm1XQmpnVlE?oc=5",
       "date": "2026-10-31T09:13:26+00:00",
       "source": "매일경제",
@@ -609,6 +609,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-10-31T17:38:03.713768+00:00",
-  "stale_after": "2026-10-31T20:38:03.713768+00:00"
+  "built_at": "2026-10-31T18:47:45.160791+00:00",
+  "stale_after": "2026-10-31T21:47:45.160791+00:00"
 }
