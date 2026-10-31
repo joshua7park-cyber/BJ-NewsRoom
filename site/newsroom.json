@@ -45,9 +45,9 @@
   "news": [
     {
       "section": "domestic",
-      "title": "무슬림이 취업비자로 ‘가족 10명’ 한국 데려왔다?…법무부 \"사실 아냐\" - JTBC",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE16S2NoRG5QVFlZc2Z3NWpDNHhtMUlwSlg4RDJ3YVBlYm83V1Nub0lqczAzaGgxaVhqYnl1LWJmZ2JSU25yNG80dDcxS3ZJb1RzNEV1Mg?oc=5",
-      "date": "2026-10-30T04:00:00+00:00",
+      "title": "트럼프, 또 꺼낸 \"현금 지급\"…이번엔 한국 ‘콕’ 집었다 - JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE94OXdkNDZTcXF4NFBUamYyM3JLMF82OS1vVDVPVWE2d1htdVUtYmpmMFBFU0VzX1VYU1VIV3VWNm8yVVkyNFNneER2cjNjc0Q3bDlHMg?oc=5",
+      "date": "2026-10-31T09:44:00+00:00",
       "source": "JTBC",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-10-31T10:46:21+00:00",
+      "date": "2026-10-31T11:45:16+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -451,6 +451,20 @@
     },
     {
       "section": "science",
+      "title": "韓·獨 “군사비밀보호 협정 조속 체결” - 세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1oQVRMZ0FEenVHWVdXci1wNC1XTXFoRnBSRG9yX3hoOFg4MVg3dTdWYnhmVE5HdDhwcG9uZl9ndVlkTG1lRjFVNzRKRVhWVnRRMUtjemFZYkfSAVRBVV95cUxQbnlSUTZ5bkVhTkt2bGtmdklMUlN1S1BYemV3NDRxcmVKbjNiSE9mLVJsbUFucEdwWGJZQ1RlV0dzM0xZRTJzTENjWU51OGJGWHZpV1E?oc=5",
+      "date": "2026-10-29T12:15:00+00:00",
+      "source": "세계일보",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "韓·獨, 첨단산업·방산 협력 확대…李 “IAA서 EU국가와 동등 대우 요청” - 전자신문",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LcGdYWjREaUFZdGJMdDlOeURRc1pQNkRRUUplM2t2T3NiOTZRY24wc2UzSFR5RVNvVlFKQzU2M2Z5Q1hrX3dndDR6Y0ZBUQ?oc=5",
       "date": "2026-10-29T11:30:00+00:00",
@@ -549,38 +563,24 @@
     },
     {
       "section": "science",
-      "title": "이 대통령·독일 총리, 전략적 동반자 관계 강화…반도체·AI·방산 협력 확대 - 시사타파NEWS",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EanBzQjhrNlhZTnRVemRxQU9VQUtrWUNqY0RZMlYzMjg4ekhSR1BiQU1KNi1UV3g3VGtoRnVWWFNldmMwdkNMbExNdk1hNVhrYXVLanVxRV9KcFNGd0HSAWtBVV95cUxQN0tQR3ItT2NDMHJpWG1zcXhjUW9wWmJpTks5MUpqXzd2el95T2FMU3BZdW15Zm9jMVRnUi1jMlFTcTVMaFRCXzhUZW9aeG96VVFpQW51SGU4RnNYZkUzQ1ppOUhESTBKbXZ1MA?oc=5",
-      "date": "2026-10-29T10:45:03+00:00",
-      "source": "시사타파NEWS",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "韓·獨 “군사비밀보호 협정 조속 체결” - 세계일보",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1oQVRMZ0FEenVHWVdXci1wNC1XTXFoRnBSRG9yX3hoOFg4MVg3dTdWYnhmVE5HdDhwcG9uZl9ndVlkTG1lRjFVNzRKRVhWVnRRMUtjemFZYkfSAVRBVV95cUxQbnlSUTZ5bkVhTkt2bGtmdklMUlN1S1BYemV3NDRxcmVKbjNiSE9mLVJsbUFucEdwWGJZQ1RlV0dzM0xZRTJzTENjWU51OGJGWHZpV1E?oc=5",
-      "date": "2026-10-29T12:15:00+00:00",
-      "source": "세계일보",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
       "title": "이재명 대통령, 독일과 전략적 동반자 관계 격상 … 첨단산업과 방산 협력 확대 - 한국뉴스",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51UXIwNGRwWnlMZGJ3ajJyMC1xdGVrVGF6WEV2T3RYWkhVRnlRWVEtMFQyeVc5VWhTTkU4RkJ6WFV6XzVCanZVN1VJTjlwUjZvT3lrM1hUbGNlTU5vMnZ6Z1F1RzRHWTjSAWtBVV95cUxNellYRE1iX3ltdE5GODRqeDJBWlBfaUFVeW9MazJIYVhhbGhJV3RrUFgzUjRBNkhpZm5xWFZULUowTTFYTGJBaHJqMjIxdnZPcXlNSFRESnUxYkJoWlN5VWRycVMwLV8yNHN0OA?oc=5",
       "date": "2026-10-29T23:55:45+00:00",
       "source": "한국뉴스",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "한-독, '강화된 전략적 동반자' 수립…방산·반도체 공조 확대 - 동행미디어 시대",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PaV9HcFhBVzFsTUszSkxTLUh6Rm8tT3hiZlQ3R0Y0M2FCcW5DZ1VaZGplSnVYQ1ppcW10UWdQc3ZsdFZfNERXaXI0MkdTbERFNzZoWms5SS1lYlNYenc?oc=5",
+      "date": "2026-10-29T11:22:42+00:00",
+      "source": "동행미디어 시대",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -693,6 +693,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-10-31T13:48:35.545604+00:00",
-  "stale_after": "2026-10-31T16:48:35.545604+00:00"
+  "built_at": "2026-10-31T14:41:03.593791+00:00",
+  "stale_after": "2026-10-31T17:41:03.593791+00:00"
 }
