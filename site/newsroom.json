@@ -129,20 +129,6 @@
     },
     {
       "section": "domestic",
-      "title": "미국·유럽 제치고 한국행…세계 청년들 왜 몰리나 - m.news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB5TGpJZzY1OUVFenZiMk11WGRyN0MtTS13UV95RTNNVDVpbkgzRlA0TTlESFpXbGlPWmd3Q2VHeTZnNVFpZkg3aE0wT2szMFpHX1VKc0FNZm9yMnhmMERCVXBzNnRCMFltdU4w?oc=5",
-      "date": "2026-10-30T23:45:56+00:00",
-      "source": "m.news.sbs.co.kr",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "domestic",
       "title": "한국 수출 첫 9천억달러 돌파…10월 1천153억달러 - news.sbs.co.kr",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdGxyQWdqZTJzZ2luV2RyM2hyVTFITjJsVHloOGRYcTBOM09kUkRRT0N3Z3MzNUtydnVKSmlxZ0JTTjdUQUU2Z19VU1V5TC1mYUlCTkFYQ05KQ2pVdEtRTzRwTWQ5MzFLVUdXVERBU0RFYncyUnN4WjFOVVpaYWxqYXFIYXJwa1h0VUVYT2lNTQ?oc=5",
       "date": "2026-11-01T05:25:53+00:00",
@@ -201,7 +187,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-01T14:37:28+00:00",
+      "date": "2026-11-01T14:27:41+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -268,6 +254,20 @@
       "link_type": "aggregator"
     },
     {
+      "section": "domestic",
+      "title": "중국 산업설비 수출 급증…\"한국, 품질·납기·유지보수로 맞서야\" - 연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3RHJnMExXMC1HOFhEMVF2UlRvUmNLRkJfOHk2WlFmcHM2Rl9fQUVOb2hjOUJ1eXVQbFRRb014MDlPbGVHWVNESVZPTzlyemJSZHdLUFJSSUVabnN5RDk1U9IBYEFVX3lxTFB3RHJnMExXMC1HOFhEMVF2UlRvUmNLRkJfOHk2WlFmcHM2Rl9fQUVOb2hjOUJ1eXVQbFRRb014MDlPbGVHWVNESVZPTzlyemJSZHdLUFJSSUVabnN5RDk1Uw?oc=5",
+      "date": "2026-11-01T02:29:05+00:00",
+      "source": "연합뉴스",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
       "section": "global",
       "title": "차기 주한 영국대사에 ‘베테랑 외교관’ 레이첼 펜템 임명… 한영 파트너십 새 장 연다(Dr. Rachel Fentem Appointed Next British Ambassador to South Korea, Ushering in a New Era of Bilateral Ties) - 글로벌휴먼타임즈",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBOV0RIWnFWQWZzSG9wa1BFNjE0TVJ2TGYzWTloZ3ZoSjhkSHV3RjlnZkZ2dGp1UWhnRkMzU2RSNWtLQTU2NTFqa2dUUEJ3QlQyZDJUcHJLREVJbjNVNnJOOXhoeUVHdTJ3RUtKcXlLNVJ0QQ?oc=5",
@@ -297,9 +297,9 @@
     },
     {
       "section": "science",
-      "title": "[심층분석] K-정책자금 수혈 퓨리오사AI, ‘폭탄 돌리기’식 3.8조 원 밸류에이션 리뷰 - 사이언스모니터",
+      "title": "[심층분석] K-정책자금 수혈 퓨리오사AI ‘PSR 662배’ 밸류에이션…매출 57억에 몸값 3.8조 평가 - 사이언스모니터",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVkUwTFNmdDl0R1FJRGMxWjNTaUp1RGZvTWE1SE80dHVXVUN1bTJJTXZtOHRSUHhDcXczWFI3QlBYMGFQbzJDYzRTZk5yWmV1TFFsS3BZVUlpOEhYdGdhdk1zZWduc2JFempleGFSLWhwZ1JVVk1jTnRNZ0lGLTZaQ0NQVFJKVVV1MEo5WTQxYjdrMGFjZ096UmtpcWJTOFVM?oc=5",
-      "date": "2026-11-01T08:24:18+00:00",
+      "date": "2026-11-01T13:57:37+00:00",
       "source": "사이언스모니터",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -329,34 +329,6 @@
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GV0c5MExPM3R5SHdQM2hPa1ljNDZJYjR1MW5fZjRNdnNrOGQ1Tk9FLTFHSkpjeVdEX0dZODdxVXUyUTlZMUxid0owLTRlUHVzN2t3d2NfV0NSVUpqMWZ6ZNIBYEFVX3lxTE9GV0c5MExPM3R5SHdQM2hPa1ljNDZJYjR1MW5fZjRNdnNrOGQ1Tk9FLTFHSkpjeVdEX0dZODdxVXUyUTlZMUxid0owLTRlUHVzN2t3d2NfV0NSVUpqMWZ6ZA?oc=5",
       "date": "2026-10-30T04:57:38+00:00",
       "source": "연합뉴스",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "이재명 “한·독 정상회담 합의, 구체적 성과로”…첨단산업·방산 협력 확대 - 뉴스로드",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5OZW1IY1NZdkczN2J1YVNYYy03X3ItbE1SeWdSMUVnTmRnb3MtQUFndWNhOHVBT0Etd3FuV1dlYTN0TzBES3UxRUdSR09ITC1xcDVNSm1xRm5XVTBaN0xTbU5sMWU2aWRnUWNqNUhja9IBb0FVX3lxTE5OZW1IY1NZdkczN2J1YVNYYy03X3ItbE1SeWdSMUVnTmRnb3MtQUFndWNhOHVBT0Etd3FuV1dlYTN0TzBES3UxRUdSR09ITC1xcDVNSm1xRm5XVTBaN0xTbU5sMWU2aWRnUWNqNUhjaw?oc=5",
-      "date": "2026-10-30T03:18:43+00:00",
-      "source": "뉴스로드",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "한 총리 \"한국은 아태-유럽 잇는 전략적 거점\"…韓-獨, 배터리·반도체·AI 협력 강조 - 뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE11SFdfalZ0aUtadGpzbU1JelZoeUdfOEdnSU5hYmo0eG9lWVo4aHFCU0EtY0N2QVJSREtZS21aRjl3aXowX1NmYmxWc09CYXV6Z2VhdndXWWtuajJWRmt5QkZLZ3BJWnRJenpxME9XNExpd0cxQy05d9IBeEFVX3lxTE11SFdfalZ0aUtadGpzbU1JelZoeUdfOEdnSU5hYmo0eG9lWVo4aHFCU0EtY0N2QVJSREtZS21aRjl3aXowX1NmYmxWc09CYXV6Z2VhdndXWWtuajJWRmt5QkZLZ3BJWnRJenpxME9XNExpd0cxQy05dw?oc=5",
-      "date": "2026-10-30T03:25:01+00:00",
-      "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -409,10 +381,10 @@
     },
     {
       "section": "science",
-      "title": "한·독, ‘강화된 전략적 동반자 관계’ 수립…첨단산업·안보 협력 본격화 - 한국미디어창업뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55NW5oaWFFZDQ2cDZsR0tZSkJYTEt5bkk0ajNtdEFsV21IQjdaeTIyeVJ3YlpxTVE5OGhaS09KMEF6MEV0NWw1TW1WZVR2OXQxN3IzZThER3A1UUFZd2hfd0h6R1c4VzN6UkVpddIBcEFVX3lxTFAtaFNFWTR2TzNYN0E3ZFBxWGFheGFpRjJpSG4xS21FSmU0QzNWeFBPblVfaFpMb1czTlZMdlpKR1hvV1lBM3ZNQVFkWTJPTUE0akRSbFhEaWUzNkVIakY4T0dBMTY4M0R2VkdQS0JPS3U?oc=5",
-      "date": "2026-10-29T23:10:11+00:00",
-      "source": "한국미디어창업뉴스",
+      "title": "한 총리 \"한국은 아태-유럽 잇는 전략적 거점\"…韓-獨, 배터리·반도체·AI 협력 강조 - 뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE11SFdfalZ0aUtadGpzbU1JelZoeUdfOEdnSU5hYmo0eG9lWVo4aHFCU0EtY0N2QVJSREtZS21aRjl3aXowX1NmYmxWc09CYXV6Z2VhdndXWWtuajJWRmt5QkZLZ3BJWnRJenpxME9XNExpd0cxQy05d9IBeEFVX3lxTE11SFdfalZ0aUtadGpzbU1JelZoeUdfOEdnSU5hYmo0eG9lWVo4aHFCU0EtY0N2QVJSREtZS21aRjl3aXowX1NmYmxWc09CYXV6Z2VhdndXWWtuajJWRmt5QkZLZ3BJWnRJenpxME9XNExpd0cxQy05dw?oc=5",
+      "date": "2026-10-30T03:25:01+00:00",
+      "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -514,7 +486,7 @@
     "israel": 0,
     "religion": 0,
     "mission": 0,
-    "science": 11,
+    "science": 9,
     "ai": 5,
     "ai_events": 0
   },
@@ -525,6 +497,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-01T15:39:47.833466+00:00",
-  "stale_after": "2026-11-01T18:39:47.833466+00:00"
+  "built_at": "2026-11-01T16:41:55.664993+00:00",
+  "stale_after": "2026-11-01T19:41:55.664993+00:00"
 }
