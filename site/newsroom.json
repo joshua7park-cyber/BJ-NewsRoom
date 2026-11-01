@@ -129,6 +129,20 @@
     },
     {
       "section": "domestic",
+      "title": "행정 문제로 선수촌 입촌 불발…한국 사격, LA 올림픽 첫걸음부터 '삐걱' - m.news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4tUTVPanQxYmJ0VWhVOGIyNENQRUFhMkVCbWU2NFVNRXRCbHFobTJZSkNmQ3VCbVF1TW5rVlBmeEozS1lFTTdJQkhBYnRQaGpPOThMYXRZN3ppb2tUQUxfd1pURnpJdVczMUlR?oc=5",
+      "date": "2026-10-30T06:33:13+00:00",
+      "source": "m.news.sbs.co.kr",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "domestic",
       "title": "한국 수출 첫 9천억달러 돌파…10월 1천153억달러 - news.sbs.co.kr",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdGxyQWdqZTJzZ2luV2RyM2hyVTFITjJsVHloOGRYcTBOM09kUkRRT0N3Z3MzNUtydnVKSmlxZ0JTTjdUQUU2Z19VU1V5TC1mYUlCTkFYQ05KQ2pVdEtRTzRwTWQ5MzFLVUdXVERBU0RFYncyUnN4WjFOVVpaYWxqYXFIYXJwa1h0VUVYT2lNTQ?oc=5",
       "date": "2026-11-01T05:25:53+00:00",
@@ -187,7 +201,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-01T14:27:41+00:00",
+      "date": "2026-11-01T14:24:21+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -245,20 +259,6 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kV3FHT1dtVmhhc1RjUEhkZlFTbUt2Z1VOTk5EOWdCQklUY1daVEowUjQ2X2NUcDlGb0w2SGtWaEdCSjhwalpGd0l5Q09OODBaM2s3ZnZNd0lST0UxZDQ3UUdST2wybHd0MUp3c0lNYw?oc=5",
       "date": "2026-11-01T01:47:15+00:00",
       "source": "서울신문",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "domestic",
-      "title": "중국 산업설비 수출 급증…\"한국, 품질·납기·유지보수로 맞서야\" - 연합뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3RHJnMExXMC1HOFhEMVF2UlRvUmNLRkJfOHk2WlFmcHM2Rl9fQUVOb2hjOUJ1eXVQbFRRb014MDlPbGVHWVNESVZPTzlyemJSZHdLUFJSSUVabnN5RDk1U9IBYEFVX3lxTFB3RHJnMExXMC1HOFhEMVF2UlRvUmNLRkJfOHk2WlFmcHM2Rl9fQUVOb2hjOUJ1eXVQbFRRb014MDlPbGVHWVNESVZPTzlyemJSZHdLUFJSSUVabnN5RDk1Uw?oc=5",
-      "date": "2026-11-01T02:29:05+00:00",
-      "source": "연합뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -497,6 +497,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-01T16:41:55.664993+00:00",
-  "stale_after": "2026-11-01T19:41:55.664993+00:00"
+  "built_at": "2026-11-01T18:48:10.562480+00:00",
+  "stale_after": "2026-11-01T21:48:10.562480+00:00"
 }
