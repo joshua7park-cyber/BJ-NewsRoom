@@ -45,9 +45,9 @@
   "news": [
     {
       "section": "domestic",
-      "title": "미 민주당 의회 장악 시 한국 유불리 따져봤더니 - JTBC",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxTUl5MGNoYzQ0MHVLTnQybFhBMnFkSFdPU0VsN21seENHWGppMm9IWGNzVmRoRW93RXg0ZmRaQkFrNVo0aFlIZC1CNFR6MUF1SDRkTQ?oc=5",
-      "date": "2026-11-04T05:47:00+00:00",
+      "title": "‘한국도 대비해야’…민주당이 의회 잡으면 벌어질 일 - JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85c3pqdGswaWdMcG9nd1NzSHluZG5zQW9XTW43ZjZSNVoyV293WURqdkQ4SFZQNE5pZ3FaQmZJcVRTLUE3VEJKemVuS2VEenJMd09DcA?oc=5",
+      "date": "2026-11-03T10:26:00+00:00",
       "source": "JTBC",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -59,9 +59,9 @@
     },
     {
       "section": "domestic",
-      "title": "한국시리즈 1차전 삼성 vs KT - KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByVmQ0dnlPSTZSQ2pYbDUzclEwQ1JjVTZoMVRSSWFwX09MbVhHWEEwSy0tUjJCU2ZPbUU4SjhOTmNqREJMb1hhMUdtTTc1Nk1OR0d0RVpEbU1wLWM?oc=5",
-      "date": "2026-11-03T12:40:00+00:00",
+      "title": "한국시리즈 2차전 삼성 vs KT - KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11WjhVMkhtMHBJMG4tb2lPaWw5eEpZUG9GeFFJSVpRdmN4SDlmUGd3bENHRE5zRmVzdElkZUNGaGI5VVNfOEUyYWNBcW9aT1JndFJfZGJIUFczdjA?oc=5",
+      "date": "2026-11-04T12:37:00+00:00",
       "source": "KBS 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-11-03T08:00:00+00:00",
+      "date": "2026-11-04T14:48:41+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -157,9 +157,9 @@
     },
     {
       "section": "domestic",
-      "title": "[단독] \"북한서 가장 위험한 조직\"…한국에 날아든 경고 - news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONzBmbGd3MGJ3NTdjSWo3TnV5TGdQTkE5Qm80OUNiaDEyeW5VSEk4bWx2MU9HS1VnZV91MkwxcDVvWnJWSzJPUmdSYTRHT1hlSmgtakE4VFZpR2JfX01YcGI3R2pId2w3eTBBdE4yUk0yaGNqa0lXRXV5akxlZ3J1S0NlelZYQQ?oc=5",
-      "date": "2026-11-02T10:57:01+00:00",
+      "title": "'아라우조 20점' 우리카드, 한국전력 완파하고 시즌 첫 승 - news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzVhY2hBYlQ5aFZMLWJWRjhtZ05lVW1BdXBJMzJhTmRYTTEzdXVkd2JrY3cxaWlkODB0UVZucDNTMjg0eS1fYXNjVmtkZkhaUHNmUXNnYW5KTWNoSDVnNGk1NGdWaW91b1RQc2M2ZHYxQnNNVGdTbWhGbXZ5ZWtpUUxZVVBCdw?oc=5",
+      "date": "2026-11-03T14:53:51+00:00",
       "source": "news.sbs.co.kr",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -567,6 +567,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-04T16:58:59.424674+00:00",
-  "stale_after": "2026-11-04T19:58:59.424674+00:00"
+  "built_at": "2026-11-04T17:56:45.664080+00:00",
+  "stale_after": "2026-11-04T20:56:45.664080+00:00"
 }
