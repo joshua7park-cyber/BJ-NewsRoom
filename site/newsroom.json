@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-11-04T17:38:21+00:00",
+      "date": "2026-11-04T19:08:21+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-04T14:59:16+00:00",
+      "date": "2026-11-04T14:22:45+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -284,7 +284,7 @@
     {
       "section": "mission",
       "title": "“글로벌 사우스 교회가 글로벌 사우스 선교사 품어야” - 기독일보",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjYTFhbzRCczBtRWRhR3c3SUJyRUZpVkcyTGtzcDlrX2ViYjJoSGlXSElQbjFWbDZhQ3duVFBWaTZmblljN0NvWTlsWXZnRGJnenBsb0lKNE9UOGRp0gFcQVVfeXFMUGNhMWFvNEJzMG1FZGFHdzdJQnJFRmlWRzJMa3NwOWtfZWJiMmhIaVdISVBuMVZsNmFDd25UUFZpNmZuWWM3Q29ZOWxZdmdEYmd6cGxvSUo0T1Q4ZGk?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ELWl2RVRtZHhGd0FhTUdtUEJ0b3ZaWDJidWhuUE9fcDFVd2xpUW1LSjVvbThiTHJBUTRmMEFjNVZab2RUME9pQnczdE5CdDRHZjFGQkNEY9IBXEFVX3lxTFBjYTFhbzRCczBtRWRhR3c3SUJyRUZpVkcyTGtzcDlrX2ViYjJoSGlXSElQbjFWbDZhQ3duVFBWaTZmblljN0NvWTlsWXZnRGJnenBsb0lKNE9UOGRp?oc=5",
       "date": "2026-11-04T02:42:52+00:00",
       "source": "기독일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
@@ -451,20 +451,6 @@
     },
     {
       "section": "science",
-      "title": "李대통령 \"AI에 21.3조 투자\"…국방예산 73.3조·R&D 역대 최대 - 머니투데이 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zUHpUZnI1dFFkdlFiM3ZseTBIQ1ZIa29pY1VIMHVtdVJLcGVRc0k0R2ctV05OSENheXdjYXJJYU9WTldaNEZiaWI4aDJTMkxwUEhpYlNFUC1aUWs3VHM5NzU1OFFVaUV2d0xPMDFwcl92QdIBckFVX3lxTE5zUHpUZnI1dFFkdlFiM3ZseTBIQ1ZIa29pY1VIMHVtdVJLcGVRc0k0R2ctV05OSENheXdjYXJJYU9WTldaNEZiaWI4aDJTMkxwUEhpYlNFUC1aUWs3VHM5NzU1OFFVaUV2d0xPMDFwcl92QQ?oc=5",
-      "date": "2026-11-02T01:35:14+00:00",
-      "source": "머니투데이",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
       "title": "[월간 산업인] '산업인' 2026년도 11월호도 알찬기사로 찾아왔습니다. - 산업인뉴스",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtTlN0a1ZiMnZoUFBPYnBNLUp3TGVFbW5Sel82TXBRR2QyU291YTdoRTBrT2hnQ3l4MEctLTBzSnpXQ3U0dWhLalI4eUFRdGFsYm5YTzFkZXZvWm9fRk96emxWeGkxMTZxS3lyQjlB?oc=5",
       "date": "2026-11-02T04:35:55+00:00",
@@ -507,10 +493,24 @@
     },
     {
       "section": "science",
-      "title": "김진현 전 장관 “인류와 AI 공존 갈림길…국가 개조의 각오로 국력 결집해야” [논설실의 人] - 서울경제",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IM0h1elRtU3VaX2ticl8zWjd4LWM5OU5KU2xzRU5ONHhZQXZyNVJPWHVYY29QYmZzSDZ6X3JzbW1rTmtKdEVLTkVBWWlxN250bmfSAVNBVV95cUxOTjZUSDdudnk2b1FlSGg4azVjbThFU3BzWFlVekJKdDA2ZWxDUnFoZDI4ajRJR0ZLRnhzNjdKMWR4djhwTkRoN2ZHV2tHVTNEYzBubw?oc=5",
-      "date": "2026-11-02T09:02:56+00:00",
-      "source": "서울경제",
+      "title": "李대통령 \"AI에 21.3조 투자\"…국방예산 73.3조·R&D 역대 최대 - 머니투데이 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zUHpUZnI1dFFkdlFiM3ZseTBIQ1ZIa29pY1VIMHVtdVJLcGVRc0k0R2ctV05OSENheXdjYXJJYU9WTldaNEZiaWI4aDJTMkxwUEhpYlNFUC1aUWs3VHM5NzU1OFFVaUV2d0xPMDFwcl92QdIBckFVX3lxTE5zUHpUZnI1dFFkdlFiM3ZseTBIQ1ZIa29pY1VIMHVtdVJLcGVRc0k0R2ctV05OSENheXdjYXJJYU9WTldaNEZiaWI4aDJTMkxwUEhpYlNFUC1aUWs3VHM5NzU1OFFVaUV2d0xPMDFwcl92QQ?oc=5",
+      "date": "2026-11-02T01:35:14+00:00",
+      "source": "머니투데이",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "[전문가기고] 5G는 사람이 보는 망, 6G는 AI가 보는 망 - 디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5eWFHS0RvYnZsT2VjVURpVWcwMFBwNFl6bFNYOHBlMmdqLVlmZWJILU5oNm9MRkMwaE9jZjhhOEFzOVQtYjA1clRTVTV2ODJJbjdrWnpSYmxaSC02QzBfVzB3?oc=5",
+      "date": "2026-11-03T06:03:19+00:00",
+      "source": "디지털데일리",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -567,6 +567,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-04T20:00:16.482344+00:00",
-  "stale_after": "2026-11-04T23:00:16.482344+00:00"
+  "built_at": "2026-11-04T20:56:31.691801+00:00",
+  "stale_after": "2026-11-04T23:56:31.691801+00:00"
 }
