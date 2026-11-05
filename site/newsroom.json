@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-11-04T23:48:25+00:00",
+      "date": "2026-11-05T01:08:21+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -102,7 +102,7 @@
     {
       "section": "domestic",
       "title": "해외IB 8곳 평균 올해 한국 성장률 전망치 3.7% - YTN",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBHeWZHMHg1YXFNc2pRWTdtdGpWMHNJYk9DY1FlejRYVVJzVjQ1OFlOc2Y2OU1OSnZrWTlQNVRBRWpfUFZzS2ZBUGR0UVl4V3JyOWpGSDBEMGlMM0R3SFE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDMnRYT29na0gtc2hKdnhOTDBYdzFneDYtTndjYjlVa0k3YjRIbjhjUDk4cEFGOWVHRThiWFF3aW5LdzlwWVlEd1BRS3Y5Ujk2MHZyN2J3WEdkWW9mTThoYk1zaTFYR2liMXpDYTdWNXZwNmlaNHc?oc=5",
       "date": "2026-11-05T00:49:00+00:00",
       "source": "YTN",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-04T14:22:33+00:00",
+      "date": "2026-11-04T14:20:57+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -283,9 +283,9 @@
     },
     {
       "section": "science",
-      "title": "Universal Quantum unveils iQPU, an all-in-one trapped-ion chip - 사이언스모니터",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbTUxMnhTTTBYODVUcFBiRzZJQml3dER5QlJRYUFrZEMxcC1aTTVNU2FtOGhlYWRMbmxXek9YampPQWpuMDZSTmtiR25NOEVtMk8ybFktYm5WNWlYc3VPV3hzUTZrQ2xXb1kzUHFVbWhNSTFJSUVQNkZyblJxbS1LUUxLSWo?oc=5",
-      "date": "2026-11-04T15:13:04+00:00",
+      "title": "AMD 3분기 매출 134억 달러…데이터센터 97% 늘고 4분기 170억 달러 전망 - 사이언스모니터",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZT1phTEhiYzl3LXV1VkJ1TXB4LUlHMUsxazJKRlRSQ3NvVjZHYTllYVVZVjdjM3VUNHZTS2NkWEFpYkdJNkVkeHR1elNhMWU4WVE0WFh1NmNpRVVuVXBBYnFkMFFPVlVETlE?oc=5",
+      "date": "2026-11-04T00:00:27+00:00",
       "source": "사이언스모니터",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -297,9 +297,9 @@
     },
     {
       "section": "science",
-      "title": "AMD 3분기 매출 134억 달러…데이터센터 97% 늘고 4분기 170억 달러 전망 - 사이언스모니터",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZT1phTEhiYzl3LXV1VkJ1TXB4LUlHMUsxazJKRlRSQ3NvVjZHYTllYVVZVjdjM3VUNHZTS2NkWEFpYkdJNkVkeHR1elNhMWU4WVE0WFh1NmNpRVVuVXBBYnFkMFFPVlVETlE?oc=5",
-      "date": "2026-11-04T00:00:27+00:00",
+      "title": "Universal Quantum unveils iQPU, an all-in-one trapped-ion chip - 사이언스모니터",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbTUxMnhTTTBYODVUcFBiRzZJQml3dER5QlJRYUFrZEMxcC1aTTVNU2FtOGhlYWRMbmxXek9YampPQWpuMDZSTmtiR25NOEVtMk8ybFktYm5WNWlYc3VPV3hzUTZrQ2xXb1kzUHFVbWhNSTFJSUVQNkZyblJxbS1LUUxLSWo?oc=5",
+      "date": "2026-11-04T15:13:04+00:00",
       "source": "사이언스모니터",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -395,6 +395,20 @@
     },
     {
       "section": "science",
+      "title": "세라믹 실로 방사선 견디는 '우주 섬유' 개발…K우주복 첫 단추 - DongA Science",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NaG1SS1A3dU9OeXdOaEV5b0dnTzBDajJxTU1pOS13UElfLURmck9xd01yZ2NSc2d1MUdlNEJqdHBBUWx2NkUzSlZLdkhZdGpER2Jrag?oc=5",
+      "date": "2026-11-03T03:00:00+00:00",
+      "source": "DongA Science",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "입자가속기 빛 잡는 반도체 국산화…지큐티코리아, 시제품 6종 개발 - 이데일리",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSFBpTDZheHBaS2FadWRKMnFIczcxaF9fb0JxYTc5NjhtVV9HbG1EMWdDckgwSks1YWU4UnRVXzQySEQwSTJ0TjdBMWJxTFdZNUhCaFIzOVVOZGstN2NqSDZSb2lnZzFBMVFLNG9Id3RpdFpZdFhyLUU0RldKd2pvSA?oc=5",
       "date": "2026-11-04T07:57:14+00:00",
@@ -409,10 +423,10 @@
     },
     {
       "section": "science",
-      "title": "세라믹 실로 방사선 견디는 '우주 섬유' 개발…K우주복 첫 단추 - DongA Science",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NaG1SS1A3dU9OeXdOaEV5b0dnTzBDajJxTU1pOS13UElfLURmck9xd01yZ2NSc2d1MUdlNEJqdHBBUWx2NkUzSlZLdkhZdGpER2Jrag?oc=5",
-      "date": "2026-11-03T03:00:00+00:00",
-      "source": "DongA Science",
+      "title": "모빌린트, 자사 NPU 글로벌 분산 AI 프레임워크 Ray 공식 코드 탑재 성공 - 보안뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBPb1N4QU5sdDNDdDVYbnFHWlZoNVVxdFVNQVBTakdmQnB0Q2laVGNVaGVCYWVTd3ZmQVJJeGFEcFFhVXBxRW1UQ2dYaXpsZ05HampwMV9vVVExaE56VDdZRkRmY3RGSUFtSE00?oc=5",
+      "date": "2026-11-04T01:17:45+00:00",
+      "source": "보안뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -492,20 +506,6 @@
       "link_type": "aggregator"
     },
     {
-      "section": "science",
-      "title": "김진현 전 장관 “인류와 AI 공존 갈림길…국가 개조의 각오로 국력 결집해야” [논설실의 人] - 서울경제",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IM0h1elRtU3VaX2ticl8zWjd4LWM5OU5KU2xzRU5ONHhZQXZyNVJPWHVYY29QYmZzSDZ6X3JzbW1rTmtKdEVLTkVBWWlxN250bmfSAVNBVV95cUxOTjZUSDdudnk2b1FlSGg4azVjbThFU3BzWFlVekJKdDA2ZWxDUnFoZDI4ajRJR0ZLRnhzNjdKMWR4djhwTkRoN2ZHV2tHVTNEYzBubw?oc=5",
-      "date": "2026-11-02T09:02:56+00:00",
-      "source": "서울경제",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
       "section": "ai",
       "title": "대구TP, 재학생·일반인 대상 맞춤형 AI 활용 교육 마무리 - 전자신문",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBlaVc3WXpRU2pyb29nRms2cjJYTFNrVTB6VFFnenk0X2VqZFNnemlJelFXUEpxWVFteWNnYl9mRWVCUkt0SldSWGM0MjI0dw?oc=5",
@@ -553,6 +553,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-05T02:15:43.856971+00:00",
-  "stale_after": "2026-11-05T05:15:43.856971+00:00"
+  "built_at": "2026-11-05T02:59:48.702917+00:00",
+  "stale_after": "2026-11-05T05:59:48.702917+00:00"
 }
