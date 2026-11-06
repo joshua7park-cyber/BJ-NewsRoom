@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-11-06T18:04:13+00:00",
+      "date": "2026-11-06T20:08:35+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -200,8 +200,8 @@
     {
       "section": "domestic",
       "title": "\"트럼프, 예견된 심판\" vs \"韓 경제 불확실성 경계\"…美 선거 국내 반응 - 뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41T21zR2UzQmRaY2tWQmN0bFRQU3QtdWwyZTFBai1MMDA0eFRWSnhsVV92OXdIMG5OQ2F2TTNmaXRTdnJ3S0hyUFZGNThxNVZybTUwa2lPcDZ4ekpwZVhNeXRyYTMxQUNPLXUtclB2ZS1CVlBWRkMxddIBeEFVX3lxTE41T21zR2UzQmRaY2tWQmN0bFRQU3QtdWwyZTFBai1MMDA0eFRWSnhsVV92OXdIMG5OQ2F2TTNmaXRTdnJ3S0hyUFZGNThxNVZybTUwa2lPcDZ4ekpwZVhNeXRyYTMxQUNPLXUtclB2ZS1CVlBWRkMxdQ?oc=5",
-      "date": "2026-11-04T23:34:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBpVVprcVVEU2FNUjVNUnp4ZUVlT0xsOUpVMnNzUllRUVlKSHRSekc2VnRtN3JPWGU1dXMtUlBRbDh6LXJHaFU3ME9Pdnd0cEZLcHN5ZHR3SFppcTM3YzlFbNIBeEFVX3lxTE41T21zR2UzQmRaY2tWQmN0bFRQU3QtdWwyZTFBai1MMDA0eFRWSnhsVV92OXdIMG5OQ2F2TTNmaXRTdnJ3S0hyUFZGNThxNVZybTUwa2lPcDZ4ekpwZVhNeXRyYTMxQUNPLXUtclB2ZS1CVlBWRkMxdQ?oc=5",
+      "date": "2026-11-04T23:30:48+00:00",
       "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -553,6 +553,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-06T19:55:06.211145+00:00",
-  "stale_after": "2026-11-06T22:55:06.211145+00:00"
+  "built_at": "2026-11-06T20:51:09.311120+00:00",
+  "stale_after": "2026-11-06T23:51:09.311120+00:00"
 }
