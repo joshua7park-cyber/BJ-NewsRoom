@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-07T03:05:30+00:00",
+      "date": "2026-11-07T03:39:35+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -227,9 +227,9 @@
     },
     {
       "section": "domestic",
-      "title": "“지금까지 세금 다 냈는데 건보료도 내라?”…연금·배당 소득자 등 ‘초비상’ - 매일경제",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxM0pVQ3B2UGpkUXVPeldqSzA0OGxjSEM4ZU1tQVlyRktlMEJ0Zm1BeEZjYjNmNkl5WmpuODc4c3NxTUp6dzFWQlBrRE4wRkRaVDNKRw?oc=5",
-      "date": "2026-11-07T06:04:38+00:00",
+      "title": "방한 하루 앞두고 돌연 취소…젠슨 황 장녀 매디슨 황 “가족 사유” - 매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5qSFBjQk0wMGNmZmVpdS1UcXh5Y2RBZEdtRDNHSEp1bUpmYTB0THJLZFQ5UkpaRHFhX3R0bXR3cHNQMHJqYnhJQ3FwTDRFUVBleE9nV29n?oc=5",
+      "date": "2026-11-07T13:09:51+00:00",
       "source": "매일경제",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -301,20 +301,6 @@
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE00VWFwZ0M3SkdpeERzcEE5SDNQbU5ieTNQcVVYZXg4ZEE1TUttcUFrRm9SUVQ1UjA4bC1qUkpORVBmcWRCV1pqa2VDU3NXNm9NWEN2UVRGbw?oc=5",
       "date": "2026-11-05T22:00:53+00:00",
       "source": "크리스천투데이",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "Universal Quantum unveils iQPU, an all-in-one trapped-ion chip - 사이언스모니터",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTUlnQVNoaF91Q28zWGZIb1c3VW81MUszWDFPVWNROHhEYzc4Z3o1R1NPMzF6c2UzV1pjQkdvZkY3UjBtcXhyVG1fYmVPYjZabi1lNnRIUnBxZTdqMlZSSjIyQURqd1g1UzdLTVktc1RLeHRkVzRJazBqOTBvVFhud0hBMFB5aHVO?oc=5",
-      "date": "2026-11-04T15:13:04+00:00",
-      "source": "사이언스모니터",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -465,6 +451,20 @@
     },
     {
       "section": "science",
+      "title": "ICT 인재양성 연구센터 5곳 선정 - 전파신문",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PdzMzV0lqOS1wZXhaUjMtS2tLcFdYU3hOMjc4S1FSeWpMd3VFa3NkclN1ME1UVkR3NDI2SWNVbW9FckdSN3NINlh6QXZkRE9sZDdqd3VkTkpJaVB3UEhkOUROSUN2ZUNnNkE?oc=5",
+      "date": "2026-11-05T05:14:00+00:00",
+      "source": "전파신문",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "베트남, 유럽 기술 기업을 위한 연구 개발 투자 기회 확대. - Vietnam.vn",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTVRHYmV0MXhTdE1wQS1EQTRuVWVtNEhWaHh6UXhkNElXSDBMOExCUVpfdml3SXQ5ZENGamp6OUU1VmRXRjlqbjc1Nkl4WkpHMURFTFo4aTB2VnVVak1tT1JnUVVTQlhlSUNvanpNYWZoWFBfS01UX280anpqMGVvblh5a2NzMjhuTF9SMzM4LWlRNzBUZEs0aWxrRQ?oc=5",
       "date": "2026-11-06T17:29:17+00:00",
@@ -479,10 +479,10 @@
     },
     {
       "section": "science",
-      "title": "ICT 인재양성 연구센터 5곳 선정 - 전파신문",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PdzMzV0lqOS1wZXhaUjMtS2tLcFdYU3hOMjc4S1FSeWpMd3VFa3NkclN1ME1UVkR3NDI2SWNVbW9FckdSN3NINlh6QXZkRE9sZDdqd3VkTkpJaVB3UEhkOUROSUN2ZUNnNkE?oc=5",
-      "date": "2026-11-05T05:14:00+00:00",
-      "source": "전파신문",
+      "title": "한-네덜란드, 첫 과학기술공동위 개최 첨단 과학기술 협력 본격화 - 글로컬저널",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9fbllXenRETFlsVkZDV3B3TWpVSEtWS3Eyd2RjZWJ3cFFtT2dHRWpZWUg2QlFSWGlVTU5EdWRaMUxySFR0UlBLV09vQTg0ZUVPV3pQa1ZHWnc4SXBuUjl3S1BKVHRfc3lseGlV0gFvQVVfeXFMTzJ6OU15RXYxbEZKdGFUdDl5QUZoTmRBb29Md2ctaEg3aVZhdXByZmtpQ01ZVmFBRnpnUEZaNnNxcnYzMmRFdzJwNHZhczM5Nm1fR3ZONWFjcENnbHVoekJVaEdhWjZidmhuOEwySElN?oc=5",
+      "date": "2026-11-06T11:13:19+00:00",
+      "source": "글로컬저널",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -553,6 +553,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-07T14:46:18.580682+00:00",
-  "stale_after": "2026-11-07T17:46:18.580682+00:00"
+  "built_at": "2026-11-07T15:43:35.964643+00:00",
+  "stale_after": "2026-11-07T18:43:35.964643+00:00"
 }
