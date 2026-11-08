@@ -157,9 +157,9 @@
     },
     {
       "section": "domestic",
-      "title": "[에디터픽] '한국서 12년' 석사까지 땄는데..\"내가 이렇게 못 했나\" 울컥 - news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSVlleG5GdWJNQnAtdTdhS2NtaWdXdjBoN21iZzBCczJnR2tCNnRUZkF3aTNFb3lEeGxMVXk1Rl9Kd2RtNHBCbnhrdlBycEZGNEkwSmpzYUVUbndRVHZtVzNwSXU0Z1FqUjVmYUZHbE9yNDlLTEpxanlrbzRWWjRKS2QzWVM0M2l5OS01eW1BWQ?oc=5",
-      "date": "2026-11-06T06:43:09+00:00",
+      "title": "[자막뉴스] 진쓰레블 '마지막 여정' 준비하는 유족…\"한국 무사히 돌아오도록\" - news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM3A2S2l2ZG4tYnVVbk1OQ1ZVYXBCVFp1WTNsM19SaWFUWkluZ0pMY1VpakpOVWFCOGZCQktvSXJsV09xeEo4RGYwNXFSb3FHNWJvOGF0Y3RJSGxZOFI3akNqaVZfSVVWbWpIRXdXYWxRdGFwUHFBdU9yRDA3WHBUNFF6WVRiSG1LMkJEUlJQVDlnRG83c1E?oc=5",
+      "date": "2026-11-06T02:38:37+00:00",
       "source": "news.sbs.co.kr",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-08T00:23:10+00:00",
+      "date": "2026-11-08T14:06:15+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -310,6 +310,20 @@
       "link_type": "aggregator"
     },
     {
+      "section": "global",
+      "title": "미·중 패권전쟁과 21세기 세계질서의 대전환 - 브레이크뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5ucVRuY1VjcTV3OG5Ob2JzLU9TZGpGeUkzTVhwOEswN2dKQXZ2bU1QaF8xS09oSXZiUGxqQXU0dmdsM09xVkM4QQ?oc=5",
+      "date": "2026-11-07T05:30:00+00:00",
+      "source": "브레이크뉴스",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
       "section": "mission",
       "title": "“AI 시대 한국교회, 예수 중심 복음과 사랑의 공동체성 회복을” : 목회/신학 - 크리스천투데이",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE00VWFwZ0M3SkdpeERzcEE5SDNQbU5ieTNQcVVYZXg4ZEE1TUttcUFrRm9SUVQ1UjA4bC1qUkpORVBmcWRCV1pqa2VDU3NXNm9NWEN2UVRGbw?oc=5",
@@ -343,6 +357,20 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kT096N0kzeUNZMXNRWmw5Y3J3QlVGOC03RFVxeUlmUVJQWkVDQzdydzc4VXdKTEFsOUNzdjF0MVA5UFdyRGZPTXoybUdnUzBRWmFwM1lPb2FTdHBsWUYtLWpweUlyX2haVTV6dmdzeGxLWGM?oc=5",
       "date": "2026-11-08T05:03:59+00:00",
       "source": "사이언스모니터",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "20조 원, 사탕값으로 지불해서는 안 된다! - 나주투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WS1YyeHlUVzRxM3cxSkMtVGVza1pNRFpYM09iem1IZFU0bHRsUEdUejRfcWM1N29PaFQ4ZHF2Qm9oWmgyaEgyaVhNZUdkOVVCenFhMk9naEhISV9xbVhVS2FULXVsRUk5T0NsVw?oc=5",
+      "date": "2026-11-08T14:06:12+00:00",
+      "source": "나주투데이",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -409,20 +437,6 @@
     },
     {
       "section": "science",
-      "title": "실스큐·에코 웨이브 파워, AI 데이터센터 겨냥한 재생에너지 디지털 거래 기술 시연 - 양자신문",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDRVNlQ1pNY05aZ0UwcDBNN2JLU2lsYXJhNDkwdy11OEh0VFZjZkpjZ0pOWkNVcWVtc0JGN2VVVnBwdDdXRGdpbl8tQmRBZlVOWXkxTGZ6U25sallwZDUtVDJTNTBCeWhBRS1xSUR6NA?oc=5",
-      "date": "2026-11-05T23:00:00+00:00",
-      "source": "양자신문",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
       "title": "美 민주당발 AI 데이터센터 규제 ‘먹구름’…빅테크는 우주로 눈 돌리나? - 더퍼블릭",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xQ0l0RVJaQ2ZTQ1VSQUxSa2ZGNmp2WWJTTmt4VWRvTEpnSElFYUFhOFktbkxGVGRjTERlMGhXellXNzRPTURTWHE5TVJHUHdnY2d2blh0X1RxTGVJZkpUMm9MVkZCb1k3LTZB0gFvQVVfeXFMUF9rTkxYRk9fcno1Ni1teEp5VDRCcFQtMGYySVdSNFJsWGtEMGZjV0NEakRLMzUxdzlWWXIwOERaS1FPQzRRQkUyTDA1TlRMSDY5M2Z0RTdrVjRwU25ZX0FlYjhnSDdITzZibExuR0ow?oc=5",
       "date": "2026-11-06T04:48:13+00:00",
@@ -451,6 +465,20 @@
     },
     {
       "section": "science",
+      "title": "토 람 사무총장 겸 회장이 일본에 거주하는 베트남 교민 및 지식인들과 만났습니다. - Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0YtR2xJVlltVTVSeGJMRVFVZXE2X0VCQkhRZFFyekxNSUtVb2FkNmFHRHlxSnFYVm4wYjc0NWZCQ1VIbkNVd1JyNVU0aGJvdzBqSWF1U0daLW9LRDNQbm96aTZkZUVVM19qd0x6ZUtrY2R1d2JaOV9tQWhNTmRqNlpxOEs0ZWcyN1Z6NE9rRnExdzhWUG1XWEtocEFxSzZfYmNPSTY3QlVyVnpwb2c?oc=5",
+      "date": "2026-11-08T14:31:40+00:00",
+      "source": "Vietnam.vn",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "동반자 관계와 건설적인 협력 정신으로 베트남-일본 관계를 증진합니다. - Vietnam.vn",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNk9wNkRSR2dHcUhrZGVFVFh1UFF4cGNkalFueDZWTkhzTUx2X0E1a25nRlZXVUtfREdlU0hRS3BNMHl6aU9Ud2xuMVF0aUlNSFhDU29qb3R4R1Vub1dOeFNpSl9SSEt2RGNUQUw0ajVHYzVmTjl4NE5JSllqOHZfMjJyRnBMeGJqZDRIUUNyb25ITEFQUWZmczdB?oc=5",
       "date": "2026-11-07T23:56:44+00:00",
@@ -465,10 +493,10 @@
     },
     {
       "section": "science",
-      "title": "베트남-일본: 지속가능한 발전 가치를 공동으로 창출 - Vietnam.vn",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMWx4cXdncEJqVDZ2cC11a1BBOHluMUwxVU5xeF9QVDYwVnFuckwwb1NfYmdUQVpxWXRsNkJrcV9NZ3ozcVh6b0ZndFlDTTM1TnZyLXZqczNiYXpDbmJTbTA2VDU2Y3NKSnA5cEFGYzI3LWVpWjRHaTJlZ2J3T2pvR0FqOW91RE1xRDJBNWdtTFh2Tm5oUnc?oc=5",
-      "date": "2026-11-07T10:23:28+00:00",
-      "source": "Vietnam.vn",
+      "title": "실스큐·에코 웨이브 파워, AI 데이터센터 겨냥한 재생에너지 디지털 거래 기술 시연 - 양자신문",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDRVNlQ1pNY05aZ0UwcDBNN2JLU2lsYXJhNDkwdy11OEh0VFZjZkpjZ0pOWkNVcWVtc0JGN2VVVnBwdDdXRGdpbl8tQmRBZlVOWXkxTGZ6U25sallwZDUtVDJTNTBCeWhBRS1xSUR6NA?oc=5",
+      "date": "2026-11-05T23:00:00+00:00",
+      "source": "양자신문",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -532,27 +560,13 @@
       "kind": "news",
       "original_url": null,
       "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "한-네덜란드, 첫 과학기술공동위 개최 첨단 과학기술 협력 본격화 - 글로컬저널",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84ZXB1XzhLbU5qX2h5UmpVa3JfVWlxNXlOdGdpWGlWdWhFdHNYRGVkeVhSSjZVb3dFUlBpMlNNUUw0ZXMzY2M0dGN3NjdlTlMwd2V0OE1ZdXYtVkhzSHMtZXBCYTdoTzR5NEJnYdIBb0FVX3lxTE8yejlNeUV2MWxGSnRhVHQ5eUFGaE5kQW9vTHdnLWhIN2lWYXVwcmZraUNNWVZhQUZ6Z1BGWjZzcXJ2MzJkRXcycDR2YXMzOTZtX0d2TjVhY3BDZ2x1aHpCVWhHYVo2YnZobjhMMkhJTQ?oc=5",
-      "date": "2026-11-06T11:13:19+00:00",
-      "source": "글로컬저널",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
     }
   ],
   "events": [],
   "counts": {
     "kbs": 0,
     "domestic": 16,
-    "global": 3,
+    "global": 4,
     "israel": 0,
     "religion": 0,
     "mission": 1,
@@ -567,6 +581,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-08T13:53:45.663282+00:00",
-  "stale_after": "2026-11-08T16:53:45.663282+00:00"
+  "built_at": "2026-11-08T14:45:33.797223+00:00",
+  "stale_after": "2026-11-08T17:45:33.797223+00:00"
 }
