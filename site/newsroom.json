@@ -157,9 +157,9 @@
     },
     {
       "section": "domestic",
-      "title": "[에디터픽] '한국서 12년' 석사까지 땄는데..\"내가 이렇게 못 했나\" 울컥 - news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSVlleG5GdWJNQnAtdTdhS2NtaWdXdjBoN21iZzBCczJnR2tCNnRUZkF3aTNFb3lEeGxMVXk1Rl9Kd2RtNHBCbnhrdlBycEZGNEkwSmpzYUVUbndRVHZtVzNwSXU0Z1FqUjVmYUZHbE9yNDlLTEpxanlrbzRWWjRKS2QzWVM0M2l5OS01eW1BWQ?oc=5",
-      "date": "2026-11-06T06:43:09+00:00",
+      "title": "[자막뉴스] 진쓰레블 '마지막 여정' 준비하는 유족…\"한국 무사히 돌아오도록\" - news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM3A2S2l2ZG4tYnVVbk1OQ1ZVYXBCVFp1WTNsM19SaWFUWkluZ0pMY1VpakpOVWFCOGZCQktvSXJsV09xeEo4RGYwNXFSb3FHNWJvOGF0Y3RJSGxZOFI3akNqaVZfSVVWbWpIRXdXYWxRdGFwUHFBdU9yRDA3WHBUNFF6WVRiSG1LMkJEUlJQVDlnRG83c1E?oc=5",
+      "date": "2026-11-06T02:38:37+00:00",
       "source": "news.sbs.co.kr",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-08T00:26:36+00:00",
+      "date": "2026-11-08T00:24:40+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -465,20 +465,6 @@
     },
     {
       "section": "science",
-      "title": "반도체 극저온 냉동기 국산화 '크라이오H&I', 특구 딥테크 챌린지 대상 - 유니콘팩토리",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1KR1FtdVg5SGhCbnhYeWhkUnB6YUVHaXRzVTltZS1BUFpGT0JfUmFxZUtCbHFFeDBjV01ZMHJzMDJXdW1nMURUMWxpTzRoNUhCeHZQaXFYaDJhLU9Dd3RNUGczdEZqNUNVUTBOQw?oc=5",
-      "date": "2026-11-05T11:30:09+00:00",
-      "source": "유니콘팩토리",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
       "title": "'실험실의 상상, 세상의 비즈니스가 되다'… 딥테크 사업화 페스티벌 12~13일 대전서 - 헬로티",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9UdkFQTjQyUTdaYktCQXpZSnBiRE93VHlnU2w0YlNzc1NhX0ZpYUttSFVMekZuaFdnYlQwMlUyZnlfLV83OGtOQnpQVm96RmdQLUtDcDJzODZNc2FKLV9r?oc=5",
       "date": "2026-11-06T01:57:05+00:00",
@@ -532,6 +518,20 @@
       "kind": "news",
       "original_url": null,
       "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "한-네덜란드, 첫 과학기술공동위 개최…“첨단 과학기술 협력 본격화” - 전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE45RE1ZeVdJMTRDc0lfampick5BMllhSHRoVVJ5VjM5MERFOFFNZmJPLTBDS1N4dUFkSk56dE5ORElYQ054WFFyQ0ZONXUyQQ?oc=5",
+      "date": "2026-11-06T05:38:34+00:00",
+      "source": "전자신문",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
     }
   ],
   "events": [],
@@ -553,6 +553,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-08T08:05:54.603479+00:00",
-  "stale_after": "2026-11-08T11:05:54.603479+00:00"
+  "built_at": "2026-11-08T08:55:32.958101+00:00",
+  "stale_after": "2026-11-08T11:55:32.958101+00:00"
 }
