@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-11-09T15:23:42+00:00",
+      "date": "2026-11-09T16:56:12+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -115,20 +115,6 @@
     },
     {
       "section": "domestic",
-      "title": "삼성, kt 누르고 12년 만에 한국시리즈 우승 - YTN star",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16VWZPbGVaWFAtTWdwYkZxczBTM2NSVERUUGNwRnlxejRSdFY1UWlEa1gyYlNhUGtWMzZmMlVHdlFycEtnZTdNRW9MWkViaW5sMTF2RldNUTg5WU00eVRR?oc=5",
-      "date": "2026-11-08T10:00:00+00:00",
-      "source": "YTN star",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "domestic",
       "title": "2032년 한국 첫 달 탐사 후보지는 어디? - YTN 사이언스",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb2FOeEhrY2hPYmxaWnExR19UMDF3N2xFNjMzY3V6dmlnS2NYWDhLeGt4blEyZ254clMtUzlQT3FNaUJzMEkweXotQXJ3dlR4Q0FvN1lrSHYtY205SXk1RlNxOUFERmdXakFjbjBxcjJPdFBXYXhqc2hmb2JiNWI5YVctSzVKeUZvSzZteg?oc=5",
       "date": "2026-11-09T02:45:32+00:00",
@@ -157,9 +143,9 @@
     },
     {
       "section": "domestic",
-      "title": "반등 못한 한국 증시…힘 못 쓰는 국민연금 - news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOd2FJbWgzWGJZSElBM3FxQ3FFZXVJd1pRcGhlbFRzSTJnMFkyYnNZVG5VZ05KRS1nS1IyNDNzRVNCMVBPR0luMzJjZHBlQWVwMjJyNE1uYjhSWGFNWVJkbEJPXy1FZE5UakF0ZjdvS0JnYkZPYkdSQUduUVlpbWNLVXhKNHVUOXM?oc=5",
-      "date": "2026-11-09T11:20:38+00:00",
+      "title": "'줄기세포 논문 조작' 황우석 근황…한국 국적 잃었다 - news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbGRzRzVzWERkWW5mbnB5LXB4cVdUamFJMVB1VWE2OFAzSTVFOWk1b1lIaXJrMWN6M0thTXlBcFBxbm1RNjk5a0N5TXJsWFZndXlrbE1XNnA5dUJhYlc4MndmR1N4TEVVQnB6dWVXNTJQczNsanBMYWRYRlE1MGJrVGN1dkFEeUV5OUhQSUlrTQ?oc=5",
+      "date": "2026-11-09T05:19:09+00:00",
       "source": "news.sbs.co.kr",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -268,6 +254,20 @@
       "link_type": "aggregator"
     },
     {
+      "section": "domestic",
+      "title": "美민주 反트럼프, 무시하는 트럼프… 한국 경제 옥죈다 - 서울신문",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82M3F5VWp3RE82VjRGN0xRTmNndjVVb2xjMTVaencyQVUwNnNQd3drMUI2czhnY0UzQTBkbnFOVFhCbFN5LU9QX2Yxc0pNS2ZfSUdGX3ZNeUJlSjZUM1pJQkZ1U3MtR1FFWlI1eDJoZ3U3OVhrVDFhNjlIaw?oc=5",
+      "date": "2026-11-09T09:21:03+00:00",
+      "source": "서울신문",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
       "section": "global",
       "title": "김정기 박사, 중국 칭화대학교 쯔징학원 특별강연 질의응답 - 브레이크뉴스",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9vNjZjajBLLVdjUF9iTmFyMFJ2TWJhMjQ4dHdtV0FmaHhRb2FEcjN4N1A4RTdHZVBoektJZkhGQm1JZ1dIa0FyaQ?oc=5",
@@ -311,20 +311,6 @@
     },
     {
       "section": "science",
-      "title": "인플렉션 포인트 VI 합병 대상 퀀텀 스페이스, 1억 8500만 달러 NASA 수주팀 참여 - 데이터투자",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5KbHpaUTFmQ1JfQTBfUkNuVlBEdmZ4a2tGV3JrZklLa00xaGROZExGUDNPZXV3Mjg0ZnhCM2tUWUxLM0hXeTFqaWhhWndMZ1lUTXotcnpLQmRVMzd2RWdsNzM5UjFCMWlBWUF6WDUweFM4bDg?oc=5",
-      "date": "2026-11-09T15:13:32+00:00",
-      "source": "데이터투자",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
       "title": "인간이 18년 간 못 밝힌 양자컴퓨팅 숙제, AI는 어떻게 72시간 만에 돌파했나 - 사이언스모니터",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcTF5b19FNDZHM0lka1dQWEgtUmxENk9zVWNSUjBVTm1wb3QtZDZrOXhwakJ0MlJvZ1U3UUVrVUthWFVfMUZvbDVZYXNJcGVBVzVuYWZLVmR0eWhzZ2diRmdTckNleTZQTGhWTGVSb29TZ2R2Zmd3bGtmYlk3MXh5bA?oc=5",
       "date": "2026-11-09T01:57:09+00:00",
@@ -339,9 +325,23 @@
     },
     {
       "section": "science",
-      "title": "젠슨 황 내연녀 中 정보자원, 48억 달러 AI칩 우회 수출 의혹...글로벌 반도체 공급망 덮친 미중 첩보전 - 사이언스모니터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1lVGRHdkE5bHN4aTB2NXZ0QXJySUZIQ3NYRHpna2ZrTnV0Q2lTck8yX3R0Y2lNVE5VTEpWMFJMdlJNaWlzOG9OSGhFVTdZb2dMWW0yckJmU3ZNMXpqWE12Yk1WOXg0VFk4c1Q0OTZxMjJUdw?oc=5",
-      "date": "2026-11-09T14:30:47+00:00",
+      "title": "인플렉션 포인트 VI 합병 대상 퀀텀 스페이스, 1억 8500만 달러 NASA 수주팀 참여 - 데이터투자",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5KbHpaUTFmQ1JfQTBfUkNuVlBEdmZ4a2tGV3JrZklLa00xaGROZExGUDNPZXV3Mjg0ZnhCM2tUWUxLM0hXeTFqaWhhWndMZ1lUTXotcnpLQmRVMzd2RWdsNzM5UjFCMWlBWUF6WDUweFM4bDg?oc=5",
+      "date": "2026-11-09T15:13:32+00:00",
+      "source": "데이터투자",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
+      "title": "젠슨 황 내연녀 中 스파이? 48억 달러 AI 칩 우회 수출 파문...글로벌 반도체 공급망 덮친 미중 첩보전 - 사이언스모니터",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNbGxGZF9qcUdGSWZReHNLNF9jMzB6ckIzS3VSRkNyeGFFNkRremFZeDRBQ3l0VzhzeDZCU3ZSUVJJWHpYZXhHbTJZUmMzLW1sdGJsX09JNGdXN1hPUGJGRGY2NjVqQ19SOERoSTZ1eDZRR3JYZi1WVmpWeWlFZ1BEb3ZEb2tHeFVPTjVnaHVuMmJoMF9rXzZ4LUNhR3RkbWhvUVJqLUd1TUQtZUp5RWpEQnZvWmJPdTY3LWxHYVRZZ3dLWjd1OXVfMlVPNldhWTk4V1BOUUpjYzZEMlVzR3g0dlNxc3l4cXdncndDUnVhaFBwR2VfM2FYdW01b2Q2d3FSc2w5RGQxU05BdG9kNnVzc2JBWjdWckVfNG56Y1RqdEVYZVU1ZXlTR2dLbmJ1MFdKYnNrbndlUFctdXNaZ1AzYnpR?oc=5",
+      "date": "2026-11-09T09:20:25+00:00",
       "source": "사이언스모니터",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -413,20 +413,6 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSWtNUGdmckNsTzJuMzlnWkRkTFdDX0VjZDdsZlhXN0JTZDdqRi1GTnpyNWJvMU1CcHdxMVlKOWxyTmk4Y29VTVVQQU9wQy1CWFR5Z19OaU5TZ0txSkg0dVhhZUZsa3JwWEQ5cHFLRDBLSUJUWHd5OTI4bHF5c0YtcGpmR21LQ3g1dTFEdnBqVFNYbDZMdTJNNEJHYzV2UlhEbGkxOA?oc=5",
       "date": "2026-11-09T13:13:17+00:00",
       "source": "Vietnam.vn",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "‘공식 방일’ 또 럼 당 서기장‧국가주석, 재일 베트남 전문가들과 회동…AI·반도체 협력 논의 - VOV World",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUVdYRTkxVVFQbTR5MU5WOE8zRTB0YVBEaW5Xa1N5QVkybmFhaEM3YTBQVXB0aWZzVWNyX0lNenNmejJIZ1pKN3hIZlgzdk9GRGJsaHdCckxHRzRuNUJ1LVlJemc1a2RPakI0RC1TWUJRSmQ1LUhqQXlORDUwQW1xMzhnZGZUQm9SNUlvanVRR0VPakhGc1lZNzlkVi04MGp4TE9LT3FCRVFnalhacFBuS2dmcTlyM3Fzd0ZUZXIwUUdsNC05ZlBfX2N4MVp5ZzJRN2RQNmlqVzF4TnZkdXc?oc=5",
-      "date": "2026-11-07T08:00:00+00:00",
-      "source": "VOV World",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -534,6 +520,20 @@
       "link_type": "aggregator"
     },
     {
+      "section": "science",
+      "title": "사무총장과 회장은 일본에서 베트남 전문가 및 지식인들과 만났습니다. - Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTTJQaWxoXzFWV2xxcGdIWkhZYnNHZ19qbFZjX191VXFZczI1TDlVc0JyY09ad2xuVGgxOVpEVUdqRnNTWHcxTWY5TlN2RU9ZLW9ZRTdTRHYwbklDaU91Z2FfVkltZ01hUl9faXFZeVBYM0FMMXRtaU9IR3pqVDlON1oza25iOVdUeUktd1NJck4wd0FzQzlmYlhhdTVONWdtT3c?oc=5",
+      "date": "2026-11-08T16:22:02+00:00",
+      "source": "Vietnam.vn",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
       "section": "ai",
       "title": "[AI트렌드] 한국항공대, 12일 ‘피지컬 AI와 월드 모델’ 세미나 개최 外 - 베이비뉴스",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DTmVFU1REQkpLbXNWMnRsM0Z0OFFOTkdCbDhESktuaVpOYVhwYnhIRGlOeHpieFhOMlJHTFl1Wi1xa2RYTzJobTZQamdQMUJiS0d1NlpKX2htUlVSc2RzOUdjM1VhVElzeUdOOQ?oc=5",
@@ -567,6 +567,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-09T16:06:50.573501+00:00",
-  "stale_after": "2026-11-09T19:06:50.573501+00:00"
+  "built_at": "2026-11-09T17:13:41.818938+00:00",
+  "stale_after": "2026-11-09T20:13:41.818938+00:00"
 }
