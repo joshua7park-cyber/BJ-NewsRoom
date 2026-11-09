@@ -311,6 +311,20 @@
     },
     {
       "section": "science",
+      "title": "인간이 18년 간 못 밝힌 양자컴퓨팅 숙제, AI는 어떻게 72시간 만에 돌파했나 - 사이언스모니터",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcTF5b19FNDZHM0lka1dQWEgtUmxENk9zVWNSUjBVTm1wb3QtZDZrOXhwakJ0MlJvZ1U3UUVrVUthWFVfMUZvbDVZYXNJcGVBVzVuYWZLVmR0eWhzZ2diRmdTckNleTZQTGhWTGVSb29TZ2R2Zmd3bGtmYlk3MXh5bA?oc=5",
+      "date": "2026-11-09T01:57:09+00:00",
+      "source": "사이언스모니터",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "IonQ vs. Quantinuum Q3: $173.8M vs. $9.1M, Two Paths to Quantum - Science Monitor - 사이언스모니터",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSlZhZ2l0VmdTOXFiaDl6bVNhQk9TWGdLZkdnS0NtQk1sb2ljdWdFZzRqVHJkeW9MRlVreW5vLXluWUh4RnRfWVNnYk4yZVBUblI2WlZwWno0UjRlVzNDT1JoLVRrRC1iVFpCdHRGSHNWZnIyNDVhSU1LVE5velhsaXBxM1ROYzdhanc?oc=5",
       "date": "2026-11-06T23:48:11+00:00",
@@ -437,10 +451,10 @@
     },
     {
       "section": "science",
-      "title": "AI반도체에서 양자-AI까지… ICT 고급인재 연구센터 5개소 동시 출범 - 헬로티",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9UVmNGZlVVeW5FSzNOQWY3RmlqTU5PUVNzNUg5bWEyd1Vmd3VpSEpjdlRRNURieEhjVmhuLWNYMDFvX3lZUEp1Y2Uwdm9qWjRya0dFR0Y0RnE5azZ3Njdn?oc=5",
-      "date": "2026-11-06T01:54:56+00:00",
-      "source": "헬로티",
+      "title": "[오늘의 증시]美 반도체지수 4% 반등…코스피, 폭락분 만회 나설 듯 - 뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QZUtkVk9GVDVNelVHUjBZd2ZkZzRwalBycFJnV1JuNHVrN0lfeXZ6NFNWX0dET2U4S0dVTEFxWmhzZ3Jidm1VVGVKcHZXR1ZPUkVBWThRNGJIQmJQTmFFdtIBeEFVX3lxTE9nZ2s1UTQ0aEI1dXB6TWw3M1AyQWRQMmh3aDZUNG5qcUFvUjVXclN0SmdFQTljZTJIQ0M3TGZyVXdzNG9ZUEhtNzNPUGpCUjFVLVAxT2syNURjZUVIMlY5Qm15eTJ3VDdfbEJTMjlVTVVBcmJoQy1UYw?oc=5",
+      "date": "2026-11-08T22:48:21+00:00",
+      "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -455,20 +469,6 @@
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBCUzF2dnFXWXR0ZnhRRE1LSFNzVEo0RGl3SFF4XzZxUko5cVFlQV90N3gtNm1hZTNlWnBRT2szT0ZfYmhKV1paMERSUVJaNkE?oc=5",
       "date": "2026-11-08T04:36:49+00:00",
       "source": "와우테일",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "[오늘의 증시]美 반도체지수 4% 반등…코스피, 폭락분 만회 나설 듯 - 뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QZUtkVk9GVDVNelVHUjBZd2ZkZzRwalBycFJnV1JuNHVrN0lfeXZ6NFNWX0dET2U4S0dVTEFxWmhzZ3Jidm1VVGVKcHZXR1ZPUkVBWThRNGJIQmJQTmFFdtIBeEFVX3lxTE9nZ2s1UTQ0aEI1dXB6TWw3M1AyQWRQMmh3aDZUNG5qcUFvUjVXclN0SmdFQTljZTJIQ0M3TGZyVXdzNG9ZUEhtNzNPUGpCUjFVLVAxT2syNURjZUVIMlY5Qm15eTJ3VDdfbEJTMjlVTVVBcmJoQy1UYw?oc=5",
-      "date": "2026-11-08T22:48:21+00:00",
-      "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -553,6 +553,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-09T01:10:54.624399+00:00",
-  "stale_after": "2026-11-09T04:10:54.624399+00:00"
+  "built_at": "2026-11-09T02:14:41.139588+00:00",
+  "stale_after": "2026-11-09T05:14:41.139588+00:00"
 }
