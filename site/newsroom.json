@@ -75,7 +75,7 @@
       "section": "domestic",
       "title": "뉴스데스크 - MBC 뉴스",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JaE5QT01BdVZ2OG1pazBPTGZpU3lDT21PN1hHOFBIWlRBYWVBSTNRejFnT2hKSXhEMW1jZjkxek0weWJwcHlqSmZtY01pTF9DZEVvRW1B?oc=5",
-      "date": "2026-11-10T02:25:57+00:00",
+      "date": "2026-11-10T03:25:40+00:00",
       "source": "MBC 뉴스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-09T15:51:48+00:00",
+      "date": "2026-11-09T15:51:32+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -521,10 +521,10 @@
     },
     {
       "section": "science",
-      "title": "토 람 사무총장 겸 회장이 일본에서 베트남 전문가 및 지식인들과 회담을 가졌다. - Vietnam.vn",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOenc0b0hfT1E3anI1YzAtTjVLS1NPNENLZmZNZEtOOFZ4dElvNnFzbXhsRG9lLXFvbktIYVNJRGtZYUtCTVpEVVJZY2VsN2lIaGdzVm1DbDFhVmQ1UUxyZ2lGbFNvYjJuQW0zTGl6N3Y1TVpBdmRpWXdmU3djRnZoVXczV2FKSzM0M0F1bUh3eFJiTDVUc01jc0xPalJhaXhSOVdDRnNaYw?oc=5",
-      "date": "2026-11-08T14:47:51+00:00",
-      "source": "Vietnam.vn",
+      "title": "미 증시 혼조세 속 데이터센터 지연 및 우주항공주 급등 - 네이버페이 머니스토리",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rRW12X1NCczBIU00xZ2tLaFNmMFZVTGRTMHhVWENqMERPbDhGS1pjNkJFbmdKYUp4Y0JQV0ZNNXg3Y1VkV1NNWmhpRDFkdElwY0hkd2NON3FQUQ?oc=5",
+      "date": "2026-11-08T23:24:25+00:00",
+      "source": "네이버페이 머니스토리",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -535,10 +535,10 @@
     },
     {
       "section": "science",
-      "title": "미 증시 혼조세 속 데이터센터 지연 및 우주항공주 급등 - 네이버페이 머니스토리",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rRW12X1NCczBIU00xZ2tLaFNmMFZVTGRTMHhVWENqMERPbDhGS1pjNkJFbmdKYUp4Y0JQV0ZNNXg3Y1VkV1NNWmhpRDFkdElwY0hkd2NON3FQUQ?oc=5",
-      "date": "2026-11-08T23:24:25+00:00",
-      "source": "네이버페이 머니스토리",
+      "title": "토 람 사무총장 겸 회장이 일본에서 베트남 전문가 및 지식인들과 회담을 가졌다. - Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOenc0b0hfT1E3anI1YzAtTjVLS1NPNENLZmZNZEtOOFZ4dElvNnFzbXhsRG9lLXFvbktIYVNJRGtZYUtCTVpEVVJZY2VsN2lIaGdzVm1DbDFhVmQ1UUxyZ2lGbFNvYjJuQW0zTGl6N3Y1TVpBdmRpWXdmU3djRnZoVXczV2FKSzM0M0F1bUh3eFJiTDVUc01jc0xPalJhaXhSOVdDRnNaYw?oc=5",
+      "date": "2026-11-08T14:47:51+00:00",
+      "source": "Vietnam.vn",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -581,6 +581,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-10T02:54:35.631590+00:00",
-  "stale_after": "2026-11-10T05:54:35.631590+00:00"
+  "built_at": "2026-11-10T03:55:05.470871+00:00",
+  "stale_after": "2026-11-10T06:55:05.470871+00:00"
 }
