@@ -437,10 +437,10 @@
     },
     {
       "section": "science",
-      "title": "‘K-문샷 정책 세미나’ 개최, 국가 과학 난제 해결을 위한 과학 인공지능 혁신을 논의하다 - 도민연합뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XMXVBdFBSMXJ6R0xnc0dpYzdCRy1helR0WVJUV0JwT1YyREp2TTgwQlN5TUg3M0U2ZE53aXRXakZhNWhkb2o0MDNkUGYySGRLQmhLZE5hSk1jMzNaSmdsbkRIRXQxRTNLU3c?oc=5",
-      "date": "2026-11-10T07:08:35+00:00",
-      "source": "도민연합뉴스",
+      "title": "정부, AI로 국가 과학기술 난제 해결 가속…'K-문샷' 실행 기반 정비 - 서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBXODZuSmZmS1ZocVdzTXliRkdNQ0xuSkdCM1Z0Mm1HdE41SDg2ZE5NVnNGNHVXRTlUbG8tNzdRRlpxeGNVeWtKcXNGd3c3N2poZmNkYVVWNDRjYWwwV3BDTFlqN2VvaUFsQlNr?oc=5",
+      "date": "2026-11-10T06:00:00+00:00",
+      "source": "서울뉴스통신",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
       "verification_status": "자동 수집 · 원문 사실검증 전",
@@ -521,6 +521,20 @@
     },
     {
       "section": "ai",
+      "title": "상지대, 남원주중 학생 174명 대상 생성형 AI 교육 - 원주신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KUlZnVEUtaVRUalZNTjJoTmtFQldjRlRsZ1JraHE3U2VjdC1NTGsxWW4weXpnaUZ0MkZncXhESjY1ZXZnYUdXcUdCR2VfWGRrQVBaNXRtQzhudlFDTlktTjdGRlZpbXc?oc=5",
+      "date": "2026-11-10T10:03:43+00:00",
+      "source": "원주신문",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "ai",
       "title": "상지대 컴퓨터공학과 지역 중학생 대상 생성형 AI 활용 교육 - 베리타스알파",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4c2dOQVpOWFNrZjc2aHhzY2NRX3BiU251ckFuc2YxRHI2RHFpeEx6NUIxMzd1Q3djTzB3XzlvLVpUTFVYSHByUzZpbVgwY0loYWp6MmhQMGthLTRmWFpFV29XTGhaOG54b1pILQ?oc=5",
       "date": "2026-11-10T07:41:29+00:00",
@@ -557,7 +571,7 @@
     "religion": 0,
     "mission": 0,
     "science": 16,
-    "ai": 2,
+    "ai": 3,
     "ai_events": 0
   },
   "errors": [],
@@ -567,6 +581,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-10T09:58:47.914886+00:00",
-  "stale_after": "2026-11-10T12:58:47.914886+00:00"
+  "built_at": "2026-11-10T10:56:25.904454+00:00",
+  "stale_after": "2026-11-10T13:56:25.904454+00:00"
 }
