@@ -45,9 +45,9 @@
   "news": [
     {
       "section": "domestic",
-      "title": "이 대통령 \"국내 자본시장 여전히 매력적인 투자 대상…제도적·정책적 노력 지속\" - JTBC",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8tVXBKdVlscGFHMFZETVFnSFZ6WGZ5LWxKYnpaUkdHYzJySW5nUE1MWkVYYVRfZS1BNE5ldmxKY1JJSWtITmh5bHpKcFVDdThmLU9KVA?oc=5",
-      "date": "2026-11-12T06:37:00+00:00",
+      "title": "이 대통령, 주가조작 범LG가 검거에 \"새 대한민국선 법지켜야\" - JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBvTlVwc2VFWmRvbVBxSmo3U0RnRnRyM29ZcEY2bzZtdkw1SnJsWl9HNFoxOHlZNE1vbmtkSnQ0eFZLRFQ4Z19fbl8yVVJIeU9UMlJVeQ?oc=5",
+      "date": "2026-11-13T14:18:00+00:00",
       "source": "JTBC",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -199,9 +199,9 @@
     },
     {
       "section": "domestic",
-      "title": "디올 CEO 박사학위 수여식에 국내 주요 그룹 총수 한자리에 - 뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5pRkZhRGlwc2FGSldkNVVzM0FCdTdaT3BaTGVkNndYUnVzczlrRzUwckEzaDdjSDBFd2RmblhrRXhycXN4Y3diRXZmX2syR21PYmhRR0o0S1BCVkg3V2tsSA?oc=5",
-      "date": "2026-11-12T02:22:53+00:00",
+      "title": "정부, '서비스 장애' 한국MS와 비상대응반 구성…\"이용자 불편 점검\" - 뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTdWdZOENEZ19kZ3R4WEpITWdsdldYdGNGNUpxanljOVVVVlRvT1d6YnhMaHJsaExKMkJBQUR2eVI0cDRTNll1czQtYjVPeTdHcFVyN25KaHpzeXVuSGEtWNIBeEFVX3lxTE4yRF83VDJ4RDhESHUzTEVwNXc5MzQ1aFdkMHYyZkpOUXFxb1FTMXFMazlKa05LVkp1aENXZG0zOW9BR2pjSGxGbDdqQlB0VlVEN0hzYzhfTWVQemRoNW9jaHM1ZkduUUVXMlphLTNmeTFtTGlBcTZHNA?oc=5",
+      "date": "2026-11-14T06:57:44+00:00",
       "source": "뉴시스",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -215,7 +215,7 @@
       "section": "domestic",
       "title": "동아일보 - 동아일보",
       "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE9xSmNlVl9oSFZ0TlpiYVZFN25TUW1feG90elZnN0VlVWphQU4yN0JUQVY3Mjc1XzFhWWc?oc=5",
-      "date": "2026-11-13T14:26:32+00:00",
+      "date": "2026-11-13T17:22:39+00:00",
       "source": "동아일보",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -339,6 +339,20 @@
     },
     {
       "section": "science",
+      "title": "젠슨 황 복귀 길 열어라…엔비디아 주주 거스트너·베이커, 이사회에 공동 서한 - 사이언스모니터",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3FMZXhMVlVQbzRCVDlXaFlIdmxMcUxOZWJqbmVrWjBURk1uV0hJalEyUXZfZkU3WjNuaDdMQmlKWEU3em1CTlllVlM1LU9OQWhFajN5anNONlAyMV9raHRGUl9vT3VnWXFzckRKTE1IVnRzNlczRGtHRkg3ek42akpkb01HXzBHUDBoWXJlWDhSb0x6MHdN?oc=5",
+      "date": "2026-11-14T12:07:20+00:00",
+      "source": "사이언스모니터",
+      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
+      "insight": "자동 생성된 분석 없음",
+      "verification_status": "자동 수집 · 원문 사실검증 전",
+      "verification_level": "indexed",
+      "kind": "news",
+      "original_url": null,
+      "link_type": "aggregator"
+    },
+    {
+      "section": "science",
       "title": "젠슨 황 CEO 퇴진, 엔비디아 창업자 시대 끝났다 - 사이언스모니터",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FSGdrckEzUDhLYklkYWlPek8zd0VxdFl2d1lEZmk5T3ZaSk5ZZDZFd210SFRzd05WOTRpM0F3SEpfYkt4dW8xVElFRXRCS0RSalh1NTVUdUlSSXhpQlZIRmUxXzRrWVE?oc=5",
       "date": "2026-11-12T14:27:01+00:00",
@@ -356,20 +370,6 @@
       "title": "엔비디아 떠난 젠슨 황, 일론 머스크 스페이스X로 향할까 - 사이언스모니터",
       "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNRGNCU2t6bVpqaDBLRUE2d00waTlPY00zT0NkRnhpa3Vsd3NpRDRXbEFDa2VWTVFlMUV6blBKLWR0NUtqdU14U09SbmNwd2VfUmFZZ0U1amNWTE54LWpGbDVCd2VfclZvMkdpLWp0dmViUDEtMXlKRzd2bG8yakpkSWVibHRqRWVJQ1Q2UTJkTW45WV9TZFpzZURMaC16YTh6V0x1UFcya3BjSko2WGQ3ZzBPMThEbnJMSG4yZDR1b1FvN1gzWVo2Q2d1TERYMXFjYXBjQlhGNXVPMktiRkxQUlRDM0JjZlpuQ0h4TEtSQ0xIeHh4bnp3RWg3YnppWnNQQmN3VnFBdF93NjAwb0JjSTA3cG1UYlVsbXhMWVhqWTRxTnpFTmUtQTgzcE8takxGLWRxTUhNWkt1RnlCNVJxV3ZRNWY?oc=5",
       "date": "2026-11-12T16:11:02+00:00",
-      "source": "사이언스모니터",
-      "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
-      "insight": "자동 생성된 분석 없음",
-      "verification_status": "자동 수집 · 원문 사실검증 전",
-      "verification_level": "indexed",
-      "kind": "news",
-      "original_url": null,
-      "link_type": "aggregator"
-    },
-    {
-      "section": "science",
-      "title": "IBM, 양자칩 ‘나이트호크 r3’ 공개…520큐비트로 연산 1만 회 겨냥, 2027년 1,040큐비트 시스템 - 사이언스모니터",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBMSHowRWNuV2ZZenR5bHd4MkNNdlJGYUFnMlVKeG1MSVVrN2huMjZwLVVsR1ZmWEpIZVFuRnVVM0FUb1BqWGpTckJBdkZnVlgyX0lRNHo0QXRMSGhyZzZ5NkMxMC1XYnJOVUVYOQ?oc=5",
-      "date": "2026-11-12T02:27:01+00:00",
       "source": "사이언스모니터",
       "summary": "RSS에 공개된 제목을 표시합니다. 원문에서 본문과 사실관계를 확인하세요.",
       "insight": "자동 생성된 분석 없음",
@@ -567,6 +567,6 @@
     "minimum_5_verified_per_section": false,
     "note": "자동 RSS 수집 결과는 편집 검증 뉴스가 아닙니다. KBS 뉴스9 방송 대조는 별도 검증이 필요합니다."
   },
-  "built_at": "2026-11-14T15:01:15.387505+00:00",
-  "stale_after": "2026-11-14T18:01:15.387505+00:00"
+  "built_at": "2026-11-14T19:54:43.683535+00:00",
+  "stale_after": "2026-11-14T22:54:43.683535+00:00"
 }
