@@ -1,0 +1,35 @@
+{
+  "finished_at": "2026-11-15T00:02+09:00",
+  "result": "success",
+  "failed_step": null,
+  "steps": {
+    "gate": "success",
+    "tests": "success",
+    "js": "success",
+    "links": "success",
+    "upload": "success",
+    "deployment": "success",
+    "public": "success"
+  },
+  "event": "workflow_run",
+  "run_url": "https://github.com/joshua7park-cyber/BJ-NewsRoom/actions/runs/43607909489",
+  "commit": "a5a3df9d4fd53a5d67e6b4a18e126c34e0940fa9",
+  "edition_date": "2026-11-14",
+  "published_at": "2026-11-14T06:44:54+09:00",
+  "links": {
+    "checked_at": "2026-11-15T00:02+09:00",
+    "total": 48,
+    "ok": 45,
+    "blocked": 2,
+    "broken": 1,
+    "problems": []
+  },
+  "broken_links": [
+    {
+      "url": "https://www.khan.co.kr/article/202611131802001",
+      "used_by": [
+        "story:soc-startup-data-leak"
+      ]
+    }
+  ]
+}
