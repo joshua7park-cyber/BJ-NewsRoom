@@ -1,0 +1,28 @@
+{
+  "finished_at": "2026-11-21T17:15+09:00",
+  "result": "success",
+  "failed_step": null,
+  "steps": {
+    "gate": "success",
+    "tests": "success",
+    "js": "success",
+    "links": "success",
+    "upload": "success",
+    "deployment": "success",
+    "public": "success"
+  },
+  "event": "workflow_run",
+  "run_url": "https://github.com/joshua7park-cyber/BJ-NewsRoom/actions/runs/44884014309",
+  "commit": "4b2f48110b5de9bfc651fb8d106cdfd7c7babeac",
+  "edition_date": "2026-11-21",
+  "published_at": "2026-11-21T06:44:33+09:00",
+  "links": {
+    "checked_at": "2026-11-21T17:15+09:00",
+    "total": 45,
+    "ok": 43,
+    "blocked": 2,
+    "broken": 0,
+    "problems": []
+  },
+  "broken_links": []
+}
